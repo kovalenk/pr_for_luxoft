@@ -4,11 +4,11 @@
     color: $white;
     font-family: $font-family-base;
     @include my(4);
-    .title {
-        width: 100%;
-        text-align: center;
+    h2 {
         font-size: $h2-font-size;
-        font-weight: $font-weight-bold;
+        text-align: center;
+        @include py(2);
+        @include my(3);
     }
     .row {
         width: 100%;
@@ -51,10 +51,14 @@
     }
 }
 
-.container-why-luxoft {
+.container-why-luxoft-optional {
     .row {
-        @include row-cols(2);
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-between(sm, xl) {
+            .col {
+                flex: 0 1 48%
+            }
+        }
+        @include media-breakpoint-down(sm) {
             @include row-cols(1);
         }
     }
