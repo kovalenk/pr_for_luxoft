@@ -16,7 +16,7 @@
               System testing and validation
             </button>
           </h2>
-          <div id="collapseOneBlack" class="accordion-collapse collapse" aria-labelledby="headingOneBlack" data-bs-parent="#accordionExample">
+          <div id="collapseOneBlack" class="accordion-collapse collapse" aria-labelledby="headingOneBlack">
             <div class="accordion-body">
               While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.
             </div>
@@ -28,7 +28,7 @@
               Bluetooth connectivity
             </button>
           </h2>
-          <div id="collapseTwoBlack" class="accordion-collapse collapse" aria-labelledby="headingTwoBlack" data-bs-parent="#accordionExample">
+          <div id="collapseTwoBlack" class="accordion-collapse collapse" aria-labelledby="headingTwoBlack">
             <div class="accordion-body">
               While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.
             </div>
@@ -40,7 +40,7 @@
               Philips Sonicare brush
             </button>
           </h2>
-          <div id="collapseThreeBlack" class="accordion-collapse collapse" aria-labelledby="headingThreeBlack" data-bs-parent="#accordionExample">
+          <div id="collapseThreeBlack" class="accordion-collapse collapse" aria-labelledby="headingThreeBlack">
             <div class="accordion-body">
               While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.
             </div>
@@ -64,7 +64,7 @@
               System testing and validation
             </button>
           </h2>
-          <div id="collapseOneWhite" class="accordion-collapse collapse" aria-labelledby="headingOneWhite" data-bs-parent="#accordionExample">
+          <div id="collapseOneWhite" class="accordion-collapse collapse" aria-labelledby="headingOneWhite">
             <div class="accordion-body">
               While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.
             </div>
@@ -76,7 +76,7 @@
               Bluetooth connectivity
             </button>
           </h2>
-          <div id="collapseTwoWhite" class="accordion-collapse collapse" aria-labelledby="headingTwoWhite" data-bs-parent="#accordionExample">
+          <div id="collapseTwoWhite" class="accordion-collapse collapse" aria-labelledby="headingTwoWhite">
             <div class="accordion-body">
               While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.
             </div>
@@ -88,7 +88,7 @@
               Philips Sonicare brush
             </button>
           </h2>
-          <div id="collapseThreeWhite" class="accordion-collapse collapse" aria-labelledby="headingThreeWhite" data-bs-parent="#accordionExample">
+          <div id="collapseThreeWhite" class="accordion-collapse collapse" aria-labelledby="headingThreeWhite">
             <div class="accordion-body">
               While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically independent solutions and the support of our top-tier partner network.
             </div>
@@ -103,29 +103,5 @@
 <script>
 export default {
   name: 'Accordion',
-  created() {
-    const accordionSection = document.getElementsByClassName('container__accordion');
-    for (let j = 0; j < accordionSection.length; j++) {
-      const accordion = accordionSection[j].getElementsByClassName('accordion__row');
-      if (accordion.length) {
-        function clearClasses() {
-          for (let i = 0; i < accordion.length; i++) {
-            accordion[i].classList.remove('accordion__row--open')
-          }
-        }
-
-        for (let i = 0; i < accordion.length; i++) {
-          accordion[i].addEventListener('click', function (event) {
-            if (accordion[i].className.includes('accordion__row--open')) {
-              clearClasses();
-            } else {
-              clearClasses();
-              accordion[i].classList.add('accordion__row--open');
-            }
-          })
-        }
-      }
-    }
-  }
 }
 </script>
