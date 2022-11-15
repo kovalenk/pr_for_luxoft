@@ -66,6 +66,6 @@
 
 <script>
 export default {
-  name: 'WhyLuxoftOne',
+  name: 'WhyLuxoftOptional',
 }
 </script>

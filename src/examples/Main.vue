@@ -1,7 +1,7 @@
 <template>
   <div>
     <Industries />
-    <WhyLuxoftOne />
+    <WhyLuxoftOptional />
     <WhyLuxoftTwo />
     <KeyPoints />
     <HowWeCanHelp />
@@ -24,7 +24,7 @@
 <script>
 
 import Industries from "@/examples/Industries";
-import WhyLuxoftOne from "@/examples/WhyLuxoftOne";
+import WhyLuxoftOptional from "@/examples/WhyLuxoftOptional";
 import WhyLuxoftTwo from "@/examples/WhyLuxoftTwo";
 import KeyPoints from "@/examples/KeyPoints";
 import HowWeCanHelp from "@/examples/HowWeCanHelp";
@@ -46,7 +46,7 @@ export default {
   name: 'main-name',
   components: {
     Industries,
-    WhyLuxoftOne,
+    WhyLuxoftOptional,
     WhyLuxoftTwo,
     KeyPoints,
     HowWeCanHelp,
