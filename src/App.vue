@@ -1,8 +1,8 @@
 <template>
   <div>
-<!--    <header-name />-->
+    <header-name />
     <main-name />
-<!--    <footer-name />-->
+    <footer-name />
   </div>
 </template>
 
@@ -14,9 +14,9 @@ import MainName from "@/examples/Main";
 export default {
   name: 'App',
   components: {
-    // FooterName,
+    FooterName,
     MainName,
-    // HeaderName
+    HeaderName
   }
 }
 </script>
