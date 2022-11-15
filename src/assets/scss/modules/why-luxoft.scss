@@ -1,263 +1,61 @@
-.why-luxoft {
+.container-why-luxoft-optional {
     display: flex;
     flex-direction: column;
-
-    padding: 24px 120px;
-
-    .why-luxoft {
-        &__title {
-            margin-bottom: 40px;
-
-            font-style: normal;
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 120%;
-            text-align: center;
-        }
-
-        &__row {
-            display: flex;
-
-            .row {
-                &__col {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    box-sizing: border-box;
-                    cursor: pointer;
-
-                    width: 100%;
-                    height: 100%;
-                    margin-right: 24px;
-                    padding: 24px 24px 19px 24px;
-
-                    border-radius: 14px;
-                    background: #1A1A1A;
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
-
-                    .col {
-                        &__title {
-                            margin: 0;
-
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 20px;
-                            line-height: 130%;
-
-                            color: white;
-                        }
-
-                        &__desc {
-                            margin: 24px 0 0;
-
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 20px;
-                            line-height: 130%;
-
-                            color: transparent;
-
-                            transition: color .2s ease-in;
-                        }
-
-                        &__arrows {
-                            margin: 29px 0 0 4px;
-                            font-size: 28px;
-                        }
-
-                        &__title, &__desc {
-                            -webkit-user-select: unset;
-                            -khtml-user-select: unset;
-                            -moz-user-select: unset;
-                            -ms-user-select: unset;
-                            -o-user-select: unset;
-                            user-select: unset;
-                        }
-                    }
-
-                    &:hover {
-                        .col__desc {
-                            color: white;
-                        }
-                    }
+    color: $white;
+    font-family: $font-family-base;
+    @include my(4);
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: $h2-font-size;
+        font-weight: $font-weight-bold;
+    }
+    .row {
+        width: 100%;
+        grid-gap: 24px;
+        .col {
+            cursor: pointer;
+            background: $gray-20;
+            border-radius: 14px;
+            @include px(3);
+            @include py(3);
+            text-decoration: none;
+            &:after {
+                content: '>>>';
+                font-weight: $font-weight-bold;
+                font-size: $font-size-28;
+            }
+            &:hover {
+                p {
+                    color: inherit;
                 }
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            h5 {
+                font-size: $font-size-28;
+                font-weight: $font-weight-bold;
+                @include mb(3);
+            }
+            p {
+                color: transparent;
+                @include mb(2);
+                font-size: $font-size-20;
+                font-weight: $font-weight-base;
+                line-height: $line-height-130;
+                transition: color .3s linear;
             }
         }
     }
+}
 
-    @media screen and (max-width: 1274px) {
-        .why-luxoft__row {
-            flex-wrap: wrap;
-
-            .row__col {
-                width: calc(33% - 13px);
-                margin-bottom: 20px;
-
-                &:nth-child(3) {
-                    margin-right: 0;
-                }
-
-                &:last-child {
-                    width: 100%;
-                }
-            }
-        }
-
-        &--cards-3 {
-            .why-luxoft__row {
-                flex-wrap: nowrap;
-
-                .row__col {
-                    width: auto;
-                    margin-bottom: inherit;
-
-                    &:nth-child(3) {
-                        margin-right: inherit;
-                    }
-
-                    &:last-child {
-                        width: initial;
-                    }
-                }
-            }
-        }
-    }
-
-    @media screen and (max-width: 1139px) {
-        .why-luxoft__row {
-
-            .row__col {
-                width: calc(50% - 12px);
-                margin-right: 20px;
-
-                &:nth-child(3) {
-                    margin-right: 20px;
-                }
-
-                &:nth-child(2), &:nth-child(4) {
-                    margin-right: 0;
-                }
-
-                &:last-child {
-                    width: calc(50% - 12px);
-                }
-            }
-        }
-
-        &--cards-3 {
-            .why-luxoft__row {
-                flex-wrap: wrap;
-
-                .row__col {
-                    &:nth-child(1), &:nth-child(2) {
-                        width: calc(50% - 10px);
-                        margin-bottom: 20px;
-                    }
-
-                    &:last-child {
-                        width: 100%;
-                        margin-right: 0;
-                    }
-                }
-            }
-        }
-    }
-
-    @media screen and (max-width: 800px) {
-        padding: 24px 30px;
-    }
-
-    @media screen and (max-width: 650px) {
-        padding: 24px 16px;
-
-        .why-luxoft {
-            &__title {
-                margin-bottom: 24px;
-
-                font-size: 32px;
-                font-weight: 700;
-                line-height: 38px;
-                letter-spacing: 0;
-                text-align: center;
-            }
-
-            &__row {
-                flex-direction: column;
-
-                .row__col {
-                    width: 100%;
-                    min-height: inherit;
-                    padding: 24px;
-                    margin-right: 0;
-                    margin-bottom: 16px;
-                    height: auto;
-
-                    &:last-child {
-                        width: 100%;
-                    }
-
-                    .col {
-                        &__title {
-                            position: relative;
-
-                            margin-bottom: 0;
-                            padding-right: 30px;
-
-                            font-weight: 700;
-                            font-size: 20px;
-                            line-height: 130%;
-
-                            &:after {
-                                //content: url("../../images/plus.svg");
-                                content: url("~@/assets/images/plus.svg");
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                                display: flex;
-                                align-items: center;
-
-                                width: 30px;
-                                height: 100%;
-                            }
-                        }
-
-                        &__desc, &__arrows {
-                            display: none;
-
-                            color: white;
-                        }
-                    }
-
-                    &--active {
-                        .col {
-                            &__title {
-                                &::after {
-                                    //content: url("../../images/minus.svg");
-                                    content: url("~@/assets/images/minus.svg");
-                                    height: 85%;
-                                }
-                            }
-
-                            &__desc {
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        &--cards-3 {
-            .why-luxoft__row {
-                .row__col {
-                    &:nth-child(1), &:nth-child(2) {
-                        width: 100%;
-                    }
-                }
-            }
+.container-why-luxoft {
+    .row {
+        @include row-cols(2);
+        @include media-breakpoint-down(md) {
+            @include row-cols(1);
         }
     }
 }
