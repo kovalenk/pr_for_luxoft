@@ -400,7 +400,6 @@
     }
     .content {
         display: flex;
-        border-radius: 14px;
         position: relative;
         @include px(11);
         @include pt(10);
@@ -651,7 +650,6 @@
                 @include mb(1);
                 cursor: pointer;
                 background: $gray-20;
-                border-radius: 14px;
                 &:last-of-type {
                     margin-bottom: 0;
                 }
@@ -707,11 +705,6 @@
                         display: block !important;
                     }
                 }
-            }
-        }
-        figure {
-            img {
-                border-radius: 14px;
             }
         }
     }

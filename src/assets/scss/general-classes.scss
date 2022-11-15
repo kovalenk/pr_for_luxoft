@@ -1,0 +1,86 @@
+.radius {
+  &--base {
+    @include border-radius($font-size-base);
+
+    input, button, img, &::after, &::before{
+      @include border-radius($font-size-base);
+    }
+  }
+
+  &--top {
+    @include border-top-radius($font-size-base);
+
+    input, button, img, &::after, &::before{
+      @include border-top-radius($font-size-base);
+    }
+
+    &-left{
+      @include border-top-start-radius($font-size-base);
+      input, button, img, &::after, &::before{
+        @include border-top-start-radius($font-size-base);
+      }
+    }
+
+    &-right{
+      @include border-top-end-radius($font-size-base);
+      input, button, img, &::after, &::before{
+        @include border-top-end-radius($font-size-base);
+      }
+    }
+  }
+
+  &--right {
+    @include border-end-radius($font-size-base);
+    input, button, img, &::after, &::before {
+      @include border-top-end-radius($font-size-base);
+    }
+  }
+
+  &--bottom {
+    @include border-bottom-radius($font-size-base);
+    input, button, img, &::after, &::before{
+      @include border-bottom-radius($font-size-base);
+    }
+
+    &-right {
+      @include border-bottom-end-radius($font-size-base);
+      input, button, img, &::after, &::before{
+        @include border-bottom-end-radius($font-size-base);
+      }
+    }
+
+    &-left{
+      @include border-bottom-start-radius($font-size-base);
+      input, button, img, &::after, &::before{
+        @include border-bottom-start-radius($font-size-base);
+      }
+    }
+  }
+
+  &--separate {
+    &-top {
+      @include border-top-start-radius($font-size-base);
+      @include border-bottom-end-radius($font-size-base);
+      input, button, img, &::after, &::before{
+        @include border-top-start-radius($font-size-base);
+        @include border-bottom-end-radius($font-size-base);
+      }
+    }
+
+    &-bottom {
+      @include border-top-end-radius($font-size-base);
+      @include border-bottom-start-radius($font-size-base);
+      input, button, img, &::after, &::before{
+        @include border-top-end-radius($font-size-base);
+        @include border-bottom-start-radius($font-size-base);
+      }
+    }
+  }
+
+  &--left {
+    @include border-start-radius($font-size-base);
+    input, button, img, &::after, &::before{
+      @include border-start-radius($font-size-base);
+    }
+  }
+}

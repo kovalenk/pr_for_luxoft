@@ -177,7 +177,7 @@
       <h2>Quantifiable benefits</h2>
       <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h6>
       <button></button>
-      <div class="content">
+      <div class="content radius--base">
         <div class="row">
           <div class="col">
             <h3>Daily reports are being</h3>
@@ -253,49 +253,49 @@
       <h6>We enable automakers to innovate across vital areas of advanced automotive and mobility technology. Combining the agility, energy and speed of a startup with the reach, positioning and manpower of an enterprise, we deliver highly complex solutions, at speed, in critical environments.</h6>
       <div class="content">
         <div class="row">
-          <div class="col">
+          <div class="col radius--base">
             <h5>Modern cloud technologies</h5>
             <p>Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other</p>
             <img src="~@/assets/images/benefits_title_img.jpg" alt="benefits">
           </div>
-          <div class="col active">
+          <div class="col active radius--base">
             <h5>Unique plays a big part in our engineers</h5>
             <p>Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other</p>
             <img src="~@/assets/images/benefits_title_img_alt.jpg" alt="benefits">
           </div>
-          <div class="col">
+          <div class="col radius--base">
             <h5>Modern cloud technologies</h5>
             <p>Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other</p>
             <img src="~@/assets/images/benefits_title_img.jpg" alt="benefits">
           </div>
-          <div class="col">
+          <div class="col radius--base">
             <h5>Modern cloud technologies</h5>
             <p>Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other</p>
             <img src="~@/assets/images/gradient02.png" alt="benefits">
           </div>
-          <div class="col">
+          <div class="col radius--base">
             <h5>Modern cloud technologies</h5>
             <p>Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other</p>
             <img src="~@/assets/images/benefits_title_img.jpg" alt="benefits">
           </div>
-          <div class="col">
+          <div class="col radius--base">
             <h5>Modern cloud technologies</h5>
             <p>Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other</p>
             <img src="~@/assets/images/gradient02.png" alt="benefits">
           </div>
-          <div class="col">
+          <div class="col radius--base">
             <h5>Modern cloud technologies</h5>
             <p>Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other</p>
             <img src="~@/assets/images/benefits_title_img.jpg" alt="benefits">
           </div>
-          <div class="col">
+          <div class="col radius--base">
             <h5>Modern cloud technologies</h5>
             <p>Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other</p>
             <img src="~@/assets/images/gradient04.png" alt="benefits">
           </div>
         </div>
         <figure>
-          <img class="content-img" src="" alt="benefits">
+          <img class="content-img radius--base" src="" alt="benefits">
         </figure>
       </div>
     </section>
