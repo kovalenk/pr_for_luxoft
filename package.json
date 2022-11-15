@@ -26,7 +26,11 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "jquery": true
     },
     "extends": [
       "plugin:vue/essential",
@@ -39,6 +43,8 @@
       "vue/no-multiple-template-root": "off",
       "vue/multi-word-component-names": "off",
       "vue/no-parsing-error": "off",
+      "no-inner-declarations": "off",
+      "no-unused-vars": "off",
       "vue/no-duplicate-attributes": "off"
     }
   },
