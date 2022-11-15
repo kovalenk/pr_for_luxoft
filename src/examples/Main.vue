@@ -1,23 +1,23 @@
 <template>
   <div>
-    <Industries />
-    <WhyLuxoftOne />
-    <WhyLuxoftTwo />
-    <KeyPoints />
-    <HowWeCanHelp />
-    <Partnership />
-    <SectionWithIcons />
-    <Team />
-    <Breadcrumbs />
-    <Video />
-    <HowWeHelp />
-    <Hero />
-    <Benefits />
-    <Accordion />
-    <Solutions />
-    <CaseStudies />
-    <Insights />
-    <Awards />
+<!--    <Industries />-->
+<!--    <WhyLuxoftOne />-->
+<!--    <WhyLuxoftTwo />-->
+<!--    <KeyPoints />-->
+<!--    <HowWeCanHelp />-->
+<!--    <Partnership />-->
+<!--    <SectionWithIcons />-->
+<!--    <Team />-->
+<!--    <Breadcrumbs />-->
+<!--    <Video />-->
+<!--    <HowWeHelp />-->
+<!--    <Hero />-->
+<!--    <Benefits />-->
+<!--    <Accordion />-->
+<!--    <Solutions />-->
+<!--    <CaseStudies />-->
+<!--    <Insights />-->
+<!--    <Awards />-->
     <Quotes />
   </div>
 </template>
@@ -48,24 +48,24 @@ export default {
   name: 'main-name',
   components: {
     Quotes,
-    Industries,
-    WhyLuxoftOne,
-    WhyLuxoftTwo,
-    KeyPoints,
-    HowWeCanHelp,
-    Partnership,
-    SectionWithIcons,
-    Team,
-    Breadcrumbs,
-    Video,
-    HowWeHelp,
-    Hero,
-    Benefits,
-    Accordion,
-    Solutions,
-    CaseStudies,
-    Insights,
-    Awards,
+    // Industries,
+    // WhyLuxoftOne,
+    // WhyLuxoftTwo,
+    // KeyPoints,
+    // HowWeCanHelp,
+    // Partnership,
+    // SectionWithIcons,
+    // Team,
+    // Breadcrumbs,
+    // Video,
+    // HowWeHelp,
+    // Hero,
+    // Benefits,
+    // Accordion,
+    // Solutions,
+    // CaseStudies,
+    // Insights,
+    // Awards,
   }
 }
 </script>
