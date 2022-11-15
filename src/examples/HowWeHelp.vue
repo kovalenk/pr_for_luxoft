@@ -1,61 +1,85 @@
 <template>
   <div>
     <!-- Big cards -->
-    <section class="how-we-help how-we-help--style-1">
-      <h2 class="how-we-help__title">How we help our clients</h2>
-      <div class="how-we-help__row">
-        <div class="row__col">
-          <h4 class="col__title">New products and growth</h4>
-          <p class="col__desc">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
-            for visual mockups.</p>
+    <section class="how-we-help how-we-help container-xxl">
+      <h2>How we help our clients</h2>
+      <div class="row">
+        <div class="col">
+          <a >
+            <div>
+              <h4>New products and growth</h4>
+              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
+            </div>
+          </a>
         </div>
-        <div class="row__col">
-          <h4 class="col__title">Cost Reduction</h4>
-          <p class="col__desc">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
-            for visual mockups.</p>
+        <div class="col">
+          <a >
+            <div>
+              <h4>Cost Reduction</h4>
+              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
+            </div>
+          </a>
         </div>
-        <div class="row__col">
-          <h4 class="col__title">Customer Centricity</h4>
-          <p class="col__desc">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
-            for visual mockups.</p>
+        <div class="col">
+          <a >
+            <div>
+              <h4>Customer Centricity</h4>
+              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
+            </div>
+          </a>
         </div>
-        <div class="row__col">
-          <h4 class="col__title">Regulation</h4>
-          <p class="col__desc">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
-            for visual mockups.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Small Cards 4 x 1 -->
-    <section class="how-we-help how-we-help--style-2 how-we-help--cards-4">
-      <h2 class="how-we-help__title">How we help our clients</h2>
-      <div class="how-we-help__row">
-        <div class="row__col">
-          <h4 class="col__title">Technological and independence strong</h4>
-          <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments
-            with technologically solutions</p>
-        </div>
-        <div class="row__col">
-          <h4 class="col__title">Technological and independence strong</h4>
-          <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments
-            with technologically solutions</p>
-        </div>
-        <div class="row__col">
-          <h4 class="col__title">Technological and independence strong</h4>
-          <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments
-            with technologically solutions</p>
-        </div>
-        <div class="row__col">
-          <h4 class="col__title">Technological and independence strong</h4>
-          <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments
-            with technologically solutions</p>
+        <div class="col">
+          <a >
+            <div>
+              <h4>Regulation</h4>
+              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Small Cards 3 x 1 -->
-    <section class="how-we-help how-we-help--style-2 how-we-help--cards-3">
+    <!-- Small Cards 4 x 1
+     <section class="how-we-help how-we-help container-xxl">
+      <h2>How we help our clients</h2>
+      <div class="row">
+        <div class="col">
+          <a href="#">
+            <div>
+              <h4>Technological and independence strong</h4>
+              <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div>
+              <h4>Technological and independence strong</h4>
+              <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div>
+              <h4>Technological and independence strong</h4>
+              <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div>
+              <h4>Technological and independence strong</h4>
+              <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section> -->
+<!--
+     Small Cards 3 x 1 
+     <section class="how-we-help how-we-help--style-2 how-we-help--cards-3">
       <h2 class="how-we-help__title">How we help our clients</h2>
       <div class="how-we-help__row">
         <div class="row__col">
@@ -74,7 +98,7 @@
             with technologically solutions</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
   </div>
 </template>
