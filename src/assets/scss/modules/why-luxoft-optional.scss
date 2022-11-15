@@ -60,6 +60,32 @@
         }
         @include media-breakpoint-down(sm) {
             @include row-cols(1);
+            .col {
+                position: relative;
+                &:after {
+                    content: '+';
+                    position: absolute;
+                    right: 10px;
+                    top: 30px;
+                }
+                h5 {
+                    @include mb(0);
+                }
+                p {
+                    display: none;
+                }
+            }
+            .col.active {
+                &:after {
+                    content: '-';
+                }
+                h5 {
+                    @include mb(3);
+                }
+                p {
+                    display: block;
+                }
+            }
         }
     }
 }

@@ -67,5 +67,31 @@
 <script>
 export default {
   name: 'WhyLuxoftOptional',
+  created() {
+    const whyLuxoft = document.getElementsByClassName('container-why-luxoft-optional');
+    setTimeout(() => {
+      for (let j = 0; j < whyLuxoft.length; j++) {
+        const accordion = whyLuxoft[j].getElementsByClassName('col');
+        if (accordion.length) {
+          function clearClasses() {
+            for (let i = 0; i < accordion.length; i++) {
+              accordion[i].classList.remove('active')
+            }
+          }
+
+          for (let i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function (event) {
+              if (accordion[i].className.includes('active')) {
+                clearClasses();
+              } else {
+                clearClasses();
+                accordion[i].classList.add('active');
+              }
+            })
+          }
+        }
+      }
+    }, 100)
+  }
 }
 </script>
