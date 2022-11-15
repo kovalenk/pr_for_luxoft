@@ -1,5 +1,5 @@
 <template>
-  <section class="container-fluid breadcrumb-section">
+  <section class="container-breadcrumbs container-xxl">
     <ul class="breadcrumb">
       <li class="breadcrumb__item">
         <a href="/">Breadcrumbs 01</a>

@@ -1,13 +1,14 @@
-.breadcrumb-section {
+.container-breadcrumbs {
     .breadcrumb {
         background: none;
 
         &__item {
             display: inline-block;
 
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
+            font-size: $font-size-14;
+            line-height: $line-height-130;
+
+            font-weight: $font-weight-normal;
             letter-spacing: 0;
             text-align: left;
 
