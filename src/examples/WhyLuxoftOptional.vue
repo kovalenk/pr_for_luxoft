@@ -3,7 +3,7 @@
     <section class="container-why-luxoft-optional container-xxl">
       <h2>Why Luxoft</h2>
       <div class="row g-0">
-          <div class="col">
+          <div class="col active">
             <a href="#">
               <h5>Technological independence and strong partnerships</h5>
               <p>While accelerating growth we solve your legacy-system issues, protecting existing
