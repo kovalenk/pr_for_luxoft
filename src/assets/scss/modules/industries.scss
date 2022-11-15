@@ -1,0 +1,123 @@
+.client-story {
+    display: flex;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+    }
+
+    h2 {
+        display: none;
+        margin-bottom: 16px;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .content {
+        min-width: 30%;
+        max-width: 30%;
+
+        @include media-breakpoint-down(sm) {
+            min-width: 100%;
+            max-width: 100%;
+            @include mt(3);
+            order: 2;
+        }
+
+        h2 {
+            display: block;
+            margin-bottom: 40px;
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+
+        .content-item {
+            display: none;
+
+            .content-item-header {
+                font-size: $font-size-sub02;
+                font-weight: $font-weight-bold;
+
+                @include media-breakpoint-down(sm) {
+                    @include mt(3);
+                }
+            }
+
+            a {
+                color: $bright-blue;
+            }
+        }
+    }
+
+    .tabs {
+        display: flex;
+        min-width: 70%;
+        max-width: 70%;
+        @include pl(10);
+
+        @include media-breakpoint-down(sm) {
+            padding-left: 0;
+            min-width: 100%;
+            max-width: 100%;
+            order: 1;
+        }
+
+        .tab {
+            overflow: hidden;
+            border-radius: 14px;
+            cursor: pointer;
+
+            position: relative;
+
+            @include media-breakpoint-down(sm) {
+                max-height: 150px;
+            }
+
+            img,
+            figure {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+
+                width: 100%;
+                height: 100%;
+
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(4px);
+                z-index: 1;
+            }
+        }
+
+        .tab:not(:last-child) {
+            @include mr(3);
+
+            @include media-breakpoint-down(sm) {
+                @include mr(1);
+            }
+        }
+
+        .active {
+            min-width: 73%;
+
+            img,
+            figure {
+                width: 100%;
+            }
+
+            &::before {
+                content: none;
+            }
+        }
+    }
+}

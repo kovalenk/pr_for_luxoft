@@ -1,0 +1,80 @@
+.container-how-we-help {
+    background: black;
+    h2 {
+        font-size: $h2-font-size;
+        text-align: center;
+        @include px(2);
+        @include py(2);
+        @include my(3);
+    }
+    .row {
+        .col {
+            @include mb(3);
+            a {
+                text-decoration: none;
+                color: inherit;
+                div {
+                    height: 100%;
+                    background: $gray-20;
+                    border-radius: 0.7rem;
+                    @include media-breakpoint-between(sm, lg) {
+                        @include px(2);
+                    }
+                    picture, h4, p {
+                        text-align: center;
+                    }
+                    @include px(5);
+                    @include py(9);
+                    picture {
+                        display: block;
+                        @include py(2);
+                        img {
+                            max-width: 50%;
+                        }
+                    }
+                    h4 {
+                        @include pt(10);
+                        @include pb(9);
+                        @include mt(5);
+                        font-size: $h4-font-size;
+                        font-weight: $font-weight-bold;
+                        line-height: $line-height-base;
+                    }
+                    p {
+                        @include my(2);
+                        display: none;
+                        padding: 1px;
+                        font-size: $font-size-20;
+                        line-height: $line-height-130;
+                    }
+                }
+            }
+            &:hover {
+                div {
+                    height: 100%;
+                    background: $gradient03;
+                    @include pt(4);
+                    @include pb(5);
+                    h4 {
+                        @include pb(4);
+                        @include pt(4);
+                    }
+                    p {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container-how-we-help {
+    .row {
+        @include media-breakpoint-between(sm, md) {
+            @include row-cols(2);
+        }
+        @include media-breakpoint-down(sm) {
+            @include row-cols(1);
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import "why_luxoft";
+@import "key_points";
+@import "how_we_can_help";
+@import "solutions";
+@import "partnership";
+@import "section_with_icons";
+@import "industries";
+@import "team";
+@import "breadcrumbs";
+@import "video";
+@import "hero";
+@import "how-we-help";
+@import "benefits";
+@import "why-luxoft";
+@import "accordion";
+@import "solutions";
+@import "case-studies";
+@import "insights";
+@import "awards";
+
+.bg-header {
+    background: transparent;
+
+    a {
+        color: $white !important;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer {
+    background: linear-gradient(180deg, #000000 0%, #361559 100%);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+
+    .col-contact {
+        border-right: solid 1px $gray-70;
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 24px;
+            border-right: none;
+            border-bottom: solid 1px $gray-70;
+        }
+    }
+
+    .copy-right {
+        @include media-breakpoint-down(lg) {
+            border-top: solid 1px $gray-70;
+        }
+    }
+
+    .sub-footer {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+
+        color: $gray-70;
+
+        a {
+            color: $gray-70 !important;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $white;
+    }
+
+    .social-networks {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-right: 48px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .border-b {
+        border-bottom: 1px solid $gray-70;
+    }
+}

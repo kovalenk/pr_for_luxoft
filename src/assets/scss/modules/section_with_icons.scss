@@ -1,0 +1,60 @@
+.container-section-icons {
+    background: black;
+    h2 {
+        font-size: $h2-font-size;
+        text-align: center;
+        @include px(2);
+        @include py(2);
+        @include my(3);
+    }
+    figure {
+        display: table-cell;
+        vertical-align: middle;
+        height: 12rem;
+        @include pt(1);
+        @include pb(4);
+        img {
+            width: 100%;
+        }
+    }
+    .row {
+        .col {
+            border-left: 1px solid white;
+            @include py(4);
+            @include px(5);
+            @include mb(5);
+            h3 {
+                font-size: $font-size-sub01;
+                font-weight: $font-weight-bold;
+                line-height: $line-height-base;
+            }
+            p {
+                padding: 1px;
+                font-size: $font-size-20;
+                line-height: $line-height-130;
+                @include mt(8);
+            }
+            h4 {
+                font-size: $h4-font-size;
+                font-weight: $font-weight-bold;
+                line-height: $line-height-base;
+            }
+        }
+    }
+}
+
+.container-section-icons {
+    .row {
+        @include media-breakpoint-between(sm, md) {
+            @include row-cols(2);
+        }
+        @include media-breakpoint-between(sm, lg) {
+            .col {
+                @include px(2);
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            @include row-cols(1);
+        }
+    }
+}

@@ -35,7 +35,12 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/no-multiple-template-root": "off",
+      "vue/multi-word-component-names": "off",
+      "vue/no-parsing-error": "off",
+      "vue/no-duplicate-attributes": "off"
+    }
   },
   "browserslist": [
     "> 1%",

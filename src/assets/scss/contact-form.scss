@@ -1,0 +1,508 @@
+#cf_h2{
+    /* H2 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+
+    height: 130px;
+
+    /* Primary / Black */
+    background: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+p{
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+
+#cf_spacer{
+    /* Spacer */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 1968px;
+    height: 80px;
+
+    /* Spacer */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.frame_level0{
+    /* Frame 2609321 */
+
+    width: auto;
+    height: 775px;
+
+    /* Gray/10
+
+    0E0E0E
+    */
+    background: #0F0F0F;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.frame_level1{
+    /* Frame 2609320 */
+
+    position: relative;
+    width: 1500px;
+    height: 775px;
+    left: 234px;
+    top: 0px;
+
+    /* Gray/10
+
+    0E0E0E
+    */
+    background: #0F0F0F;
+}
+
+.frame_level2{
+    /* Frame 2609279 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 54px;
+
+    position: absolute;
+    width: 1346px;
+    height: 747px;
+    left: 0px;
+    top: 33px;
+}
+
+.frame_selected_title{
+    /* Frame 2609276 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 464px;
+    height: 152.63px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.frame_form{
+    /* Frame 11377 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 828px;
+    height: 747px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#cf_icons{
+    /* Icons */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+   
+    height: 192px;
+
+    /* Gray/10
+
+    0E0E0E
+    */
+    background: #0F0F0F;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.content_level0{
+    /* content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 1680px;
+    height: 192px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.content_level1{
+    /* content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    width: 1680px;
+    height: 104px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.content_level2{
+    /* content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 1680px;
+    height: 104px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.form_lab{
+    /* Form tab */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    margin-right: auto;
+    gap: 32px;
+
+    width: 464px;
+    height: 104px;
+
+    /* Gray / 50
+
+    666666
+    */
+    border-bottom: 2px solid #666666;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.header_title{
+    /* header */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 380px;
+    height: 78px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.chevron-down{
+        /* icon/chevron-down */
+
+    width: 52px;
+    height: 52px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+
+.frame{
+    /* Frame 2609319 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    width: 346.92px;
+    height: 78px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.title_section{
+    /* Careers */
+
+width: 346.92px;
+height: 40px;
+
+/* Headings/H4 */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 110%;
+
+/* identical to box height, or 40px */
+
+/* Gray/70 */
+color: #BFBFBF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.subtitle{
+    /* Solve management problems */
+
+width: 346.92px;
+height: 26px;
+
+/* Body text/Body text 20 Regular */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 130%;
+
+/* identical to box height, or 26px */
+
+/* Gray/70 */
+color: #BFBFBF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.spacer{
+    /* Spacer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+
+width: 56px;
+height: 104px;
+
+/* Spacer */
+opacity: 0;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+#cf_spacer_foo{
+    /* Spacer */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 1968px;
+    height: 24px;
+
+    /* Spacer */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+
+#cf_title{
+    /* Let’s talk! */
+
+    width: 1968px;
+    height: 67px;
+
+    /* Headings / H2 */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+
+    /* or 67px */
+    text-align: center;
+
+    /* Primary / White */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#cf_text_foo{
+    /* Thanks for your interest in Luxoft. Please select one of the options below */
+
+    width: 949px;
+    height: 36px;
+
+    /* Body text/Body text 28 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+
+    /* or 36px */
+    text-align: center;
+
+    /* Primary / White */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+
+.custom-contact-form-inputs{
+/* Rectangle 1 */
+
+box-sizing: border-box;
+
+left: 0%;
+right: 0%;
+top: 25px;
+margin-bottom: 25px;
+
+/* Primary / Black */
+background-color: #000000 ;
+color:#fff;
+
+/* Gray / 50
+
+666666
+*/
+border: 1px solid #666666;
+border-radius: 2px;
+}
+
+.purple{
+    /* Button for dark bg */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 32px;
+gap: 8px;
+
+width: 141px;
+height: 54px;
+
+/* Bright Purple/50 (key)
+
+5F249F
+*/
+background: #5F249F;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+}
+
+.selected{
+    border-bottom: 2px solid #5F249F;
+}

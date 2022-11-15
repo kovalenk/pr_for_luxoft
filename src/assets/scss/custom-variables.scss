@@ -1,0 +1,251 @@
+// Color system //
+$white:    #fff;
+$black:    #000;
+$gray:     #666666;
+
+$gray-10: #0F0F0F;
+$gray-20: #1A1A1A;
+$gray-30: #333333;
+$gray-40: #4D4D4D;
+$gray-50: $gray;
+$gray-60: #808080;
+$gray-70: #BFBFBF;
+$gray-80: #D9D9D9;
+$gray-90: #F2F2F2;
+
+$grays: (
+        "10": $gray-10,
+        "20": $gray-20,
+        "30": $gray-30,
+        "40": $gray-40,
+        "50": $gray-50,
+        "60": $gray-60,
+        "70": $gray-70,
+        "80": $gray-80,
+        "90": $gray-90
+);
+
+$bright-purple:    #5F249F;
+$bright-teal:      #00968F;
+$bright-blue:      #00A3E1;
+$orange:           #ED9B33;
+$navy:             #003A79;
+$cobalt-blue:      #0E56E9;
+$red:              #DC362E;
+$yellow:           #F2C94C;
+$green:            #0FB239;
+$purple:  #5f249f !default;
+$gray-column: #f2f2f2;
+
+$colors: (
+        "purple":      $bright-purple,
+        "teal":        $bright-teal,
+        "blue":        $bright-blue,
+        "orange":      $orange,
+        "navy":        $navy,
+        "cobalt-blue": $cobalt-blue,
+        "gray":        $gray-50
+);
+
+$primary:       $bright-purple;
+$secondary:     $black;
+$success:       $green;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-10;
+$dark:          $gray-90;
+
+$theme-colors: (
+        "primary":    $primary,
+        "secondary":  $secondary,
+        "success":    $success,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      $light,
+        "dark":       $dark
+);
+
+$color-contrast-dark:      $black;
+$color-contrast-light:     $white;
+
+$bright-blue-10: #002533;
+$bright-blue-20: #005273;
+$bright-blue-30: #00658C;
+$bright-blue-40: #0089BF;
+$bright-blue-50: $bright-blue;
+$bright-blue-60: #1ABEFF;
+$bright-blue-70: #80DBFF;
+$bright-blue-80: #B2E9FF;
+$bright-blue-90: #D9F4FF;
+
+$bright-purple-10: #0F061A;
+$bright-purple-20: #260F40;
+$bright-purple-30: #361559;
+$bright-purple-40: #4D1D80;
+$bright-purple-50: $bright-purple;
+$bright-purple-60: #AA73E6;
+$bright-purple-70: #D7B2FF;
+$bright-purple-80: #EBD9FF;
+$bright-purple-90: #F8F2FF;
+
+$bright-teal-10: #001A18;
+$bright-teal-20: #003330;
+$bright-teal-30: #004D49;
+$bright-teal-40: #005955;
+$bright-teal-50: $bright-teal;
+$bright-teal-60: #00B3AA;
+$bright-teal-70: #5CE6DF;
+$bright-teal-80: #A6FFFB;
+$bright-teal-90: #D9FFFD;
+
+$orange-10: #331D00;
+$orange-20: #734100;
+$orange-30: #995700;
+$orange-40: #CC7C14;
+$orange-50: $orange;
+$orange-60: #FFB24D;
+$orange-70: #FFBD66;
+$orange-80: #FFD399;
+$orange-90: #FFEED9;
+
+$navy-10: #000C1A;
+$navy-20: #001933;
+$navy-30: #00254D;
+$navy-40: #003166;
+$navy-50: $navy;
+$navy-60: #005FC4;
+$navy-70: #4DA3FF;
+$navy-80: #99CAFF;
+$navy-90: #E5F2FF;
+
+$cobalt-blue-10: #020E26;
+$cobalt-blue-20: #051D4D;
+$cobalt-blue-30: #093999;
+$cobalt-blue-40: #0B47BF;
+$cobalt-blue-50: $cobalt-blue;
+$cobalt-blue-60: #3377FF;
+$cobalt-blue-70: #80AAFF;
+$cobalt-blue-80: #B2CCFF;
+$cobalt-blue-90: #E5EEFF;
+
+$red-10: #410E0B;
+$red-20: #601410;
+$red-30: #8C1D18;
+$red-40: #B3261E;
+$red-50: $red;
+$red-60: #E46962;
+$red-70: #EC928E;
+$red-80: #F2B8B5;
+$red-90: #F9DEDC;
+
+$yellow-10: #29240E;
+$yellow-20: #443C17;
+$yellow-30: #60521C;
+$yellow-40: #776627;
+$yellow-50: #AC9037;
+$yellow-60: #CFAD41;
+$yellow-70: $yellow;
+$yellow-80: #F5D470;
+$yellow-90: #F7DF94;
+
+$green-10: #043511;
+$green-20: #064717;
+$green-30: #096B22;
+$green-40: #0C8E2D;
+$green-50: $green;
+$green-60: #22BA49;
+$green-70: #48C368;
+$green-80: #75D48D;
+$green-90: #9FE0B0;
+
+// Gradient
+$gradient: linear-gradient(127.22deg, #361559 28.42%, #0F061A 69.76%);
+$gradient02: linear-gradient(180deg, rgba(15, 18, 40, 0.9) 6.38%, rgba(36, 36, 54, 0.455077) 52.14%, rgba(58, 54, 69, 0) 80.79%), linear-gradient(90deg, #2C1247 15.13%, #C39B91 100%), #FFFFFF;
+$gradient03: linear-gradient(100.51deg, rgba(15, 18, 40, 0.8) 27.73%, rgba(58, 54, 69, 0) 81.44%), linear-gradient(150.23deg, #48078B 29.89%, #DAA391 99.6%), #FFFFFF;
+$gradient04: linear-gradient(100.51deg, rgba(15, 18, 40, 0.8) 27.73%, rgba(58, 54, 69, 0) 81.44%), linear-gradient(150.23deg, #2A024F 29.89%, #812E2B 99.6%), #FFFFFF;
+
+$gradient06: linear-gradient(127.22deg, #361559 28.42%, #0F061A 69.76%);
+
+// Breakpoints //
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 905px,
+  lg: 1240px,
+  xl: 1440px,
+  xxl: 1920px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1680px
+);
+
+// Typography //
+// font size
+$font-size-root: 16px;
+
+$font-size-base:              1rem !default;
+$font-size-sm:                $font-size-base * 0.75;
+$font-size-md:                $font-size-base * 0.75;
+$font-size-lg:                $font-size-base * 0.85;
+$font-size-xl:                $font-size-base;
+$font-size-xxl:               $font-size-base * 1.125;
+
+// font weight
+$font-weight-normal:          400; // Regular
+$font-weight-semibold:        600; // Semibold
+$font-weight-bold:            700; // Bold
+
+$font-weight-base:            $font-weight-normal;
+
+// line height
+$line-height-base:            1.2; // 120%
+$line-height-110:              1.1; // 110%
+$line-height-130:              1.3; // 130%
+
+// head font size, rem
+$h1-font-size: $font-size-base * 3.75;
+$h2-font-size: $font-size-base * 3.5;
+$h3-font-size: $font-size-base * 3;
+$h4-font-size: $font-size-base * 2.25;
+$h5-font-size: $font-size-base * 2;
+
+// body font size, rem
+$font-size-14: $font-size-base * 0.85;
+$font-size-16: $font-size-base;
+$font-size-20: $font-size-base * 1.25;
+$font-size-28: $font-size-base * 1.75;
+$font-size-sub01: $font-size-base * 3;
+$font-size-sub02: $font-size-base * 1.75;
+
+// Buttons //
+$border-width-btn:        2px;
+$btn-padding-y:           0.875rem;
+$btn-padding-x:           2rem;
+$btn-font-size:           $font-size-20;
+$btn-border-radius:       10px;
+$btn-focus-box-shadow:    0px 1px 2px rgba($black, 0.3), 0px 2px 6px 2px rgba(103, 80, 164, 0.2);
+$btn-disabled-box-shadow: 0px 4px 4px rgba($black, 0.25);
+$btn-press-box-shadow:    inset 0px 2px 6px rgba(67, 44, 105, 0.5);
+$btn-disabled-opacity:    .25;
+
+// Spacing //
+$spacer: 1rem;
+$spacers: (
+        0: 0,
+        1: $spacer * .5,
+        2: $spacer,
+        3: $spacer * 1.5,
+        4: $spacer * 2,
+        5: $spacer * 2.5,
+        6: $spacer * 3,
+        7: $spacer * 3.5,
+        8: $spacer * 4,
+        9: $spacer * 4.5,
+        10:$spacer * 5,
+        11:$spacer * 7.5,
+);
+

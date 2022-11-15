@@ -1,0 +1,221 @@
+.container-hero-carousel {
+    .carousel {
+        height: 100vh;
+
+        .carousel-caption {
+            position: relative;
+            left: 0;
+            text-align: left;
+            max-width: 50%;
+            z-index: 10;
+            @include media-breakpoint-down(sm) {
+                max-width: 100%;
+            }
+
+            h1 {
+                @include mb(10);
+            }
+        }
+
+        .carousel-item {
+            height: 100%;
+
+            .container {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+
+        .fill {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+
+            img {
+                background-size: cover;
+                width: auto;
+                height: auto;
+                min-width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 0;
+                transform: translate(-50%, -50%);
+                min-height: 100%;
+            }
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .container-indicators {
+            position: relative;
+
+            .carousel-indicators {
+                margin: 0;
+                right: unset;
+                @include mt(6);
+                @include mb(10);
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+
+                a {
+                    @include ml(3);
+                    color: $white;
+                    text-indent: 0;
+                    border: none;
+                    font-size: $font-size-16;
+                    text-decoration: none;
+                    text-align: center;
+                    width: auto;
+                    height: 0;
+
+                    &.active p {
+                        border-bottom: 3px solid $white;
+                        @include pb(2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container-hero-img {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: $white;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        background-size: cover;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 0;
+        transform: translate(-50%, -50%);
+        min-height: 100%;
+    }
+
+    .container {
+        display: flex;
+        z-index: 2;
+    }
+
+    .content {
+        width: 50%;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+
+        h1 {
+            @include pb(4);
+        }
+
+        .text-28 {
+            @include pb(2);
+
+            & + p {
+                @include pb(7);
+            }
+        }
+    }
+}
+
+.container-hero-video {
+    position: relative;
+    overflow: hidden;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    color: $white;
+
+    .bgvideo {
+        background-size: cover;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 0;
+        transform: translate(-50%, -50%);
+        min-height: 100%;
+    }
+
+    .container {
+        z-index: 2;
+
+        .content {
+            width: 50%;
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+
+            h1 {
+                @include pb(4);
+            }
+
+            .text-28 {
+                @include pb(2);
+
+                & + p {
+                    @include pb(7);
+                }
+            }
+        }
+    }
+}
+
+.down-arr {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+
+    &.carousel-v {
+        @include media-breakpoint-down(xl) {
+            bottom: 125px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            bottom: 50px;
+        }
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    p {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    i {
+        //background-image: url("/theme/luxoft/assets/images/arrow-down-more.svg");
+        background-image: url("~@/assets/images/arrow-down-more.svg");
+        display: block;
+        width: 43px;
+        height: 16px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}

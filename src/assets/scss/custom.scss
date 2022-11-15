@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --bs-font-sans-serif: 'Open Sans', sans-serif;
+  letter-spacing: 0;
+}
+h1 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-110;
+}
+
+h2 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-base;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-base;
+}
+
+h4 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-base;
+}
+
+h5 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-base;
+}
+.regular {
+  font-weight: $font-weight-normal;
+}
+.semibold {
+  font-weight: $font-weight-semibold;
+}
+.bold {
+  font-weight: $font-weight-bold;
+}
+.text-14 {
+  font-size: $font-size-base * 0.85;
+}
+.text-16 {
+  font-size: $font-size-base;
+}
+.text-20 {
+  font-size: $font-size-base * 1.25;
+}
+.text-28 {
+  font-size: $font-size-base * 1.75;
+}
+.overline {
+  text-transform: uppercase;
+}
+.underline {
+  text-decoration: underline;
+}
+.sub01 {
+  font-size: $font-size-base * 3;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+}
+.sub02 {
+  font-size: $font-size-base * 1.75;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-base;
+}
+.lh-120 {
+  line-height: $line-height-base;
+}
+.lh-130 {
+  line-height: $line-height-130;
+}
+
+.bd-b_blue-90 {
+  background: $bright-blue-90;
+  color: $black;
+}
+.bd-b_blue-80 {
+  background: $bright-blue-80;
+  color: $black;
+}
+.bd-b_blue-70 {
+  background: $bright-blue-70;
+  color: $black;
+}
+.bd-b_blue-60 {
+  background: $bright-blue-60;
+  color: $black;
+}
+.bd-b_blue-50 {
+  background: $bright-blue;
+  color: $white;
+}
+.bd-b_blue-40 {
+  background: $bright-blue-40;
+  color: $white;
+}
+.bd-b_blue-30 {
+  background: $bright-blue-30;
+  color: $white;
+}
+.bd-b_blue-20 {
+  background: $bright-blue-20;
+  color: $white;
+}
+.bd-b_blue-10 {
+  background: $bright-blue-10;
+  color: $white;
+}
+.bd-b_purple-90 {
+  background: $bright-purple-90;
+  color: $black;
+}
+.bd-b_purple-80 {
+  background: $bright-purple-80;
+  color: $black;
+}
+.bd-b_purple-70 {
+  background: $bright-purple-70;
+  color: $black;
+}
+.bd-b_purple-60 {
+  background: $bright-purple-60;
+  color: $black;
+}
+.bd-b_purple-50 {
+  background: $bright-purple;
+  color: $white;
+}
+.bd-b_purple-40 {
+  background: $bright-purple-40;
+  color: $white;
+}
+.bd-b_purple-30 {
+  background: $bright-purple-30;
+  color: $white;
+}
+.bd-b_purple-20 {
+  background: $bright-purple-20;
+  color: $white;
+}
+.bd-b_purple-10 {
+  background: $bright-purple-10;
+  color: $white;
+}
+.bd-b_teal-90 {
+  background: $bright-teal-90;
+  color: $black;
+}
+.bd-b_teal-80 {
+  background: $bright-teal-80;
+  color: $black;
+}
+.bd-b_teal-70 {
+  background: $bright-teal-70;
+  color: $black;
+}
+.bd-b_teal-60 {
+  background: $bright-teal-60;
+  color: $black;
+}
+.bd-b_teal-50 {
+  background: $bright-teal;
+  color: $white;
+}
+.bd-b_teal-40 {
+  background: $bright-teal-40;
+  color: $white;
+}
+.bd-b_teal-30 {
+  background: $bright-teal-30;
+  color: $white;
+}
+.bd-b_teal-20 {
+  background: $bright-teal-20;
+  color: $white;
+}
+.bd-b_teal-10 {
+  background: $bright-teal-10;
+  color: $white;
+}
+.bd-orange-90 {
+  background: $orange-90;
+  color: $black;
+}
+.bd-orange-80 {
+  background: $orange-80;
+  color: $black;
+}
+.bd-orange-70 {
+  background: $orange-70;
+  color: $black;
+}
+.bd-orange-60 {
+  background: $orange-60;
+  color: $black;
+}
+.bd-orange-50 {
+  background: $orange;
+  color: $white;
+}
+.bd-orange-40 {
+  background: $orange-40;
+  color: $white;
+}
+.bd-orange-30 {
+  background: $orange-30;
+  color: $white;
+}
+.bd-orange-20 {
+  background: $orange-20;
+  color: $white;
+}
+.bd-orange-10 {
+  background: $orange-10;
+  color: $white;
+}
+.bd-navy-90 {
+  background: $navy-90;
+  color: $black;
+}
+.bd-navy-80 {
+  background: $navy-80;
+  color: $black;
+}
+.bd-navy-70 {
+  background: $navy-70;
+  color: $black;
+}
+.bd-navy-60 {
+  background: $navy-60;
+  color: $black;
+}
+.bd-navy-50 {
+  background: $navy;
+  color: $white;
+}
+.bd-navy-40 {
+  background: $navy-40;
+  color: $white;
+}
+.bd-navy-30 {
+  background: $navy-30;
+  color: $white;
+}
+.bd-navy-20 {
+  background: $navy-20;
+  color: $white;
+}
+.bd-navy-10 {
+  background: $navy-10;
+  color: $white;
+}
+.bd-c_blue-90 {
+  background: $cobalt-blue-90;
+  color: $black;
+}
+.bd-c_blue-80 {
+  background: $cobalt-blue-80;
+  color: $black;
+}
+.bd-c_blue-70 {
+  background: $cobalt-blue-70;
+  color: $black;
+}
+.bd-c_blue-60 {
+  background: $cobalt-blue-60;
+  color: $black;
+}
+.bd-c_blue-50 {
+  background: $cobalt-blue;
+  color: $white;
+}
+.bd-c_blue-40 {
+  background: $cobalt-blue-40;
+  color: $white;
+}
+.bd-c_blue-30 {
+  background: $cobalt-blue-30;
+  color: $white;
+}
+.bd-c_blue-20 {
+  background: $cobalt-blue-20;
+  color: $white;
+}
+.bd-c_blue-10 {
+  background: $cobalt-blue-10;
+  color: $white;
+}
+.bd-red-90 {
+  background: $red-90;
+  color: $black;
+}
+.bd-red-80 {
+  background: $red-80;
+  color: $black;
+}
+.bd-red-70 {
+  background: $red-70;
+  color: $black;
+}
+.bd-red-60 {
+  background: $red-60;
+  color: $black;
+}
+.bd-red-50 {
+  background: $red;
+  color: $black;
+}
+.bd-red-40 {
+  background: $red-40;
+  color: $white;
+}
+.bd-red-30 {
+  background: $red-30;
+  color: $white;
+}
+.bd-red-20 {
+  background: $red-20;
+  color: $white;
+}
+.bd-red-10 {
+  background: $red-10;
+  color: $white;
+}
+.bd-yellow-90 {
+  background: $yellow-90;
+  color: $black;
+}
+.bd-yellow-80 {
+  background: $yellow-80;
+  color: $black;
+}
+.bd-yellow-70 {
+  background: $yellow;
+  color: $black;
+}
+.bd-yellow-60 {
+  background: $yellow-60;
+  color: $black;
+}
+.bd-yellow-50 {
+  background: $yellow-50;
+  color: $black;
+}
+.bd-yellow-40 {
+  background: $yellow-40;
+  color: $white;
+}
+.bd-yellow-30 {
+  background: $yellow-30;
+  color: $white;
+}
+.bd-yellow-20 {
+  background: $yellow-20;
+  color: $white;
+}
+.bd-yellow-10 {
+  background: $yellow-10;
+  color: $white;
+}
+.bd-green-90 {
+  background: $green-90;
+  color: $black;
+}
+.bd-green-80 {
+  background: $green-80;
+  color: $black;
+}
+.bd-green-70 {
+  background: $green-70;
+  color: $black;
+}
+.bd-green-60 {
+  background: $green-60;
+  color: $black;
+}
+.bd-green-50 {
+  background: $green;
+  ccolor: $black;
+}
+.bd-green-40 {
+  background: $green-40;
+  color: $white;
+}
+.bd-green-30 {
+  background: $green-30;
+  color: $white;
+}
+.bd-green-20 {
+  background: $green-20;
+  color: $white;
+}
+.bd-green-10 {
+  background: $green-10;
+  color: $white;
+}
+.bd-gray-90 {
+  background: $gray-90;
+  color: $black;
+}
+.bd-gray-80 {
+  background: $gray-80;
+  color: $black;
+}
+.bd-gray-70 {
+  background: $gray-70;
+  color: $black;
+}
+.bd-gray-60 {
+  background: $gray-60;
+  color: $black;
+}
+.bd-gray-50 {
+  background: $gray;
+  color: $white;
+}
+.bd-gray-40 {
+  background: $gray-40;
+  color: $white;
+}
+.bd-gray-30 {
+  background: $gray-30;
+  color: $white;
+}
+.bd-gray-20 {
+  background: $gray-20;
+  color: $white;
+}
+.bd-gray-10 {
+  background: $gray-10;
+  color: $white;
+}
+.bd-white {
+  color: $black;
+  background-color: $white;
+
+  &.team {
+    .card {
+      .card-body {
+        background: $white !important;
+
+        h5,
+        p {
+          color: $black !important;
+        }
+      }
+    }
+  }
+
+  .container-key-points {
+      background: $white;
+
+      .row {
+          .col {
+              h2,
+              h5 {
+                  color: $purple !important;
+              }
+              border-left: 1px solid $purple;
+          }
+      }
+  }
+
+  .how-we-help {
+      background-color: $white !important;
+      .how-we-help__row {
+          .row__col {
+              background-color: $purple !important;
+          }
+      }
+  }
+
+  .row {
+    .gray-column {
+      background-color: $gray-column !important;
+    }
+  }
+}
+
+.bd-black {
+  color: $white;
+  background-color: $black;
+
+  &.team {
+    .card {
+      .card-body {
+        background: $gray-20 !important;
+
+        h5,
+        p {
+          color: $white !important;
+        }
+      }
+    }
+  }
+}
+.gradient {
+  color: $white;
+  background: $gradient;
+}
+.gradient02 {
+  color: $white;
+  background: $gradient02;
+  mix-blend-mode: multiply;
+}
+.gradient03 {
+  color: $white;
+  background: $gradient03;
+  mix-blend-mode: multiply;
+}
+.gradient04 {
+  color: $white;
+  background: $gradient04;
+  mix-blend-mode: multiply;
+}
+
+
+// Buttons
+.btn {
+  display: inline-block;
+  font-family: $btn-font-family;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-base * 1.25 !important;
+  line-height: $line-height-130;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+  vertical-align: middle;
+  cursor: if($enable-button-pointers, pointer, null);
+  user-select: none;
+  background-color: white;
+  border: none;
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  @include transition($btn-transition);
+
+  &:hover,
+  &.hover{
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  .btn-check:focus + &,
+  &:focus,
+  &.focus{
+    background: $bright-blue-50;
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    color: $gray-40;
+    background: $gray-60;
+    box-shadow: $btn-disabled-box-shadow;
+    opacity: 1;
+  }
+  &.press {
+    box-shadow: $btn-press-box-shadow;
+  }
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  &:after {
+    content: '';
+    //background: url("../images/arrow_right.svg");
+    background: url("~@/assets/images/arrow_right.svg");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}
+.btn-outline {
+  background: transparent;
+  border: $border-width-btn solid $white;
+  color: $white;
+  &:hover,
+  &.hover{
+    background: rgba($white, 0.1);
+    box-shadow: $btn-focus-box-shadow;
+    color: $white;
+  }
+  .btn-check:focus + &,
+  &:focus,
+  &.focus{
+    background: transparent;
+    color: $bright-blue-50;
+    border-color: $bright-blue-50;
+    &.btn-icon:after {
+      //background: url("../images/arrow_right_bl.svg");
+      background: url("~@/assets/images/arrow_right_bl.svg");
+    }
+  }
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    color: $gray-40;
+    background: $black;
+    border-color: $gray-40;
+    box-shadow: none;
+    opacity: 1;
+    &.btn-icon:after {
+      //background: url("../images/arrow_right_gr.svg");
+      background: url("~@/assets/images/arrow_right_gr.svg");
+    }
+  }
+  &.press {
+    background: $black;
+  }
+  &.btn-icon:after {
+    //background: url("../images/arrow_right_w.svg");
+    background: url("~@/assets/images/arrow_right_w.svg");
+  }
+}
+.btn-text {
+  border: none;
+  background: none;
+  color: $white;
+  &.btn-icon:after {
+    //background: url("../images/arrow_right_w.svg");
+    background: url("~@/assets/images/arrow_right_w.svg");
+  }
+  &:hover,
+  &.hover{
+    color: $bright-blue-50;
+    box-shadow: none;
+    &.btn-icon:after {
+      //background: url("../images/arrow_right_bl_hv.svg");
+      background: url("~@/assets/images/arrow_right_bl_hv.svg");
+      width: 70px;
+    }
+  }
+  .btn-check:focus + &,
+  &:focus,
+  &.focus{
+    color: $bright-blue-50;
+    background: none;
+    &.btn-icon:after {
+      //background: url("../images/arrow_right_bl.svg");
+      background: url("~@/assets/images/arrow_right_bl.svg");
+    }
+  }
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    color: $gray-40;
+    background: none;
+    &.btn-icon:after {
+      //background: url("../images/arrow_right_gr.svg");
+      background: url("~@/assets/images/arrow_right_gr.svg");
+
+    }
+  }
+  &.press {
+    color: #FBF9FF;
+    box-shadow: none;
+  }
+
+}
+
+.container-team .col .html-code {
+  display: none;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.align-left {
+  text-align: left;
+}
+
+img,
+svg {
+  max-width: 100%;
+}

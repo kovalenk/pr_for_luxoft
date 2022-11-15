@@ -1,0 +1,133 @@
+section {
+  background: $black;
+}
+.container-video-left {
+  color: $white;
+  @include py(8);
+  .row {
+    & > div:first-child {
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+        @include pr(0);
+        figure {
+          object-fit: cover;
+          border-top-left-radius: 14px;
+          border-bottom-left-radius: 14px;
+          height: 100%;
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        figure {
+          border-top-left-radius: 14px;
+          border-top-right-radius: 14px;
+        }
+      }
+    }
+    & > div:last-child {
+      & > div {
+        height: 100%;
+        @include p(10);
+        background: $gradient;
+        p {
+          font-size: $font-size-28;
+        }
+        h2, p {
+          @include pb(6);
+        }
+      }
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+        @include pl(0);
+        & > div {
+          border-top-right-radius: 14px;
+          border-bottom-right-radius: 14px;
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        & > div {
+          border-bottom-left-radius: 14px;
+          border-bottom-right-radius: 14px;
+          @include p(3);
+        }
+      }
+    }
+  }
+}
+.container-video-right {
+  color: $white;
+  @include py(8);
+  .row {
+    &>div:last-child {
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+        @include pl(0);
+        figure {
+          object-fit: cover;
+          border-top-right-radius: 14px;
+          border-bottom-right-radius: 14px;
+          height: 100%;
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        order: 1;
+        figure {
+          border-top-left-radius: 14px;
+          border-top-right-radius: 14px;
+        }
+      }
+    }
+    &>div:first-child {
+      &>div {
+        height: 100%;
+        @include p(10);
+        background: $gradient;
+        p {
+          font-size: $font-size-28;
+        }
+        h2, p {
+          @include pb(6);
+        }
+      }
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+        @include pr(0);
+        &>div {
+          border-top-left-radius: 14px;
+          border-bottom-left-radius: 14px;
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        order: 2;
+        &>div {
+          border-bottom-left-radius: 14px;
+          border-bottom-right-radius: 14px;
+          @include p(3);
+        }
+      }
+    }
+  }
+}
+.video-content {
+  height: 100%;
+  position: relative;
+}
+.play {
+  //background: url("../images/play.svg");
+  background: url("~@/assets/images/play.svg");
+  background-repeat: no-repeat;
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  border-radius: 50%;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+}
