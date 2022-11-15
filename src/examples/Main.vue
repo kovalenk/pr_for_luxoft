@@ -18,6 +18,7 @@
     <CaseStudies />
     <Insights />
     <Awards />
+    <Quotes />
   </div>
 </template>
 
@@ -41,10 +42,12 @@ import Solutions from "@/examples/Solutions";
 import CaseStudies from "@/examples/CaseStudies";
 import Insights from "@/examples/Insights";
 import Awards from "@/examples/Awards";
+import Quotes from "@/examples/Quotes";
 
 export default {
   name: 'main-name',
   components: {
+    Quotes,
     Industries,
     WhyLuxoftOne,
     WhyLuxoftTwo,
