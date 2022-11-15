@@ -1,136 +1,263 @@
 .how-we-help {
-    background: black;
-    font-family: $font-family-base;
-    h2 {
-        @include py(2);
-        @include my(3);
+  background: black;
+  font-family: $font-family-base;
+
+  h2 {
+    @include py(2);
+    @include my(3);
+    font-weight: $font-weight-bold;
+    font-size: $h2-font-size;
+    text-align: center;
+    width: 100%;
+  }
+
+  .row {
+    gap: 24px;
+    @include mb(3);
+
+    .col {
+      flex: 1 0 402px;
+      @include my(0);
+      @include px(0);
+
+      h4 {
+        font-size: $h4-font-size;
         font-weight: $font-weight-bold;
-        font-size: $h2-font-size;
-        text-align: center;
-        width: 100%;
+        line-height: $line-height-base;
+        @include mt(1);
+        max-height: 76px;
+      }
+
+      p {
+        @include pt(3);
+        font-size: $font-size-20;
+        line-height: $line-height-130;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        div {
+          height: 100%;
+          background: $black;
+          border-radius: 0.7rem;
+          border: 1px solid $gray-80;
+          @include py(10);
+          @include px(5);
+          @include media-breakpoint-between(sm, lg) {
+            @include px(3);
+          }
+        }
+
+        &:hover {
+          div {
+            @include pt(4);
+            @include pb(5);
+            height: 100%;
+            background: $gradient03;
+            border: 0;
+
+            h4 {
+              position: relative;
+              @include pb(4);
+              @include pt(2);
+            }
+
+            p {
+              display: block;
+              @include pt(10);
+              @include mb(0);
+            }
+          }
+        }
+      }
+
+      &.active {
+        a {
+          div {
+            @include pt(4);
+            @include pb(5);
+            height: 100%;
+            background: $gradient03;
+            border: 0;
+
+            h4 {
+              position: relative;
+              @include pb(4);
+              @include pt(2);
+            }
+
+            p {
+              display: block;
+              @include pt(10);
+              @include mb(0);
+            }
+          }
+        }
+      }
     }
+  }
+
+  @include media-breakpoint-down(sm) {
+    h2 {
+      @include py(2);
+      @include my(3);
+      font-weight: $font-weight-bold;
+      font-size: 32px;
+      text-align: center;
+      width: 100%;
+    }
+
     .row {
-        gap: 24px;
-        .col {
-            flex: 1 0 402px;
-            @include mb(3);
-            @include px(1);
-            a {
-                text-decoration: none;
-                color: inherit;
-                div {
-                    height: 100%;
-                    background: $black;
-                    border-radius: 0.7rem;
-                    border: 1px solid $gray-80;
-                    @include py(10);
-                    @include px(5);
-                    @include media-breakpoint-between(sm, lg) {
-                    @include px(2);
-                }
-                h4 {
-                    font-size: $h4-font-size;
-                    font-weight: $font-weight-bold;
-                    line-height: $line-height-base;
-                    @include mt(1);
-                    max-height: 76px;
-                }
-                p {
-                    @include pt(3);
-                    font-size: $font-size-20;
-                    line-height: $line-height-130;
-                }
-                }
-            }
-            &:hover {
-                div {
-                    @include pt(4);
-                    @include pb(5);
-                    height: 100%;
-                    background: $gradient03;
-                    border: 0;
-                    h4 {
-                        position: relative;
-                        @include pb(4);
-                        @include pt(2);
-                    }
-                    p {
-                        @include pt(10);
-                        display: block;
-                    }
-                }
-            }
+      @include m(0);
+      @include mb(3);
+      @include p(0);
+
+      .col {
+        @include px(2);
+        @include m(0);
+
+        h4 {
+          position: relative;
+          font-size: $font-size-20;
+          @include m(0);
+          @include p(0);
+
+          &::after {
+            //content: url("../../images/plus.svg");
+            content: url("~@/assets/images/plus.svg");
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+
+            width: 12px;
+            height: 100%;
+          }
         }
+
+        p {
+          font-size: $font-size-16;
+          display: none;
+        }
+
+        a {
+          div {
+            @include py(3);
+            @include px(3);
+          }
+
+          &:hover {
+            div {
+              @include py(3);
+              @include px(3);
+
+              h4 {
+                @include m(0);
+                @include p(0);
+
+                &::after {
+                  //content: url("../../images/minus.svg");
+                  content: url("~@/assets/images/minus.svg");
+                  height: 65%;
+                }
+              }
+
+              p {
+                @include pt(6);
+              }
+            }
+          }
+        }
+
+        &.active {
+          a {
+            div {
+              @include py(3);
+              @include px(3);
+
+              h4 {
+                @include m(0);
+                @include p(0);
+
+                &::after {
+                  //content: url("../../images/minus.svg");
+                  content: url("~@/assets/images/minus.svg");
+                  height: 65%;
+                }
+              }
+
+              p {
+                @include pt(6);
+              }
+            }
+          }
+        }
+      }
     }
-    @include media-breakpoint-down(sm) {
-        h2 {
-            @include py(2);
-            @include my(3);
-            font-weight: $font-weight-bold;
-            font-size: 32px;
-            text-align: center;
-            width: 100%;
-        }
-        .row {
-            gap: 0;
-            .col {
-                flex: 1 0 402px;
-                @include px(2);
-                a {
-                    text-decoration: none;
-                    color: inherit;
-                    div {
-                        height: 100%;
-                        background: $black;
-                        border-radius: 0.7rem;
-                        border: 1px solid $gray-80;
-                        @include py(2);
-                        @include px(2);
-                        @include media-breakpoint-between(sm, lg) {
-                            @include px(2);
-                        }
-                        h4 {
-                            font-size: $font-size-20;
-                            font-weight: $font-weight-bold;
-                            line-height: $line-height-base;
-                            @include mt(1);
-                            max-height: 76px;
-                            &:after{
-                                content: "+";
-                                position: absolute;
-                                right: 14px;
-                                @include pr(2);
-                            }
-                        }
-                        p {
-                            @include pt(3);
-                            font-size: $font-size-16;
-                            line-height: $line-height-130;
-                            display: none;
-                        }
-                    }
-                }
-                &:hover {
-                    div {
-                        @include pt(4);
-                        @include pb(5);
-                        height: 100%;
-                        background: $gradient03;
-                        border: 0;
-                        h4 {
-                            position: relative;
-                            &:after{
-                                content: "-";
-                                right: 0;
-                                position: absolute;
-                            }
-                        }
-                        p {
-                            @include pt(10);
-                        }
-                    }
-                }
+  }
+
+  &--v2, &--v3 {
+    .row {
+      .col {
+
+        h4 {
+          font-size: $h5-font-size;
+          @include pb(4);
+          max-height: unset;
+
+          @include media-breakpoint-down(sm) {
+            font-size: $font-size-20;
+
+            &::after {
+              content: none;
             }
-        } 
-    }   
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+
+          div {
+            background: $gray-20;
+            border: none;
+            @include p(3);
+            @include media-breakpoint-between(sm, lg) {
+              @include p(3);
+            }
+          }
+
+          &:hover {
+            div {
+              background: $gray-20;
+            }
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          p {
+            display: block;
+            @include mb(0);
+          }
+        }
+      }
+    }
+  }
+
+  &--v3 {
+    .row {
+      .col {
+        h4 {
+          font-size: $font-size-28;
+
+          @include media-breakpoint-down(sm) {
+            font-size: $font-size-20;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- Big cards -->
-    <section class="how-we-help how-we-help container-xxl">
+    <!-- Hover cards -->
+    <section class="how-we-help how-we-help--hover container-xxl">
       <h2>How we help our clients</h2>
       <div class="row">
         <div class="col">
@@ -39,67 +39,82 @@
       </div>
     </section>
 
-    <!-- Small Cards 4 x 1
-     <section class="how-we-help how-we-help container-xxl">
+    <!--    Small Cards 4 x 1 -->
+    <section class="how-we-help how-we-help--v2 container-xxl">
       <h2>How we help our clients</h2>
       <div class="row">
         <div class="col">
-          <a href="#">
+          <a >
             <div>
-              <h4>Technological and independence strong</h4>
+              <h4>Technological and independence strong
+              </h4>
               <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
             </div>
           </a>
         </div>
         <div class="col">
-          <a href="#">
+          <a >
             <div>
-              <h4>Technological and independence strong</h4>
+              <h4>Technological and independence strong
+              </h4>
               <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
             </div>
           </a>
         </div>
         <div class="col">
-          <a href="#">
+          <a >
             <div>
-              <h4>Technological and independence strong</h4>
+              <h4>Technological and independence strong
+              </h4>
               <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
             </div>
           </a>
         </div>
         <div class="col">
-          <a href="#">
+          <a >
             <div>
-              <h4>Technological and independence strong</h4>
+              <h4>Technological and independence strong
+              </h4>
               <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
             </div>
           </a>
         </div>
       </div>
-    </section> -->
-<!--
-     Small Cards 3 x 1 
-     <section class="how-we-help how-we-help--style-2 how-we-help--cards-3">
-      <h2 class="how-we-help__title">How we help our clients</h2>
-      <div class="how-we-help__row">
-        <div class="row__col">
-          <h4 class="col__title">Technological and independence strong</h4>
-          <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments
-            with technologically solutions</p>
-        </div>
-        <div class="row__col">
-          <h4 class="col__title">Technological and independence strong</h4>
-          <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments
-            with technologically solutions</p>
-        </div>
-        <div class="row__col">
-          <h4 class="col__title">Technological and independence strong</h4>
-          <p class="col__desc">While accelerating growth we solve your legacy-system issues, protecting existing investments
-            with technologically solutions</p>
-        </div>
-      </div>
-    </section> -->
+    </section>
 
+    <!--    Small Cards 3 x 1 -->
+    <section class="how-we-help how-we-help--v3 container-xxl">
+      <h2>How we help our clients</h2>
+      <div class="row">
+        <div class="col">
+          <a >
+            <div>
+              <h4>Technological and independence strong
+              </h4>
+              <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a >
+            <div>
+              <h4>Technological and independence strong
+              </h4>
+              <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a >
+            <div>
+              <h4>Technological and independence strong
+              </h4>
+              <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

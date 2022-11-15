@@ -1,23 +1,23 @@
 <template>
   <div>
-    <Industries />
-    <WhyLuxoftOne />
-    <WhyLuxoftTwo />
-    <KeyPoints />
-    <HowWeCanHelp />
-    <Partnership />
-    <SectionWithIcons />
-    <Team />
-    <Breadcrumbs />
-    <Video />
+<!--    <Industries />-->
+<!--    <WhyLuxoftOne />-->
+<!--    <WhyLuxoftTwo />-->
+<!--    <KeyPoints />-->
+<!--    <HowWeCanHelp />-->
+<!--    <Partnership />-->
+<!--    <SectionWithIcons />-->
+<!--    <Team />-->
+<!--    <Breadcrumbs />-->
+<!--    <Video />-->
     <HowWeHelp />
-    <Hero />
-    <Benefits />
-    <Accordion />
-    <Solutions />
-    <CaseStudies />
-    <Insights />
-    <Awards />
+<!--    <Hero />-->
+<!--    <Benefits />-->
+<!--    <Accordion />-->
+<!--    <Solutions />-->
+<!--    <CaseStudies />-->
+<!--    <Insights />-->
+<!--    <Awards />-->
   </div>
 </template>
 
@@ -45,24 +45,24 @@ import Awards from "@/examples/Awards";
 export default {
   name: 'main-name',
   components: {
-    Industries,
-    WhyLuxoftOne,
-    WhyLuxoftTwo,
-    KeyPoints,
-    HowWeCanHelp,
-    Partnership,
-    SectionWithIcons,
-    Team,
-    Breadcrumbs,
-    Video,
+    // Industries,
+    // WhyLuxoftOne,
+    // WhyLuxoftTwo,
+    // KeyPoints,
+    // HowWeCanHelp,
+    // Partnership,
+    // SectionWithIcons,
+    // Team,
+    // Breadcrumbs,
+    // Video,
     HowWeHelp,
-    Hero,
-    Benefits,
-    Accordion,
-    Solutions,
-    CaseStudies,
-    Insights,
-    Awards,
+    // Hero,
+    // Benefits,
+    // Accordion,
+    // Solutions,
+    // CaseStudies,
+    // Insights,
+    // Awards,
   }
 }
 </script>
