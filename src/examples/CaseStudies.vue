@@ -22,7 +22,7 @@
               <p class="body-text-bold">Energy and Utilities </p>
               <h4>Integrated Distribution Management Systems For Electric Grids
               </h4>
-              <p>Vantage Power accelerates time-to-market by six months reducing operational costs by over 80%.</p>
+              <p class="gray">Vantage Power accelerates time-to-market by six months reducing operational costs by over 80%.</p>
               <button class="btn btn-text btn-icon focus" type="button">read more</button>
             </div>
           </a>
@@ -33,7 +33,7 @@
               <img src="~@/assets/images/case_st/image3.png" alt="vector">
               <p class="body-text-bold">Automotive</p>
               <h4>VW’s CARIAD taps Luxoft for future oriented in car software solutions</h4>
-              <p>Vantage Power accelerates time-to-market by six months reducing operational costs by over 80%.</p>
+              <p class="gray">Vantage Power accelerates time-to-market by six months reducing operational costs by over 80%.</p>
               <button class="btn btn-text btn-icon focus" type="button">read more</button>
             </div>
           </a>

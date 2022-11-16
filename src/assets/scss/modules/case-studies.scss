@@ -11,6 +11,10 @@
     .row {
         grid-gap: 24px;
 
+        @include media-breakpoint-between(md, lg) {
+            flex-direction: column;
+        }
+
         .col {
             @include py(0);
             @include px(0);
@@ -40,7 +44,7 @@
                 div {
                     position: relative;
                     justify-content: flex-end;
-                    max-height: 760px;
+                    min-height: 760px;
                     height: 100%;
                     @include py(6);
                     @include px(3);
@@ -51,6 +55,7 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
+                        object-fit: cover;
                     }
 
                     * {
@@ -74,6 +79,11 @@
                     .gray {
                         color: $gray-90;
                     }
+
+                    @include media-breakpoint-between(md, lg) {
+                        min-height: unset;
+                        @include p(3);
+                    }
                 }
             }
 
@@ -84,6 +94,33 @@
                     div {
                         p {
                             display: block;
+                        }
+                    }
+
+                    @include media-breakpoint-between(md, lg) {
+                        div {
+                            p {
+                                @include p(0);
+
+                                &.body-text-bold {
+                                    @include pb(10);
+                                    @include mb(4);
+                                }
+
+                                &.gray {
+                                    display: none;
+                                }
+                            }
+
+                            h4 {
+                                @include p(0);
+                                @include mb(4);
+                                max-width: 45%;
+                            }
+
+                            button {
+                                @include p(0);
+                            }
                         }
                     }
                 }
@@ -114,64 +151,27 @@
                         }
                     }
                 }
-            }
-        }
 
-        @include media-breakpoint-between(md, lg) {
-            flex-direction: column;
-
-            .col {
-
-                h2 {
-
-                }
-                p {
-
-                }
-
-                a {
-                    div {
-
-                        img {
-
-                        }
-
-                        p {
-
-                        }
-
-                        h4 {
-                        }
-
-                        .gray {
-                        }
-                    }
-                }
-
-                &.expand {
+                @include media-breakpoint-between(md, lg) {
                     a {
+                        &::after {
+                            content: none;
+                        }
+
                         div {
-                            @include p(3);
-
-                            p {
-                              &.body-text-bold {
-                                  @include pt(0);
-                                  @include pb(10);
-                                  @include mb(4);
-                              }
-
-
-                            }
 
                             h4 {
-                                @include pt(0);
-                                @include pb(4);
+                                @include p(0);
+                                opacity: 1;
+                                font-size: $font-size-20;
+                                max-width: 45%;
+                            }
+
+                            p, button {
+                                display: none;
                             }
                         }
                     }
-                }
-
-                &.shrink {
                 }
             }
         }
