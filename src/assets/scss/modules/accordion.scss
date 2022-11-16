@@ -1,11 +1,13 @@
 .accordion-section {
     padding: 60px 120px;
+    .accordion-button{
+        font-size: $font-size-28;
+    }
     &--white{
         background-color: $white;
         color: $black;
         .accordion-item{
-            border: 0;
-            border-top: 1px $black solid;
+            border-width: 1px 0;
             .accordion-button:not(.collapsed){
                 box-shadow:none;
             }
@@ -21,7 +23,6 @@
             .accordion-button{
                 background-color: $black;
                 color: $white;
-                
             }
             .accordion-item{
                 background-color: $black;
@@ -29,18 +30,16 @@
             }
         }
         .accordion-item{
-            border: 0;
-            border-top: 1px $white solid;
+            border-color: $white;
+            border-width: 1px 0;
             .accordion-button{
                 background-color: $black;
                 color: $white;
-                box-shadow:none;
                 &::after{
                     background-image: url("../src/assets/images/accordion/plus.svg")
                 }
             }
             .accordion-button:not(.collapsed){
-                box-shadow:none;
                 &::after{
                     background-image: url("../src/assets/images/accordion/minus.svg")
                 }
