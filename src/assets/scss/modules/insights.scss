@@ -1,234 +1,156 @@
-.insights {
-    height: max-content;
-    padding: 56px 0px;
-    background: #000000;
+.container-insights {
+    background: $black;
 
-    .container {
-        max-width: 1680px;
-    }
-
-    h2 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 120%;
-        color: #FFFFFF;
-    }
-
-    h4 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 110%;
-        color: #FFFFFF;
-    }
-
-    h5 {
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 120%;
-        color: #FFFFFF;
-    }
-
-    .body-text-bold {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 130%;
-        color: #FFFFFF;
-    }
-
-    .solutions__button {
-        display: none;
-    }
-
-    .body-text-regular {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 130%;
-        color: #FFFFFF;
-    }
-
-    @media (max-width: 700px) {
-        h2 {
-            font-size: 32px;
-            line-height: 120%;
+    .title {
+        width: 100%;
+        text-align: center;
+        @include media-breakpoint-between(sm, lg) {
+            @include pr(3);
         }
-        h4 {
-            font-size: 28px;
-            line-height: 120%;
-        }
-        h5 {
-            font-size: 20px;
-            line-height: 130%;
-        }
-        .body-text-regular {
-            font-size: 16px;
-            line-height: 130%;
-        }
-    }
-
-    &__block {
-        display: flex;
-        gap: 24px;
-        flex-wrap: nowrap;
-        margin-bottom: 36px;
-    }
-
-    &__title {
-        margin-bottom: 40px;
-        display: flex;
-        justify-content: center;
-    }
-
-    &__box {
-        &_img {
+        @include media-breakpoint-down(sm) {
+            @include px(0);
             width: 100%;
-            max-height: 320px;
-        }
-        &_text {
-            margin: 16px 0px 24px;
-        }
 
-        &_desc {
-            margin: 0px auto 48px;
-        }
-
-        &_button {
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 130%;
-            text-transform: uppercase;
-            color: #00A3E1;
-            margin: 0px 0px 32px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        &:hover {
-            .insights__box_button::after {
-                content: "> >";
-                padding: 0px 2px;
-                right: 20px;
-                top: 8px;
-                z-index: 1;
-                text-align: center;
-                width: 10%;
-                height: 100%;
-                pointer-events: none;
-            }
-        }
-    }
-}
-
-@media (max-width: 1260px) {
-    .insights {
-        &__block {
-            flex-wrap: wrap;
-        }
-
-        &__box {
-            width: 48%;
-        }
-    }
-}
-
-@media (max-width: 895px) {
-    .insights {
-        .container {
-            padding: 0 50px;
-        }
-    }
-}
-
-@media (max-width: 700px) {
-    .insights {
-        padding: 24px 0px 16px;
-
-        .container {
-            padding: 0px 16px;
-        }
-        &__box {
-            width: 100%;
-        }
-
-        &__button {
-            padding: 8px 24px 8px 32px;
-            cursor: pointer;
-            text-decoration: none;
-            // gap: 8px;
-            width: 100%;
-            height: 54px;
-            background: #000000;
-            border: 2px solid #FFFFFF;
-            border-radius: 10px;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 130%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             text-align: center;
-            text-transform: uppercase;
-            color: #FFFFFF;
         }
+        h2 {
+            font-size: $h2-font-size;
+            font-weight: $font-weight-bold;
+            @include pt(7);
+            @include pb(5);
+            @include media-breakpoint-between(sm, lg) {
+                @include pb(4);
 
-        &__title {
-            margin: 0px auto 24px;
-        }
 
-        &__block {
-            flex-wrap: wrap;
-
-            &-second {
-                flex-wrap: wrap;
-                gap: 0px;
-                margin-top: 0px;
             }
-
-            &-third {
-                flex-wrap: wrap;
-                gap: 0px;
-                margin-top: 0px;
+            @include media-breakpoint-down(sm) {
+                @include pb(3);
+                @include pt(1);
+                @include mb(0);
+                font-size: $h5-font-size;
             }
         }
-
-        &__box {
-            flex: 100%;
-
-            &_desc {
-                margin: 0px auto 18px;
+        p {
+            font-size: $font-size-28;
+            line-height: $line-height-130;
+            @include pb(5);
+            @include media-breakpoint-down(sm) {
+                font-size: $font-size-20;
             }
+        }
 
-            &_img {
+        @include media-breakpoint-between(sm, lg) {
+            @include pr(3);
+        }
+    }
+    .row {
+        width: 100%;
+        margin: auto;
+        grid-column-gap: 24px;
+        @include media-breakpoint-down(sm) {
+            background: $black;
+            border-radius: 0.7rem;
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .col-my {
+            @include pt(3);
+        }
+        .col {
+            min-width: 300px;
+            cursor: pointer;
+            flex: 1;
+            @include px(0);
+            @include pb(0);
+            @include media-breakpoint-down(sm) {
+                flex: 100%;
+                &:first-child {
+                    div {
+                        border: none;
+                    }
+                }
+            }
+            button {
+                @include p(0);
+                @include pb(10);
+                @include media-breakpoint-down(sm){
+                    @include pb(5);
+                    font-size: $font-size-16;
+                }
+            }
+            img {
+                height: 349px;
                 width: 100%;
-                height: 200px;
-
-                &-small {
-                    width: 100%;
-                    height: 200px;
+                @include pb(4);
+                @include media-breakpoint-down(sm){
+                    @include pb(3);
+                    height: 225px;
+                }
+            }
+            h5 {
+                min-height: 140px;
+                @include pb(3);
+                @include mb(2);
+                @include media-breakpoint-down(sm){
+                    min-height: unset;
+                    @include pb(2);
+                    font-size: 1.25rem;
+                }
+            }
+            p {
+                font-size: $font-size-20;
+                line-height: $line-height-130;
+                @include pb(4);
+                @include mb(0);
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                    @include pb(2);
                 }
             }
 
-            &_title {
-                margin: 24px 0px 16px;
-                // width: 249px
-            }
-
-            &_button {
-                font-size: 16px;
-                line-height: 130%;
-                margin: 16px 0px 41px;
+            div {
+                min-height: 200px;
+                border-top: 1px solid white;
+                @include px(3);
+                @include py(3);
+                @include media-breakpoint-down(sm) {
+                    min-height: 0;
+                    padding-bottom: 0;
+                }
+                h5 {
+                    font-size: $font-size-28;
+                    font-weight: $font-weight-bold;
+                    @include media-breakpoint-down(sm) {
+                        @include pb(3);
+                    }
+                }
+                p {
+                    display: none;
+                    @include pb(5);
+                    @include media-breakpoint-down(sm) {
+                        font-size: $font-size-20;
+                        line-height: $line-height-130;
+                        margin-bottom: 0;
+                        display: block;
+                    }
+                }
+                @include media-breakpoint-up(sm) {
+                    &:hover {
+                        border:none;
+                        background: linear-gradient(111.36deg, rgba(86, 8, 139, 0.6) 29.15%, rgba(173, 71, 151, 0.06) 108.07%);
+                    }
+                }
             }
         }
+    }
+}
 
-        &__arrow {
-            margin: 0px 14px 2px;
-            border: solid #FFFFFF;
-            border-width: 0 2px 2px 0;
-            display: inline-block;
-            padding: 3px;
-            transform: rotate(-45deg);
+.container-insights {
+    .row {
+        @include row-cols(4);
+        @include media-breakpoint-down(md) {
+            @include row-cols(1);
         }
     }
 }

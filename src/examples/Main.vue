@@ -16,7 +16,7 @@
 <!--    <Accordion />-->
     <Solutions />
 <!--    <CaseStudies />-->
-<!--    <Insights />-->
+    <Insights />
 <!--    <Awards />-->
   </div>
 </template>
@@ -61,7 +61,7 @@ export default {
     // Accordion,
     Solutions,
     // CaseStudies,
-    // Insights,
+    Insights,
     // Awards,
   }
 }
