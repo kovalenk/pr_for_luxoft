@@ -1,0 +1,129 @@
+.container-why-luxoft-optional {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    font-family: $font-family-base;
+    @include my(4);
+    h2 {
+        font-size: $h2-font-size;
+        text-align: center;
+        @include py(2);
+        @include my(3);
+    }
+    .row {
+        width: 100%;
+        grid-gap: 24px;
+        .col {
+            cursor: pointer;
+            background: $gray-20;
+            border-radius: 14px;
+            @include px(3);
+            @include py(3);
+            text-decoration: none;
+            &:after {
+                content: '>>>';
+                font-weight: $font-weight-bold;
+                font-size: $font-size-28;
+            }
+            &:hover {
+                p {
+                    color: inherit;
+                }
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            h5 {
+                font-size: $font-size-28;
+                font-weight: $font-weight-bold;
+                @include mb(3);
+
+
+            }
+            p {
+                color: transparent;
+                @include mb(2);
+                font-size: $font-size-20;
+                font-weight: $font-weight-base;
+                line-height: $line-height-130;
+                transition: color .3s linear;
+            }
+        }
+
+        .accordion-item {
+            display: none;
+        }
+    }
+}
+
+.container-why-luxoft-optional {
+    .row {
+        @include media-breakpoint-between(sm, xl) {
+            .col {
+                min-width: 300px;
+                flex: 1 1 0;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            @include row-cols(1);
+            .col {
+                @include p(0);
+
+                min-width: unset;
+
+                &::after {
+                    content: none;
+                }
+                p {
+                    color: $white;
+                }
+
+                a {
+                    display: none;
+                }
+
+                .accordion-item {
+                    display: block;
+                    background: $gray-20;
+                    border-radius: 15px;
+
+                    @include p(3);
+
+                    h2 {
+                        @include p(0);
+                        @include m(0);
+
+                        button {
+                            @include p(0);
+                            font-size: $font-size-20;
+                            font-weight: $font-weight-bold;
+                            background-color: transparent;
+                            color: $white;
+                            box-shadow: none;
+
+                            &::after {
+                                background-image: url("../src/assets/images/accordion/plus.svg");
+                                background-position: center;
+                            }
+
+                            &:not(.collapsed)::after {
+                                background-image: url("../src/assets/images/accordion/minus.svg");
+                                transform: none;
+                            }
+                        }
+                    }
+
+                    p {
+                        display: block;
+                        @include mt(3);
+                        font-size: $font-size-16;
+                        font-weight: $font-weight-base;
+                    }
+
+
+                }
+            }
+        }
+    }
+}

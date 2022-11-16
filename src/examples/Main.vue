@@ -18,6 +18,7 @@
     <CaseStudies />
     <Insights />
     <Awards />
+    <Quotes />
   </div>
 </template>
 
