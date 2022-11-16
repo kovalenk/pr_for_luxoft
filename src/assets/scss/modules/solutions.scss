@@ -1,6 +1,6 @@
 
 .solutions {
-   
+
 
     .carousel-control {
         margin: 4px 0;
@@ -204,22 +204,13 @@
                 left: 0px;
             }
         }
-        
+
     }
 }
 
 .container-our-solutions {
     background: $black;
-    @include mt(0 !important);
-    @include mb(1) ;
-    @include my(4);
-    @include media-breakpoint-between(sm, lg) {
-        @include p(4);
-    }
-    @include media-breakpoint-down(sm) {
-        display: block;
-        @include p(2);
-    }
+
     .title {
         width: 100%;
         text-align: center;
@@ -239,8 +230,8 @@
             @include pb(5);
             @include media-breakpoint-between(sm, lg) {
                 @include pb(4);
-                
-                
+
+
             }
             @include media-breakpoint-down(sm) {
                 @include pb(3);
@@ -257,13 +248,14 @@
                 font-size: $font-size-20;
             }
         }
-        
+
         @include media-breakpoint-between(sm, lg) {
             @include pr(3);
         }
     }
     .row {
         width: 100%;
+        margin: auto;
         grid-column-gap: 24px;
         @include media-breakpoint-down(sm) {
             background: $black;
@@ -276,6 +268,7 @@
             @include pt(3);
         }
         .col {
+            min-width: 300px;
             cursor: pointer;
             flex: 1;
             @include px(0);
@@ -284,7 +277,7 @@
                 flex: 100%;
                 &:first-child {
                     div {
-                        border: none !important;
+                        border: none;
                     }
                 }
             }
@@ -293,7 +286,7 @@
                 @include pb(10);
                 @include media-breakpoint-down(sm){
                     @include pb(5);
-                    font-size: $font-size-16 !important;
+                    font-size: $font-size-16;
                 }
             }
             img {
@@ -323,7 +316,7 @@
                     @include pb(2);
                 }
             }
-           
+
             div {
                 min-height: 200px;
                 border-top: 1px solid white;
