@@ -31,12 +31,12 @@
 // import Partnership from "@/examples/Partnership";
 // import SectionWithIcons from "@/examples/SectionWithIcons";
 // import Team from "@/examples/Team";
-import Breadcrumbs from "@/examples/Breadcrumbs";
+// import Breadcrumbs from "@/examples/Breadcrumbs";
 // import Video from "@/examples/Video";
 // import HowWeHelp from "@/examples/HowWeHelp";
 // import Hero from "@/examples/Hero";
 // import Benefits from "@/examples/Benefits";
-// import Accordion from "@/examples/Accordion";
+import Accordion from "@/examples/Accordion";
 // import Solutions from "@/examples/Solutions";
 // import CaseStudies from "@/examples/CaseStudies";
 // import Insights from "@/examples/Insights";
@@ -53,12 +53,12 @@ export default {
     // Partnership,
     // SectionWithIcons,
     // Team,
-    Breadcrumbs,
+    // Breadcrumbs,
     // Video,
     // HowWeHelp,
     // Hero,
     // Benefits,
-    // Accordion,
+     Accordion,
     // Solutions,
     // CaseStudies,
     // Insights,
