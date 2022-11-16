@@ -1,38 +1,11 @@
 .container-breadcrumbs {
     .breadcrumb {
-        background: none;
-
-        &__item {
-            display: inline-block;
-
-            font-size: $font-size-14;
-            line-height: $line-height-130;
-
-            font-weight: $font-weight-normal;
-            letter-spacing: 0;
-            text-align: left;
-
-            a {
+        &-item {
+            a{
                 text-decoration: none;
                 color: $gray-70;
-
-                &::after {
-                    //content: url("../../assets/images/arrow_right_breadcrumb.svg");
-                    content: url("~@/assets/images/arrow_right_breadcrumb.svg");
-                    margin-right: 13px;
-                    margin-left: 13px;
-                }
-            }
-
-            &:hover {
-                a {
+                &:hover{
                     color: $white;
-                }
-            }
-
-            &:last-child {
-                a::after {
-                    content: '';
                 }
             }
         }

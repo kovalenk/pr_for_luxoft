@@ -1,24 +1,23 @@
 <template>
   <div>
-<!--    <Industries />-->
-<!--    <WhyLuxoftOne />-->
-<!--    <WhyLuxoftTwo />-->
-<!--    <KeyPoints />-->
-<!--    <HowWeCanHelp />-->
-<!--    <Partnership />-->
-<!--    <SectionWithIcons />-->
-<!--    <Team />-->
-<!--    <Breadcrumbs />-->
-<!--    <Video />-->
-<!--    <HowWeHelp />-->
-<!--    <Hero />-->
-<!--    <Benefits />-->
-<!--    <Accordion />-->
-<!--    <Solutions />-->
-<!--    <CaseStudies />-->
-<!--    <Insights />-->
-<!--    <Awards />-->
-    <Quotes />
+    <Industries />
+    <WhyLuxoftOne />
+    <WhyLuxoftTwo />
+    <KeyPoints />
+    <HowWeCanHelp />
+    <Partnership />
+    <SectionWithIcons />
+    <Team />
+    <Breadcrumbs />
+    <Video />
+    <HowWeHelp />
+    <Hero />
+    <Benefits />
+    <Accordion />
+    <Solutions />
+    <CaseStudies />
+    <Insights />
+    <Awards />
   </div>
 </template>
 
@@ -47,25 +46,25 @@ import Quotes from "@/examples/Quotes";
 export default {
   name: 'main-name',
   components: {
+    Industries,
+    WhyLuxoftOne,
+    WhyLuxoftTwo,
+    KeyPoints,
+    HowWeCanHelp,
+    Partnership,
+    SectionWithIcons,
+    Team,
+    Breadcrumbs,
+    Video,
+    HowWeHelp,
+    Hero,
+    Benefits,
+    Accordion,
+    Solutions,
+    CaseStudies,
+    Insights,
+    Awards,
     Quotes,
-    // Industries,
-    // WhyLuxoftOne,
-    // WhyLuxoftTwo,
-    // KeyPoints,
-    // HowWeCanHelp,
-    // Partnership,
-    // SectionWithIcons,
-    // Team,
-    // Breadcrumbs,
-    // Video,
-    // HowWeHelp,
-    // Hero,
-    // Benefits,
-    // Accordion,
-    // Solutions,
-    // CaseStudies,
-    // Insights,
-    // Awards,
   }
 }
 </script>

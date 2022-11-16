@@ -1,10 +1,52 @@
 .accordion-section {
     padding: 60px 120px;
-
-    * {
-        color: white;
+    .accordion-button{
+        font-size: $font-size-28;
     }
+    &--white{
+        background-color: $white;
+        color: $black;
+        .accordion-item{
+            border-width: 1px 0;
+            .accordion-button:not(.collapsed){
+                box-shadow:none;
+            }
+        }
 
+    }
+    &--black{
+        background-color: $black;
+        color: $white;
+        .accordion{
+            background-color: $black;
+            color: $white;
+            .accordion-button{
+                background-color: $black;
+                color: $white;
+            }
+            .accordion-item{
+                background-color: $black;
+                color: $white;
+            }
+        }
+        .accordion-item{
+            border-color: $white;
+            border-width: 1px 0;
+            .accordion-button{
+                background-color: $black;
+                color: $white;
+                &::after{
+                    background-image: url("../src/assets/images/accordion/plus.svg")
+                }
+            }
+            .accordion-button:not(.collapsed){
+                &::after{
+                    background-image: url("../src/assets/images/accordion/minus.svg")
+                }
+            }
+        }
+
+    }
     @media (max-width: 900px) {
         padding: 60px;
     }
@@ -13,165 +55,4 @@
         padding: 40px 20px;
     }
 
-    .accordion-section__container {
-        max-width: 900px;
-        margin: auto;
-
-        .container {
-            &__title {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 28px;
-                line-height: 120%;
-
-                @media (max-width: 700px) {
-                    font-size: 24px;
-                }
-            }
-
-            &__article {
-                margin-top: 32px;
-
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 130%;
-
-                @media (max-width: 700px) {
-                    font-size: 18px;
-                }
-            }
-
-            &__accordion {
-                margin-top: 32px;
-
-                .accordion__row {
-                    cursor: pointer;
-                    padding: 24px 0;
-                    border-color: #ffffff;
-                    border-style: solid;
-                    border-width: 1px 0 0;
-
-                    @media (max-width: 700px) {
-                        padding: 20px 8px;
-                    }
-
-                    .row {
-                        &__title {
-                            position: relative;
-
-                            margin: 0;
-                            padding-right: 30px;
-
-                            font-weight: 400;
-                            font-size: 28px;
-                            line-height: 130%;
-
-                            @media (max-width: 700px) {
-                                padding-right: 35px;
-                                font-size: 22px;
-                            }
-
-                            &:after {
-                                content: '';
-                                //background-image: url("../../assets/images/accordion/plus.svg");
-                                background-image: url("~@/assets/images/accordion/plus.svg");
-                                background-size: 16px;
-                                background-position: center;
-                                background-repeat: no-repeat;
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                                display: flex;
-                                align-items: center;
-
-                                width: 30px;
-                                height: 100%;
-
-                                @media (max-width: 700px) {
-                                    background-size: 20px;
-                                }
-                            }
-                        }
-
-                        &__desc {
-                            display: none;
-
-                            margin: 24px 0 0;
-
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 20px;
-                            line-height: 130%;
-
-                            @media (max-width: 700px) {
-                                font-size: 18px;
-                            }
-                        }
-                    }
-
-                    &--open {
-                        .row {
-                            &__title {
-                                &::after {
-                                    //background-image: url("../../assets/images/accordion/minus.svg");
-                                    background-image: url("~@/assets/images/accordion/minus.svg");
-                                    height: 85%;
-                                }
-                            }
-
-                            &__desc {
-                                display: block;
-                            }
-                        }
-                    }
-
-                    &:last-child {
-                        border-width: 1px 0;
-                    }
-                }
-            }
-        }
-    }
-
-    &.accordion-section--white {
-        background-color: white;
-
-        * {
-            color: #000000;
-        }
-
-        .container {
-            &__accordion {
-                .accordion__row {
-                    border-color: #000000;
-
-                    .row {
-                        &__title {
-
-                            &:after {
-                                //background-image: url("../../assets/images/accordion/plus-black.svg");
-                                background-image: url("~@/assets/images/accordion/plus-black.svg");
-                            }
-                        }
-                    }
-
-                    &--open {
-                        .row {
-                            &__title {
-                                &::after {
-                                    //background-image: url("../../assets/images/accordion/minus-black.svg");
-                                    background-image: url("~@/assets/images/accordion/minus-black.svg");
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .accordion__row {
-            border-color: #000000;
-        }
-    }
 }

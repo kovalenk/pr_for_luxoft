@@ -1,19 +1,20 @@
 <template>
   <section class="container-breadcrumbs container-xxl">
-    <ul class="breadcrumb">
-      <li class="breadcrumb__item">
-        <a href="/">Breadcrumbs 01</a>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/">
+          Breadcrumbs 01
+        </a>
       </li>
-      <li class="breadcrumb__item">
-        <a href="/">Breadcrumbs 01</a>
+      <li class="breadcrumb-item">
+        <a href="/">
+          Breadcrumbs 01
+        </a>
       </li>
-      <li class="breadcrumb__item">
-        <a href="/">Breadcrumbs 01</a>
+      <li class="breadcrumb-item active">
+          Breadcrumbs 01
       </li>
-      <li class="breadcrumb__item">
-        <a href="/">Breadcrumbs 01</a>
-      </li>
-    </ul>
+    </ol>
   </section>
 
 </template>
