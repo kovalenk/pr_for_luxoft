@@ -1,58 +1,150 @@
-.accordion-section {
+.container-accordion {
     padding: 60px 120px;
-    .accordion-button{
-        font-size: $font-size-28;
-    }
-    &--white{
-        background-color: $white;
-        color: $black;
-        .accordion-item{
-            border-width: 1px 0;
-            .accordion-button:not(.collapsed){
-                box-shadow:none;
-            }
-        }
 
-    }
-    &--black{
-        background-color: $black;
-        color: $white;
-        .accordion{
-            background-color: $black;
-            color: $white;
-            .accordion-button{
-                background-color: $black;
-                color: $white;
-            }
-            .accordion-item{
-                background-color: $black;
-                color: $white;
-            }
-        }
-        .accordion-item{
-            border-color: $white;
-            border-width: 1px 0;
-            .accordion-button{
-                background-color: $black;
-                color: $white;
-                &::after{
-                    background-image: url("../src/assets/images/accordion/plus.svg")
-                }
-            }
-            .accordion-button:not(.collapsed){
-                &::after{
-                    background-image: url("../src/assets/images/accordion/minus.svg")
-                }
-            }
-        }
+    h2 {
+        font-size: $h2-font-size;
+        text-align: center;
+        @include py(2);
+        @include my(3);
 
+        @include media-breakpoint-down(sm) {
+            font-size: $font-size-20;
+        }
     }
-    @media (max-width: 900px) {
+
+    @include media-breakpoint-between(md, lg) {
         padding: 60px;
     }
 
-    @media (max-width: 700px) {
+    @include media-breakpoint-down(sm) {
         padding: 40px 20px;
     }
 
+    p {
+        padding: 1px;
+        font-size: $font-size-20;
+        line-height: $line-height-130;
+        @include m(0);
+        @include pb(2);
+        @include pt(3);
+
+        @include media-breakpoint-down(sm) {
+            font-size: $font-size-16;
+        }
+    }
+
+    * {
+        color: white;
+    }
+
+    .accordion {
+        margin-top: 32px;
+        &-item {
+            cursor: pointer;
+            border: none;
+            border-top: 1px solid white;
+
+            @media (max-width: 700px) {
+                padding: 20px 8px;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid white;
+            }
+            &:first-of-type, &:last-of-type {
+                border-radius: 0;
+                .accordion-button {
+                    border-radius: 0;
+                }
+            }
+
+            h2 {
+                @include p(0);
+                @include m(0);
+            }
+        }
+
+        &-button {
+            padding: 1px;
+            font-size: $font-size-28;
+            line-height: $line-height-130;
+            @include py(3);
+
+            font-weight: 400;
+            border-radius: 0;
+            box-shadow: none;
+
+            @include media-breakpoint-down(sm) {
+                @include pr(0);
+                font-size: $font-size-20;
+            }
+
+            &::after {
+                -webkit-mask-size: 16px;
+                -webkit-mask-position: center;
+                -webkit-mask-repeat: no-repeat;
+                background-color: white;
+                -webkit-mask-image: url("~@/assets/images/accordion/minus.svg");
+                background-image: none;
+                margin-right: 6px;
+            }
+
+            &.collapsed {
+                &::after {
+                    -webkit-mask-image: url("~@/assets/images/accordion/plus.svg");
+                    background-image: none;
+                }
+            }
+        }
+    }
+
+    &--white {
+        background-color: white;
+        color: black;
+
+        * {
+            color: black;
+        }
+
+        .accordion {
+            &-item {
+                border-top: 1px solid black;
+                background-color: white;
+                &:last-child {
+                    border-bottom: 1px solid black;
+                }
+            }
+            &-button {
+                color: black;
+                background-color: white;
+                &,&.collapsed {
+                    &::after {
+                        background-color: black;
+                    }
+                }
+            }
+            &-body {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    &--black {
+        background-color: black;
+        color: white;
+        .accordion {
+            &-item {
+                background-color: black;
+            }
+            &-button {
+                color: white;
+                background-color: black;
+            }
+            &-body {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
 }
+
