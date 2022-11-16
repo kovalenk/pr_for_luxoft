@@ -15,7 +15,7 @@
 <!--    <Benefits />-->
 <!--    <Accordion />-->
     <Solutions />
-<!--    <CaseStudies />-->
+    <CaseStudies />
     <Insights />
 <!--    <Awards />-->
   </div>
@@ -60,7 +60,7 @@ export default {
     // Benefits,
     // Accordion,
     Solutions,
-    // CaseStudies,
+    CaseStudies,
     Insights,
     // Awards,
   }

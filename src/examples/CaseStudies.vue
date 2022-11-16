@@ -1,6 +1,52 @@
 <template>
   <div>
+    <section class="container-case-studies container-xxl">
+      <h2>Case Studies</h2>
+      <div class="row">
+        <div class="col expand">
+          <a href="#">
+            <div class="d-flex flex-sm-column">
+              <img src="~@/assets/images/case_st/image1.png" alt="vector">
+              <p class="body-text-bold">Automotive</p>
+              <h4>Predictive
+                Maintenance For Connected Vehicles</h4>
+              <p class="gray">Vantage Power accelerates time-to-market by six months reducing operational costs by over 80%.</p>
+              <button class="btn btn-text btn-icon focus" type="button">read more</button>
+            </div>
+          </a>
+        </div>
+        <div class="col shrink">
+          <a href="#">
+            <div class="d-flex flex-sm-column">
+              <img src="~@/assets/images/case_st/image2.png" alt="vector">
+              <p class="body-text-bold">Energy and Utilities </p>
+              <h4>Integrated Distribution Management Systems For Electric Grids
+              </h4>
+              <p>Vantage Power accelerates time-to-market by six months reducing operational costs by over 80%.</p>
+              <button class="btn btn-text btn-icon focus" type="button">read more</button>
+            </div>
+          </a>
+        </div>
+        <div class="col shrink">
+          <a href="#">
+            <div class="d-flex flex-sm-column">
+              <img src="~@/assets/images/case_st/image3.png" alt="vector">
+              <p class="body-text-bold">Automotive</p>
+              <h4>VW’s CARIAD taps Luxoft for future oriented in car software solutions</h4>
+              <p>Vantage Power accelerates time-to-market by six months reducing operational costs by over 80%.</p>
+              <button class="btn btn-text btn-icon focus" type="button">read more</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="case-studies-section case">
+      <div class="title">
+        <h2>Why Luxoft</h2>
+        <p class="why-info"></p>
+      </div>
+
       <div class="container">
         <div class="row">
           <h2 class="case__title">Case Studies</h2>

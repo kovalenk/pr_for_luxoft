@@ -141,7 +141,7 @@
             min-height: 396px;
             padding: 38px 81px;
 
-            background-color: #1A1A1A;
+            background-color: $gray-20;
             border-radius: 14px;
             //background-image: url("../../assets/images/awards/leaves.svg");
             background-image: url("~@/assets/images/awards/leaves.svg");
@@ -156,7 +156,7 @@
                 line-height: 38px;
                 letter-spacing: 0em;
                 text-align: center;
-                color: #AA73E6;
+                color: $bright-purple-60;
             }
             &__text {
                 margin: 0 0 40px 0;

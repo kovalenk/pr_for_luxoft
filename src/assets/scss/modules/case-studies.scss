@@ -1,3 +1,183 @@
+.container-case-studies {
+    background: $black;
+
+    h2 {
+        font-size: $h2-font-size;
+        text-align: center;
+        @include py(2);
+        @include my(3);
+    }
+
+    .row {
+        grid-gap: 24px;
+
+        .col {
+            @include py(0);
+            @include px(0);
+            @include mb(0);
+
+            h2 {
+                @include pb(1);
+                @include pt(2);
+                @include m(0);
+                font-size: $h1-font-size;
+                font-weight: $font-weight-bold;
+                line-height: $line-height-base;
+                text-align: start;
+            }
+            p {
+                padding: 1px;
+                font-size: $font-size-20;
+                line-height: $line-height-130;
+                @include m(0);
+                @include pb(2);
+                @include pt(3);
+            }
+
+            a {
+                text-decoration: unset;
+
+                div {
+                    position: relative;
+                    justify-content: flex-end;
+                    max-height: 760px;
+                    height: 100%;
+                    @include py(6);
+                    @include px(3);
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    * {
+                        z-index: 1;
+                        text-decoration: none;
+                    }
+
+                    p {
+                        @include py(2);
+                        color: $white;
+
+                        .gray {
+                            display: none;
+                        }
+                    }
+
+                    h4 {
+                        @include py(2);
+                    }
+
+                    .gray {
+                        color: $gray-90;
+                    }
+                }
+            }
+
+            &.expand {
+                flex: 3 0 0;
+
+                a {
+                    div {
+                        p {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &.shrink {
+                flex: 1 0 0;
+                a {
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 14px;
+                        background: rgba(0, 0, 0, 0.4);
+                        backdrop-filter: blur(4px);
+                    }
+
+                    div {
+                        p, h4, button {
+                            opacity: 0;
+                            transition: opacity .4s linear;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            flex-direction: column;
+
+            .col {
+
+                h2 {
+
+                }
+                p {
+
+                }
+
+                a {
+                    div {
+
+                        img {
+
+                        }
+
+                        p {
+
+                        }
+
+                        h4 {
+                        }
+
+                        .gray {
+                        }
+                    }
+                }
+
+                &.expand {
+                    a {
+                        div {
+                            @include p(3);
+
+                            p {
+                              &.body-text-bold {
+                                  @include pt(0);
+                                  @include pb(10);
+                                  @include mb(4);
+                              }
+
+
+                            }
+
+                            h4 {
+                                @include pt(0);
+                                @include pb(4);
+                            }
+                        }
+                    }
+                }
+
+                &.shrink {
+                }
+            }
+        }
+    }
+}
+
 
 /* Box sizing rules */
 *,
