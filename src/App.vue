@@ -14,9 +14,9 @@ import MainName from "@/examples/Main";
 export default {
   name: 'App',
   components: {
-   // FooterName,
+    FooterName,
     MainName,
-   // HeaderName
+    HeaderName
   }
 }
 </script>

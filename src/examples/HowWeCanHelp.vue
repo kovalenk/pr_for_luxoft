@@ -3,7 +3,7 @@
     <div class="container-how-we-help container-xxl">
       <h2>How we help our clients</h2>
       <div class="row">
-        <div class="col">
+        <!-- <div class="col">
           <a href="#">
             <div>
               <picture>
@@ -13,7 +13,7 @@
               <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p>
             </div>
           </a>
-        </div>
+        </div> -->
         <div class="col">
           <a href="#">
             <div>
