@@ -50,6 +50,10 @@
                 transition: color .3s linear;
             }
         }
+
+        .accordion-item {
+            display: none;
+        }
     }
 }
 
@@ -64,51 +68,60 @@
         @include media-breakpoint-down(sm) {
             @include row-cols(1);
             .col {
+                @include p(0);
+
                 min-width: unset;
-
-                h5 {
-                    position: relative;
-                    font-size: $font-size-20;
-                    @include m(0);
-                    @include p(0);
-                    @include pr(3);
-
-
-                    &::after {
-                        //content: url("../../images/plus.svg");
-                        content: url("~@/assets/images/plus.svg");
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        display: flex;
-                        align-items: center;
-
-                        width: 12px;
-                        height: 100%;
-                    }
-                }
-                p {
-                    display: none;
-                }
 
                 &::after {
                     content: none;
                 }
+                p {
+                    color: $white;
+                }
 
-                &.active {
-                    h5 {
-                        @include mb(3);
+                a {
+                    display: none;
+                }
 
-                        &::after {
-                            //content: url("../../images/minus.svg");
-                            content: url("~@/assets/images/minus.svg");
-                            height: 65%;
+                .accordion-item {
+                    display: block;
+                    background: $gray-20;
+                    border-radius: 15px;
+
+                    @include p(3);
+
+                    h2 {
+                        @include p(0);
+                        @include m(0);
+
+                        button {
+                            @include p(0);
+                            font-size: $font-size-20;
+                            font-weight: $font-weight-bold;
+                            background-color: transparent;
+                            color: $white;
+                            box-shadow: none;
+
+                            &::after {
+                                background-image: url("../src/assets/images/accordion/plus.svg");
+                                background-position: center;
+                            }
+
+                            &:not(.collapsed)::after {
+                                background-image: url("../src/assets/images/accordion/minus.svg");
+                                transform: none;
+                            }
                         }
                     }
+
                     p {
-                        display: block;                    color: inherit;
-                        color: inherit;
+                        display: block;
+                        @include mt(3);
+                        font-size: $font-size-16;
+                        font-weight: $font-weight-base;
                     }
+
+
                 }
             }
         }
