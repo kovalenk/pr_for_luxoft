@@ -1,30 +1,27 @@
 <template>
-  <section class="insights">
-    <div class="container">
-      <h2 class="insights__title">Key insights and featured news </h2>
-      <div class="insights__block">
-        <div class="insights__box">
-          <img class="insights__box_img" src="~@/assets/images/insights1.png" alt="">
-          <p class="body-text-bold insights__box_text">Blog</p>
-          <h5 class="insights__box_desc">Accelerate autonomous driving development with the Robotic Drive Innovation Lab</h5>
-          <a class="insights__box_button" href="#">read more ></a>
-        </div>
-        <div class="insights__box">
-          <img class="insights__box_img" src="~@/assets/images/insights2.png" alt="">
-          <p class="body-text-bold insights__box_text">Blog</p>
-          <h5 class="insights__box_desc">Accelerate autonomous driving development with the Robotic Drive Innovation Lab</h5>
-          <a class="insights__box_button" href="#">read more ></a>
-        </div>
-        <div class="insights__box">
-          <img class="insights__box_img" src="~@/assets/images/insights3.png" alt="">
-          <p class="body-text-bold insights__box_text">Blog</p>
-          <h5 class="insights__box_desc">Accelerate autonomous driving development with the Robotic Drive Innovation Lab</h5>
-          <a class="insights__box_button" href="#">read more ></a>
-        </div>
+  <section class="container-insights">
+    <div class="title">
+      <h2>Key insights and featured news</h2>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="~@/assets/images/insights1.png" alt="">
+        <p class="body-text-bold">Blog</p>
+        <h5>Accelerate autonomous driving development with the Robotic Drive Innovation Lab</h5>
+        <button type="button" class="btn btn-text btn-icon focus">read more</button>
       </div>
-      <a href="#" class="solutions__button">
-        Load more <i class="solutions__arrow"></i>
-      </a>
+      <div class="col">
+        <img src="~@/assets/images/insights2.png" alt="">
+        <p class="body-text-bold">Blog</p>
+        <h5>Luxoft to acquire CMORE Automotive, provider of data-driven autonomous </h5>
+        <button type="button" class="btn btn-text btn-icon focus">read more</button>
+      </div>
+      <div class="col">
+        <img src="~@/assets/images/insights3.png" alt="">
+        <p class="body-text-bold">Blog</p>
+        <h5>DXC Technology appoints Luz G. Mauch as Executive Vice President</h5>
+        <button type="button" class="btn btn-text btn-icon focus">read more</button>
+      </div>
     </div>
   </section>
 </template>

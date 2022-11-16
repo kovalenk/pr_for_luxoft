@@ -125,7 +125,7 @@
 
         <div class="carousel-indicators">
           <a data-bs-target="#carouselExampleCaptions-2" data-bs-slide="prev">&lsaquo;</a>
-          <a data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="0"class="active" aria-current="true">Digital Cockpit</a>
+          <a data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="0" class="active" aria-current="true">Digital Cockpit</a>
           <a data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="1">System testing and validation</a>
           <a data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="2">Connencted</a>
           <a data-bs-target="#carouselExampleCaptions-2" data-bs-slide="next">&rsaquo;</a>
@@ -261,173 +261,161 @@
         </li>
       </ul>
     </div>
-    <section class="our-solutions">
-      <div class="container">
-        <h2 class="our-solutions__title">Our solutions</h2>
-        <div class="our-solutions__block row">
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions1.png" class="our-solutions__box_img" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+    <section class="container-our-solutions container-xxl">
+      <div class="title">
+        <h2>Our solutions</h2>
+      </div>
+        <div class="row">
+          <div class="col">
+            <img src="~@/assets/images/solutions/solutions1.png" alt="">
+            <h5>Unleash technology and the marketplace</h5>
+            <p>Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions2.png" class="our-solutions__box_img" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and  the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+          <div class="col">
+            <img src="~@/assets/images/solutions/solutions2.png" class="" alt="">
+            <h5 class="">Unleash technology and  the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions3.png" class="our-solutions__box_img" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and  the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions3.png" class="" alt="">
+            <h5 class="">Unleash technology and  the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions4.png" class="our-solutions__box_img" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions4.png" class="" alt="">
+            <h5 class="">Unleash technology and the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
         </div>
-        <a href="#" class="our-solutions__button">
-          Load more <i class="our-solutions__arrow"></i>
-        </a>
-      </div>
     </section>
-    <section class="our-solutions">
-      <div class="container">
-        <h2 class="our-solutions__title">Our solutions</h2>
-        <div class="our-solutions__block row">
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions1.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">CContinental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+    <section class="container-our-solutions container-xxl">
+      <div class="title">
+        <h2>Our solutions</h2>
+      </div>
+        <div class="row">
+          <div class="col">
+            <img src="~@/assets/images/solutions/solutions1.png" class="" alt="">
+            <h5 class="">Unleash technology and  the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions2.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions2.png" class="" alt="">
+            <h5 class="">Unleash technology and  the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions3.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions3.png" class="" alt="">
+            <h5 class="">Unleash technology and the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
         </div>
-        <a href="#" class="our-solutions__button">
-          Load more <i class="our-solutions__arrow"></i>
-        </a>
-      </div>
     </section>
-    <section class="our-solutions">
-      <div class="container">
-        <h2 class="our-solutions__title">Our solutions</h2>
-        <div class="our-solutions__block row">
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions1.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions2.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions3.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-        </div>
-        <div class="our-solutions__block-second row">
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions1.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions2.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions3.png" class="our-solutions__box_img solutions__box_img-height" alt="">
-            <h5 class="our-solutions__box_title">Unleash technology and the marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-        </div>
-        <a href="#" class="our-solutions__button">
-          Load more <i class="our-solutions__arrow"></i>
-        </a>
+
+    <section class="container-our-solutions container-xxl">
+      <div class="title">
+        <h2>Our solutions</h2>
       </div>
+        <div class="row">
+          <div class="col">
+            <img src="~@/assets/images/solutions/solutions1.png" class="" alt="">
+            <h5 class="">Unleash technology and  the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions2.png" class="" alt="">
+            <h5 class="">Unleash technology and  the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions3.png" class="" alt="">
+            <h5 class="">Unleash technology and the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="~@/assets/images/solutions/solutions1.png" class="" alt="">
+            <h5 class="">Unleash technology and  the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions2.png" class="" alt="">
+            <h5 class="">Unleash technology and  the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions3.png" class="" alt="">
+            <h5 class="">Unleash technology and the marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+        </div>
     </section>
-    <section class="our-solutions">
-      <div class="container">
-        <h2 class="our-solutions__title">Our solutions</h2>
-        <div class="our-solutions__block row">
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions1.png" class="our-solutions__box_img-small" alt="">
-            <h5 class="our-solutions__box_title">How to unleash technology and dominate a <br/>crowded marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC <br/>Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+
+    <section class="container-our-solutions container-xxl">
+      <div class="title">
+        <h2>Our solutions</h2>
+      </div>
+        <div class="row">
+          <div class="col">
+            <img src="~@/assets/images/solutions/solutions2.png" class="" alt="">
+            <h5 class="">How to unleash technology and dominate a crowded marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions2.png" class="our-solutions__box_img-small" alt="">
-            <h5 class="our-solutions__box_title">UX writing for digital cockpits: Practical tips for<br/> automotive</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC <br/>Technology and Luxoft as key partners</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions3.png" class="" alt="">
+            <h5 class="">UX writing for digital cockpits: Practical tips for automotive</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
         </div>
-        <a href="#" class="our-solutions__button">
-          Load more <i class="our-solutions__arrow"></i>
-        </a>
-      </div>
     </section>
-    <section class="our-solutions">
-      <div class="container">
-        <h2 class="our-solutions__title">Our solutions</h2>
-        <div class="our-solutions__block row">
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions1.png" class="our-solutions__box_img-small" alt="">
-            <h5 class="our-solutions__box_title">How to unleash technology and dominate a <br/>crowded marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC <br/>Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions2.png" class="our-solutions__box_img-small" alt="">
-            <h5 class="our-solutions__box_title">UX writing for digital cockpits: Practical tips for<br/> automotive</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC <br/>Technology and Luxoft as key partners</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-        </div>
-        <div class="our-solutions__block-third row">
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions1.png" class="our-solutions__box_img-small" alt="">
-            <h5 class="our-solutions__box_title">How to unleash technology and dominate a <br/>crowded marketplace</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC <br/>Technology and Luxoft as key partners for Continental Automotive Edge</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-          <div class="our-solutions__box col">
-            <img src="~@/assets/images/solutions/solutions2.png" class="our-solutions__box_img-small" alt="">
-            <h5 class="our-solutions__box_title">UX writing for digital cockpits: Practical tips for<br/> automotive</h5>
-            <p class="body-text-regular">Continental, a global leader in the future of mobility, selected DXC <br/>Technology and Luxoft as key partners</p>
-            <a class="our-solutions__box_button" href="#">read more ></a>
-          </div>
-        </div>
-        <a href="#" class="our-solutions__button">
-          Load more <i class="our-solutions__arrow"></i>
-        </a>
+
+    <section class="container-our-solutions container-xxl">
+      <div class="title">
+        <h2>Our solutions</h2>
       </div>
+      <div class="row">
+          <div class="col">
+            <img src="~@/assets/images/solutions/solutions2.png" class="" alt="">
+            <h5 class="">How to unleash technology and dominate a crowded marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+          <div class=" col">
+            <img src="~@/assets/images/solutions/solutions3.png" class="" alt="">
+            <h5 class="">UX writing for digital cockpits: Practical tips for automotive</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-my">
+            <img src="~@/assets/images/solutions/solutions2.png" class="" alt="">
+            <h5 class="">How to unleash technology and dominate a crowded marketplace</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+          <div class="col col-my">
+            <img src="~@/assets/images/solutions/solutions3.png" class="" alt="">
+            <h5 class="">UX writing for digital cockpits: Practical tips for automotive</h5>
+            <p class="">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+        </div>
     </section>
   </div>
 </template>
