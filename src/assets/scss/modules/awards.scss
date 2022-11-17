@@ -1,3 +1,15 @@
+.carousel {
+    padding: 200px 0;
+
+    .carousel-item {
+        width: 33%;
+    }
+
+    .show {
+        display: block;
+    }
+}
+
 .awards-round {
     display: flex;
     flex-direction: column;

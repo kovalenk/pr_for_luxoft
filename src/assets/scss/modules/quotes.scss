@@ -49,16 +49,16 @@
         position: absolute;
         width: 100%;
         margin: auto;
-        z-index: 100;
+        z-index: 1;
         transition: transform .5s, opacity .5s, z-index .5s;
 
         &.quotes--initial, &.quotes--active {
           opacity: 1;
           position: relative;
-          z-index: 900;
+          z-index: 3;
         }
         &.quotes--prev, &.quotes--next {
-          z-index: 800;
+          z-index: 2;
           top: 0;
         }
         &.quotes--prev {
@@ -274,7 +274,7 @@
         top: 0;
         width: 100%;
         margin: auto;
-        z-index: 100;
+        z-index: 1;
         border-radius: 14px;
         transition: all ease 0.5s;
 
@@ -347,7 +347,7 @@
           @include mr(4);
           opacity: 1;
           position: relative;
-          z-index: 900;
+          z-index: 3;
 
           @include media-breakpoint-down(lg) {
             @include mr(0);
@@ -358,7 +358,7 @@
           height: auto;
           top:0;
           position: absolute;
-          z-index: 800;
+          z-index: 2;
           transform: translate(-200%);
         }
         &.quotes--next2{
@@ -373,7 +373,7 @@
           @include mt(0);
           position: absolute;
           display: block;
-          z-index: 800;
+          z-index: 2;
           opacity: 0.5;
           transform: translate(100%);
           -webkit-mask-image: linear-gradient(90deg,
@@ -465,7 +465,7 @@
       position: absolute;
       display: block;
       transform: translateX(100%);
-      z-index: 800;
+      z-index: 2;
       @include pb(5);
       -webkit-mask-image: linear-gradient(90deg, rgba(26,26,26,1), rgba(26,26,26,0));
     }
@@ -484,15 +484,15 @@
           position: absolute;
           width: 100%;
           margin: auto;
-          z-index: 100;
+          z-index: 1;
           transition: transform .5s, opacity .5s, z-index .5s;
           &.quotes--initial, &.quotes--active {
             opacity: 1;
             position: relative;
-            z-index: 900;
+            z-index: 3;
           }
           &.quotes--prev, &.quotes--next {
-            z-index: 800;
+            z-index: 2;
           }
           &.quotes--prev{
             transform: translateX(-100%);
@@ -560,17 +560,17 @@
           @include pb(1);
           opacity: 0;
           position: absolute;
-          z-index: 100;
+          z-index: 1;
           transition: transform .5s, opacity .5s, z-index .5s;
           &.quotes--initial2, &.quotes--active2 {
             @include my(5);
             @include mx(2);
             opacity: 1;
             position: relative;
-            z-index: 900;
+            z-index: 3;
           }
           &.quotes--prev2, &.quotes--next2 {
-            z-index: 800;
+            z-index: 2;
           }
           &.quotes--prev2 {
             transform: translateX(-100%);

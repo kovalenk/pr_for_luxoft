@@ -7,8 +7,8 @@
 </template>
 
 <script>
-// import FooterName from "@/partials/FooterName";
-// import HeaderName from "@/partials/HeaderName";
+import FooterName from "@/partials/FooterName";
+import HeaderName from "@/partials/HeaderName";
 import MainName from "@/examples/Main";
 
 export default {
