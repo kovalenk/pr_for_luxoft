@@ -1,405 +1,362 @@
-.carousel {
-    padding: 200px 0;
+.container-awards {
+    background: $black;
 
-    .carousel-item {
-        width: 33%;
-    }
-
-    .show {
-        display: block;
-    }
-}
-
-.awards-round {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    padding: 56px 120px;
-
-    &__header {
-        display: block;
-        margin: 0 auto 96px;
-
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 67px;
-        letter-spacing: 0;
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: $font-weight-bold;
         text-align: center;
+        @include py(2);
+        @include my(3);
     }
 
     .swiper {
-        height: 543px;
+        h2 {
+            @include mb(6);
 
-        max-width: 468px;
-        overflow: visible;
-        &-slide {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: end;
+            font-size: $h5-font-size;
+            font-weight: $font-weight-bold;
+            line-height: $line-height-130;
+            letter-spacing: 0;
+            text-align: center;
+        }
 
-            height: 543px;
+        p {
+            &.marketing {
+                font-size: $font-size-16;
+                font-weight: $font-weight-bold;
 
-            max-width: 468px;
-            width: 100%;
-            padding: 0 76px 37%;
-
-            //background-image: url("../../assets/images/award_card.svg");
-            background-image: url("~@/assets/images/award_card.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            &:before {
-                position: absolute;
-                content: ' ';
-                z-index: 2;
-                top: 0;
-
-                width: 100%;
-                height: 100%;
-
-                background-color: rgba(0, 0, 0, 0.5);
-            }
-            &-active {
-                &:before {
-                    display: none;
-                }
-            }
-            &__header {
-                margin-top: 108px;
-                margin-bottom: 20px;
-
-                font-size: 36px;
-                font-weight: 700;
-                line-height: 40px;
-                letter-spacing: 0em;
-                text-align: center;
-            }
-            &__text {
-                margin-bottom: 41px;
-
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 26px;
-                letter-spacing: 0em;
-                text-align: center;
-            }
-            &__category {
-                margin-bottom: 6px;
-                padding: 0 30px;
-
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 21px;
+                line-height: $line-height-130;
                 letter-spacing: 0em;
                 text-align: center;
                 text-transform: uppercase;
             }
-            &__year {
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 21px;
-                letter-spacing: 0em;
-                text-align: center;
-                text-transform: capitalize;
-            }
-        }
-        &-pagination {
-            bottom: -8.6%;
-            &-bullets {
-                .swiper-pagination-bullet {
-                    background: white;
-                    height: 15px;
-                    width: 15px;
-                    margin: 0 18px;
-                }
-            }
         }
     }
-}
 
-.awards-row {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    &__v1 {
+        .swiper {
+            height: 543px;
 
-    width: 100%;
-    height: 100%;
-    padding: 56px 120px;
+            max-width: 468px;
+            overflow: visible;
 
-    &__header {
-        display: block;
-        margin: 0 auto 40px;
-
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 67px;
-        letter-spacing: 0em;
-        text-align: center;
-    }
-
-    .swiper {
-        width: 100%;
-        height: 100%;
-        padding-bottom: 100px;
-        &-slide {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            width: 402px;
-            min-height: 396px;
-            padding: 38px 81px;
-
-            background-color: $gray-20;
-            border-radius: 14px;
-            //background-image: url("../../assets/images/awards/leaves.svg");
-            background-image: url("~@/assets/images/awards/leaves.svg");
-            background-repeat: no-repeat;
-            background-size: 92% 100%;
-            background-position: 50% 50%;
-            &__year {
-                margin-bottom: 51px;
-
-                font-size: 32px;
-                font-weight: 700;
-                line-height: 38px;
-                letter-spacing: 0em;
-                text-align: center;
-                color: $bright-purple-60;
-            }
-            &__text {
-                margin: 0 0 40px 0;
-
-                font-size: 28px;
-                font-weight: 700;
-                line-height: 34px;
-                letter-spacing: 0em;
-                text-align: center;
-            }
-            &__category {
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 26px;
-                letter-spacing: 0em;
-                text-align: center;
-                color: #808080;
-
-            }
-        }
-        &-pagination {
-            bottom: 5.2%;
-            &-bullets {
-                .swiper-pagination-bullet {
-                    background: white;
-                    height: 15px;
-                    width: 15px;
-                    margin: 0 18px;
-                }
-            }
-        }
-    }
-}
-
-.awards-big {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    width: 100%;
-    height: 100%;
-    padding: 56px 120px;
-    background: linear-gradient(127.22deg, #361559 28.42%, #0F061A 69.76%);
-
-    &__header {
-        display: block;
-        margin: 0 auto 40px;
-
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 67px;
-        letter-spacing: 0em;
-        text-align: center;
-    }
-
-    .swiper {
-        width: 100%;
-        height: 100%;
-        &-slide {
-            display: flex;
-
-            margin-bottom: 48px;
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            &-info {
+            &-slide {
+                position: relative;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                justify-content: end;
 
-                min-height: 822px;
-                width: 50%;
-                padding: 153px 100px 121px;
-                margin: 0 24px 0 0;
+                height: 543px;
 
-                //background-image: url("../../assets/images/awards/info-block.png");
-                background-image: url("~@/assets/images/awards/info-block.png");
-                background-size: cover;
-                border-radius: 14px;
-                &__text {
-                    margin: 0 0 127px 0;
-                    .article {
-                        margin: 0;
+                max-width: 468px;
+                width: 100%;
+                padding: 0 76px 37%;
 
-                        font-size: 28px;
-                        font-weight: 400;
-                        line-height: 39px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                    }
-                }
-                &__about {
-                    display: flex;
-                    align-items: center;
+                //background-image: url("../../assets/images/award_card.svg");
+                background-image: url("~@/assets/images/award_card.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                &:before {
+                    position: absolute;
+                    content: ' ';
+                    z-index: 2;
+                    top: 0;
 
                     width: 100%;
-                    .avatar {
-                        width: 146px;
-                        height: 146px;
-                        margin-right: 36px;
+                    height: 100%;
 
-                        border-radius: 100%;
-                        background: white;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                &-active {
+                    &:before {
+                        display: none;
                     }
-                    .name {
-                        font-size: 32px;
-                        font-weight: 700;
-                        line-height: 38px;
-                        letter-spacing: 0em;
-                        text-align: left;
+                }
 
-                        .info {
+                h2 {
+                    @include pt(4);
+                    @include mt(10);
+                    @include mb(3);
+                }
+
+                &__text {
+                    margin-bottom: 41px;
+
+                    font-size: $font-size-20;
+                    font-weight: $font-weight-normal;
+                    line-height: $line-height-130;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+
+                p {
+                    &.marketing {
+                        @include mb(1);
+                        @include py(0);
+                        @include px(4);
+                    }
+                }
+                &__year {
+                    font-size: $font-size-16;
+                    font-weight: $font-weight-bold;
+
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+            }
+            &-pagination {
+                bottom: -8.6%;
+                &-bullets {
+                    .swiper-pagination-bullet {
+                        background: $white;
+                        height: 15px;
+                        width: 15px;
+
+                        @include my(0);
+                        @include mx(2);
+                    }
+                }
+            }
+        }
+    }
+
+    &__v2 {
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 100px;
+
+            &-wrapper {
+                gap: 24px;
+            }
+
+            &-slide {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                width: 402px;
+                min-height: 396px;
+
+                @include py(4);
+                @include px(10);
+
+                background-color: $gray-20;
+                border-radius: 14px;
+                //background-image: url("../../assets/images/awards/leaves.svg");
+                background-image: url("~@/assets/images/awards/leaves.svg");
+                background-repeat: no-repeat;
+                background-size: 92% 100%;
+                background-position: 50% 50%;
+
+                h2 {
+                    color: $bright-purple-60;
+                }
+                &__text {
+                    @include m(0);
+                    @include mb(5);
+
+                    font-weight: $font-size-28;
+                    font-weight: $font-weight-bold;
+
+                    line-height: 34px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+
+                p {
+                    &.marketing {
+                        font-weight: $font-size-20;
+                        color: $gray-60;
+                    }
+                }
+            }
+
+            &-pagination {
+                bottom: 5.2%;
+                &-bullets {
+                    .swiper-pagination-bullet {
+                        background: $white;
+                        height: 15px;
+                        width: 15px;
+                        @include my(0);
+                        @include mx(2);
+                    }
+                }
+            }
+        }
+    }
+
+    &__v3 {
+        .swiper {
+            width: 100%;
+            height: 100%;
+            &-slide {
+                display: flex;
+
+                margin-bottom: 48px;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                &-info {
+                    display: flex;
+                    flex-direction: column;
+
+                    min-height: 822px;
+                    width: 50%;
+                    padding: 153px 100px 121px;
+                    @include m(0);
+                    @include mr(4);
+
+                    //background-image: url("../../assets/images/awards/info-block.png");
+                    background-image: url("~@/assets/images/awards/info-block.png");
+                    background-size: cover;
+                    border-radius: 14px;
+                    &__text {
+                        @include m(0);
+                        margin-bottom: 127px;
+
+                        .article {
+                            @include m(0);
+
                             font-size: 28px;
-                            font-weight: 400;
-                            line-height: 36px;
+                            font-weight: $font-weight-normal;
+                            line-height: 39px;
                             letter-spacing: 0em;
                             text-align: left;
                         }
                     }
+                    &__about {
+                        display: flex;
+                        align-items: center;
+
+                        width: 100%;
+                        .avatar {
+                            width: 146px;
+                            height: 146px;
+                            margin-right: 36px;
+
+                            border-radius: 100%;
+                            background: $white;
+                        }
+                        .name {
+                            font-size: 32px;
+                            font-weight: $font-weight-bold;
+
+                            line-height: 38px;
+                            letter-spacing: 0em;
+                            text-align: left;
+
+                            .info {
+                                font-size: 28px;
+                                font-weight: $font-weight-normal;
+                                line-height: 36px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                            }
+                        }
+                    }
                 }
-            }
-            &-links {
-                display: flex;
-                flex-direction: column;
-
-                height: 100%;
-                width: 50%;
-
-                border-radius: 14px;
-
-                &__card {
+                &-links {
                     display: flex;
                     flex-direction: column;
 
-                    padding: 0 195px 0 40px;
-                    margin: 0 0 27px 0;
+                    height: 100%;
+                    width: 50%;
 
-                    background: #1A1A1A;
                     border-radius: 14px;
 
-                    .text {
-                        margin-top: 133px;
-                        margin-bottom: 32px;
-
-                        font-size: 36px;
-                        font-weight: 700;
-                        line-height: 40px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                    }
-                    .link {
-                        margin-bottom: 85px;
-                        text-decoration: none;
-                        font-size: 20px;
-                        cursor: pointer;
-                        font-weight: 700;
-                        line-height: 26px;
-                        letter-spacing: 0em;
-                        text-align: left;
-
-                        color: #00A3E1;
-
-                        &:after {
-                            content: ' >';
-                        }
-                        &:hover:after {
-                            content: ' >>>';
-                        }
-                    }
-                }
-                &__awards {
-                    display: flex;
-                    justify-content: space-between;
-                    .award-item {
-                        position: relative;
+                    &__card {
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
 
-                        width: 402px;
-                        min-height: 396px;
-                        padding: 38px 81px;
+                        @include p(0);
+                        padding-right: 195px;
+                        @include pl(5);
 
-                        background-color: #1A1A1A;
+                        @include m(0);
+                        @include mb(3);
+
+                        background: $gray-20;
                         border-radius: 14px;
-                        //background-image: url("../../assets/images/awards/leaves.svg");
-                        background-image: url("~@/assets/images/awards/leaves.svg");
-                        background-repeat: no-repeat;
-                        background-size: 92% 100%;
-                        background-position: 50% 50%;
-                        &:first-child {
-                            margin-right: 24px;
-                        }
-                        &__year {
-                            margin-bottom: 51px;
 
-                            font-size: 32px;
-                            font-weight: 700;
-                            line-height: 38px;
-                            letter-spacing: 0em;
-                            text-align: center;
-                            color: #AA73E6;
+                        h2 {
+                            margin-top: 158px;
+                            @include mb(3);
+                            @include p(0);
+                            text-align: left;
                         }
-                        &__text {
-                            margin: 0 0 40px 0;
 
-                            font-size: 28px;
-                            font-weight: 700;
-                            line-height: 34px;
-                            letter-spacing: 0em;
-                            text-align: center;
+                        button {
+                            @include mb(10);
                         }
-                        &__category {
-                            font-size: 20px;
-                            font-weight: 400;
-                            line-height: 26px;
-                            letter-spacing: 0em;
-                            text-align: center;
-                            color: #808080;
+                    }
+                    &__awards {
+                        display: flex;
+                        justify-content: space-between;
+                        .award-item {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            width: 402px;
+                            min-height: 396px;
+                            @include py(5);
+                            @include px(10);
+
+                            background-color: $gray-20;
+                            border-radius: 14px;
+                            //background-image: url("../../assets/images/awards/leaves.svg");
+                            background-image: url("~@/assets/images/awards/leaves.svg");
+                            background-repeat: no-repeat;
+                            background-size: 92% 100%;
+                            background-position: 50% 50%;
+                            &:first-child {
+                                @include mr(4);
+                            }
+                            h2 {
+                                @include p(0);
+                                @include m(0);
+                                @include mb(6);
+                                color: $bright-purple-60;
+                            }
+                            &__text {
+                                @include m(0);
+                                @include mb(5);
+
+                                font-size: $font-size-28;
+                                font-weight: $font-weight-bold;
+
+                                line-height: 34px;
+                                letter-spacing: 0em;
+                                text-align: center;
+                            }
+
+                            p {
+                                &.marketing {
+                                    font-weight: $font-size-20;
+                                    color: $gray-60;
+                                }
+                            }
                         }
                     }
                 }
             }
-        }
-        &-pagination {
-            bottom: 0;
-            &-bullets {
-                .swiper-pagination-bullet {
-                    background: white;
-                    height: 15px;
-                    width: 15px;
-                    margin: 0 18px;
+            &-pagination {
+                bottom: 0;
+                &-bullets {
+                    .swiper-pagination-bullet {
+                        background: $white;
+                        height: 15px;
+                        width: 15px;
+                        @include my(0);
+                        @include mx(2);
+                    }
                 }
             }
         }

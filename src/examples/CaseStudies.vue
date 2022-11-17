@@ -222,37 +222,54 @@
 <script>
   export default {
     name: 'CaseStudies',
-    created() {
+    mounted() {
       /* eslint-disable */
-
-      const accordSection = document.getElementsByClassName('case-studies-section');
+      const accordSection = document.getElementsByClassName('container-case-studies');
       for (let j = 0; j < accordSection.length; j++) {
-        const accordion = accordSection[j].getElementsByClassName('case__box_content');
+        const accordion = accordSection[j].getElementsByClassName('col');
+
+
         if (accordion.length) {
           function toggleClasses() {
             for (let i = 0; i < accordion.length; i++) {
-              accordion[i].classList.add('case__box_content--min')
+              accordion[i].classList.add('shrink')
+            }
+          }
+
+          let targetElemnt = null;
+
+          for (let i = 0; i < accordion.length; i++) {
+            accordion[i].onmouseover = handler;
+            accordion[i].onmouseout = () => {
+              accordion[i].classList.remove('expand');
+              accordion[i].classList.remove('shrink');
+            };
+
+            function handler(event) {
+              console.log(targetElemnt, targetElemnt, i)
+              if(targetElemnt !== null && targetElemnt === i) {
+                return;
+              } else {
+                if(event.path.find(f => f.className === 'col')) {
+                  targetElemnt = i;
+                  if (accordion[i].className.includes('expand')) {
+                    clearClasses();
+                  } else {
+                    clearClasses();
+                    toggleClasses();
+                    accordion[i].classList.remove('shrink')
+                    accordion[i].classList.add('expand');
+                  }
+                }
+              }
             }
           }
 
           function clearClasses() {
             for (let i = 0; i < accordion.length; i++) {
-              accordion[i].classList.remove('case__box_content--min')
-              accordion[i].classList.remove('case__box_content--max')
+              accordion[i].classList.remove('shrink')
+              accordion[i].classList.remove('expand')
             }
-          }
-
-          for (let i = 0; i < accordion.length; i++) {
-            accordion[i].addEventListener('click', function (event) {
-              if (accordion[i].className.includes('case__box_content--max')) {
-                clearClasses();
-              } else {
-                clearClasses();
-                toggleClasses();
-                accordion[i].classList.remove('case__box_content--min')
-                accordion[i].classList.add('case__box_content--max');
-              }
-            })
           }
         }
       }
