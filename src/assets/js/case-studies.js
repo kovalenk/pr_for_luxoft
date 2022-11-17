@@ -1,28 +1,28 @@
-const accordSection = document.getElementsByClassName('case-studies-section');
+const accordSection = document.getElementsByClassName('container-case-studies');
 for (let j = 0; j < accordSection.length; j++) {
-  const accordion = accordSection[j].getElementsByClassName('case__box_content');
+  const accordion = accordSection[j].getElementsByClassName('col');
   if (accordion.length) {
     function toggleClasses() {
       for (let i = 0; i < accordion.length; i++) {
-        accordion[i].classList.add('case__box_content--min')
+        accordion[i].classList.add('shrink')
       }
     }
     function clearClasses() {
       for (let i = 0; i < accordion.length; i++) {
-        accordion[i].classList.remove('case__box_content--min')
-        accordion[i].classList.remove('case__box_content--max')
+        accordion[i].classList.remove('shrink')
+        accordion[i].classList.remove('expand')
       }
     }
 
     for (let i = 0; i < accordion.length; i++) {
       accordion[i].addEventListener('click', function (event) {
-        if (accordion[i].className.includes('case__box_content--max')) {
+        if (accordion[i].className.includes('expand')) {
           clearClasses();
         } else {
           clearClasses();
           toggleClasses();
-          accordion[i].classList.remove('case__box_content--min')
-          accordion[i].classList.add('case__box_content--max');
+          accordion[i].classList.remove('shrink')
+          accordion[i].classList.add('expand');
         }
       })
     }

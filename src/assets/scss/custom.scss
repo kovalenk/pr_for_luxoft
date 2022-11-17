@@ -564,10 +564,11 @@ h5 {
   display: flex;
   align-items: center;
   padding-left: 0;
+
   &:after {
     content: '';
     //background: url("../images/arrow_right.svg");
-    background: url("~@/assets/images/arrow_right.svg");
+    background: url("~@/assets/images/arrow_right_bl_hv.svg");
     width: 24px;
     height: 24px;
     display: inline-block;
