@@ -142,8 +142,8 @@
               </div>
               <div class="col">
                 <img src="~@/assets/images/case_st/image5.png" alt="">
-                <h4>Banking</h4>
-                    <h2>How to unleash technology and<br/> dominate marketplace </h2>
+                <h4>Automotive</h4>
+                    <h2>UX writing for digital cockpits: Three</br> practical tips for automotive </h2>
                 <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
                 <button type="button" class="btn btn-text btn-icon focus">read more</button>
               </div>
