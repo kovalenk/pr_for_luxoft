@@ -132,88 +132,37 @@
         <div class="row">
           <h2 class="featured__title">Featured insights</h2>
         </div>
-        <main class="padding-y-xl">
-          <div class="container max-width-adaptive-md margin-bottom-lg">
-            <ul class="stack-cards js-stack-cards">
-              <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
-                <img src="~@/assets/images/case_st/image5.png" class="featured-second__box__image" alt="">
-
-                <div class="featured__box_content_text">
-
-                  <p class="featured__box_mobile_text">
-                    How to unleas technology and<br/> dominate marketplace
-                  </p>
-                  <div class="featured__tablet">
-                    <p class="body-text-bold featured__box_distance">Banking</p>
-                    <!-- <div class="featured__tablet_plus featured__tablet_alt featured__tablet_minus"></div> -->
-                  </div>
-                  <div class="featured__mobile">
-                    <!-- <p class="body-text-bold featured__box_distance">Automotive</p> -->
-                    <div class="featured__mobile_plus featured__mobile_alt featured__mobile_minus"></div>
-                  </div>
-
-
-                  <h4>How to unleash technology and <br/>dominate marketplace</h4>
-                  <p id="div8" class="hide case__box_text">Discover actionable insights that unlock the value in your
-                    data</p>
-                  <button type="button" class="btn btn-text btn-icon focus">read more</button>
-
-                </div>
-              </li>
-
-              <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
-                <img src="~@/assets/images/case_st/image8.png" class="featured-second__box__image" alt="">
-
-                <div class="featured__box_content_text">
-
-                  <p class="featured__box_mobile_text">
-                    How to unleas technology and<br/> dominate marketplace
-                  </p>
-                  <div class="featured__tablet">
-                    <p class="body-text-bold featured__box_distance">Banking</p>
-                    <!-- <div class="featured__tablet_plus featured__tablet_alt featured__tablet_minus"></div> -->
-                  </div>
-                  <div class="featured__mobile">
-                    <!-- <p class="body-text-bold featured__box_distance">Automotive</p> -->
-                    <div class="featured__mobile_plus featured__mobile_alt featured__mobile_minus"></div>
-                  </div>
-
-
-                  <h4>How to unleash technology and <br/>dominate marketplace</h4>
-                  <p id="div8" class="hide case__box_text">Discover actionable insights that unlock the value in your
-                    data</p>
-                  <button type="button" class="btn btn-text btn-icon focus">read more</button>
-
-                </div>
-              </li>
-
-              <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
-                <img src="~@/assets/images/case_st/image7.png" class="featured-second__box__image" alt="">
-
-                <div class="featured__box_content_text">
-
-                  <p class="featured__box_mobile_text">
-                    How to unleas technology and<br/> dominate marketplace
-                  </p>
-                  <div class="featured__tablet">
-                    <p class="body-text-bold featured__box_distance">Banking</p>
-                    <!-- <div class="featured__tablet_plus featured__tablet_alt featured__tablet_minus"></div> -->
-                  </div>
-                  <div class="featured__mobile">
-                    <!-- <p class="body-text-bold featured__box_distance">Automotive</p> -->
-                    <div class="featured__mobile_plus featured__mobile_alt featured__mobile_minus"></div>
-                  </div>
-
-
-                  <h4>How to unleash technology and <br/>dominate marketplace</h4>
-                  <p id="div8" class="hide case__box_text">Discover actionable insights that unlock the value in your
-                    data</p>
-                  <button type="button" class="btn btn-text btn-icon focus">read more</button>
-                </div>
-              </li>
-            </ul>
+          <div class="container-xxl">
+              <div class="col">
+                <img src="~@/assets/images/case_st/image5.png" alt="">
+                <h4>Banking</h4>
+                    <h2>How to unleash technology and<br/> dominate marketplace </h2>
+                <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
+                <button type="button" class="btn btn-text btn-icon focus">read more</button>
+              </div>
+              <div class="col">
+                <img src="~@/assets/images/case_st/image5.png" alt="">
+                <h4>Banking</h4>
+                    <h2>How to unleash technology and<br/> dominate marketplace </h2>
+                <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
+                <button type="button" class="btn btn-text btn-icon focus">read more</button>
+              </div>
+              <div class="col">
+                <img src="~@/assets/images/case_st/image5.png" alt="">
+                <h4>Banking</h4>
+                    <h2>How to unleash technology and<br/> dominate marketplace </h2>
+                <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
+                <button type="button" class="btn btn-text btn-icon focus">read more</button>
+              </div>
+            <!-- <div class="row">
+              <img src="~@/assets/images/case_st/image5.png" alt="">
+              <div></div>
+            </div>
+            <div class="row">
+              <img src="~@/assets/images/case_st/image5.png" alt="">
+              <div></div>
+            </div> -->
           </div>
-        </main>
       </div>
     </section>
   </div>
