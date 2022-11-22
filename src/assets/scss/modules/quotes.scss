@@ -26,13 +26,16 @@
       min-height: 680px;
     }
     .carousel{
-      max-width: 938px;
       height: auto;
-      margin: auto;
       .carousel-inner{
         overflow: inherit;
       }
       .carousel-item{
+          width: 100%;
+        &-default {
+          margin: 0 auto;
+          max-width: 968px;
+
           background: #1A1A1A;
           border-radius: 15px;
           @include pt(6);
@@ -42,6 +45,7 @@
           @include media-breakpoint-down(sm) {
             @include pl(2);
           }
+        }
         p {
           @include p(0);
           @include pt(4);
@@ -69,6 +73,8 @@
     }
     .button-group{
       display: flex;
+      max-width: 968px;
+      margin: auto;
       @include mt(3);
       @include pb(1);
       align-items:center;
@@ -77,10 +83,8 @@
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        max-width: 100%;
         height: 48px;
         @include mt(3);
-        @include pl(2);
         @include pb(1);
       }
 
@@ -361,18 +365,17 @@
     }
     .button-group{
       display: flex;
+      max-width: 968px;
+      margin: auto;
       @include mt(3);
-      @include pb(1);
       align-items:center;
       @include media-breakpoint-down(lg) {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        max-width: 100%;
         height: 48px;
         @include mt(3);
-        @include pl(2);
         @include pb(1);
       }
 

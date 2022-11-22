@@ -48,28 +48,34 @@
       <div id="carouselExampleIndicators1" class="carousel slide">
        <div class="carousel-inner">
          <div class="carousel-item active">
-            <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
-            <p>
-              1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-            </p>
-            <h5>Naresh Kirpalani</h5>
-            <h6>Solution Lead, Intelligent Automation</h6>
+           <div class="carousel-item-default">
+              <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+                <p>
+                  1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+                </p>
+                <h5>Naresh Kirpalani</h5>
+                <h6>Solution Lead, Intelligent Automation</h6>
+           </div>
          </div>
          <div class="carousel-item">
-          <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
-            <p>
-              2Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-            </p>
-            <h5>Naresh Kirpalani</h5>
-            <h6>Solution Lead, Intelligent Automation</h6>
+           <div class="carousel-item-default">
+             <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+               <p>
+                 1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+               </p>
+               <h5>Naresh Kirpalani</h5>
+               <h6>Solution Lead, Intelligent Automation</h6>
+           </div>
          </div>
          <div class="carousel-item">
-          <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
-            <p>
-              3Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-            </p>
-            <h5>Naresh Kirpalani</h5>
-            <h6>Solution Lead, Intelligent Automation</h6>
+           <div class="carousel-item-default">
+             <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+               <p>
+                 1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+               </p>
+               <h5>Naresh Kirpalani</h5>
+               <h6>Solution Lead, Intelligent Automation</h6>
+           </div>
          </div>
        </div>
        <div class="button-group">
