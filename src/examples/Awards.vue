@@ -81,15 +81,15 @@
         </div>
         <div class="swiper-pagination swiper-pagination--v2"></div>
         <div class="buttons-group">
-            <div class="button--prev--v2">
-              <!--                            <img class="picture" src="{{ asset('assets/images/arrow_right_w.svg') }}" alt="">-->
-              <img class="picture" src="../assets/images/arrow_right_w.svg" alt="">
-            </div>
-            <div class="button--next--v2">
-              <!--                            <img class="picture" src="{{ asset('assets/images/arrow_right_w.svg') }}" alt="">-->
-              <img class="picture" src="../assets/images/arrow_right_w.svg" alt="">
-            </div>
-          </div>
+          <button class="button--prev--v2 carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="button--next--v2 carousel-control-next" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -268,15 +268,15 @@
         </div>
         <div class="swiper-pagination swiper-pagination--v3"></div>
         <div class="buttons-group">
-            <div class="button--prev--v3">
-              <!--                            <img class="picture" src="{{ asset('assets/images/arrow_right_w.svg') }}" alt="">-->
-              <img class="picture" src="../assets/images/arrow_right_w.svg" alt="">
-            </div>
-            <div class="button--next--v3">
-              <!--                            <img class="picture" src="{{ asset('assets/images/arrow_right_w.svg') }}" alt="">-->
-              <img class="picture" src="../assets/images/arrow_right_w.svg" alt="">
-            </div>
-          </div>
+          <button class="button--prev--v3 carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="button--next--v3 carousel-control-next" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
   </div>

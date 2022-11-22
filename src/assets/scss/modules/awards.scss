@@ -161,9 +161,14 @@
             padding-bottom: 100px;
             .buttons-group{
                 display: none;
+
                 @include media-breakpoint-down(md) {
-                        display: flex;
-                        .button--next--v2, .button--prev--v2{
+                    display: flex;
+
+                    .button--next--v2, .button--prev--v2 {
+                        position: relative;
+                        opacity: 1;
+
                         display: flex;
                         flex-direction: row;
                         align-items: center;
@@ -171,11 +176,24 @@
                         width: 48px;
                         height: 48px;
                         background: $gray-20;
-                      }
-                      .button--prev--v2{
+
+                        .carousel-control-prev-icon, .carousel-control-next-icon {
+                            background-size: 9px;
+                        }
+
+                        .carousel-control-prev-icon {
+                            background-image: url("~@/assets/images/arrow_right_white.svg");
+                        }
+
+                        .carousel-control-next-icon {
+                            background-image: url("~@/assets/images/arrow_right_white.svg");
+                        }
+                    }
+
+                    .button--prev--v2 {
                         transform: rotate(180deg);
                         @include mr(1);
-                      }
+                    }
                 }
             }
             &-wrapper {
@@ -269,7 +287,8 @@
                     left: 115px;
                     width: calc(100% - 118px);
                     display: flex;
-                    gap: 6px;
+                    justify-content: flex-end;
+                    gap: 8px;
                 }
                 &-bullets {
                     .swiper-pagination-bullet {
@@ -281,6 +300,7 @@
 
                         @include media-breakpoint-down(md){
                             width: 100%;
+                            max-width: 24px;
                             @include m(0);
                             border-radius: 1px;
                             height: 4px;
@@ -298,12 +318,16 @@
             height: 100%;
             margin-bottom: 60px;
 
-            .buttons-group{
+            .buttons-group {
                 display: none;
                 @include media-breakpoint-down(md) {
                     margin-top: 32px;
-                        display: flex;
-                        .button--next--v3, .button--prev--v3{
+                    display: flex;
+
+                    .button--next--v3, .button--prev--v3 {
+                        position: relative;
+                        opacity: 1;
+
                         display: flex;
                         flex-direction: row;
                         align-items: center;
@@ -311,11 +335,23 @@
                         width: 48px;
                         height: 48px;
                         background: $gray-20;
-                      }
-                      .button--prev--v3{
+
+                        .carousel-control-prev-icon, .carousel-control-next-icon {
+                            background-size: 9px;
+                        }
+
+                        .carousel-control-prev-icon {
+                            background-image: url("~@/assets/images/arrow_right_white.svg");
+                        }
+
+                        .carousel-control-next-icon {
+                            background-image: url("~@/assets/images/arrow_right_white.svg");
+                        }
+                    }
+                    .button--prev--v3 {
                         transform: rotate(180deg);
                         @include mr(1);
-                      }
+                    }
                 }
             }
             &-slide {
