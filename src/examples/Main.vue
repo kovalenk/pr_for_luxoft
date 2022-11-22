@@ -17,8 +17,8 @@
 <!--    <Solutions />-->
     <CaseStudies />
 <!--    <Insights />-->
-    <Awards />
-<!--    <Quotes />-->
+    <!-- <Awards /> -->
+   <Quotes />
   </div>
 </template>
 
@@ -64,8 +64,8 @@ export default {
     // Solutions,
     CaseStudies,
     // Insights,
-    Awards,
-    // Quotes,
+    // Awards,
+     Quotes,
   }
 }
 </script>

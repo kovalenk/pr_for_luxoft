@@ -1,130 +1,93 @@
 <template>
   <div>
+    
     <section class="quotes-section quotes-section--v1 container-xxl">
       <img class="background" src="../assets/images/quotes/bg.png">
-      <div class="quotes__wrapper second-style--v1">
-        <div class="carusel-wrapper--v1">
-          <div class="carusel--v1">
-            <div class="quotes__block quotes__block--v1 quotes--active">
-              <div class="quotes">
-                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
-                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
-              </div>
-              <p class="quotes__content">
-                1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-              </p>
-              <p class="quotes__name">Naresh Kirpalani</p>
-              <p class="quotes__position">Solution Lead, Intelligent Automation</p>
-            </div>
-
-            <div class="quotes__block quotes__block--v1 quotes--next">
-              <div class="quotes">
-                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
-                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
-              </div>
-              <p class="quotes__content">
-                1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-              </p>
-              <p class="quotes__name">Naresh Kirpalani</p>
-              <p class="quotes__position">Solution Lead, Intelligent Automation</p>
-            </div>
-
-            <div class="quotes__block quotes__block--v1 quotes--prev">
-              <div class="quotes">
-                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
-                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
-              </div>
-              <p class="quotes__content">
-                1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-              </p>
-              <p class="quotes__name">Naresh Kirpalani</p>
-              <p class="quotes__position">Solution Lead, Intelligent Automation</p>
-            </div>
+      <div id="carouselExampleIndicators" class="carousel slide">
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+            <p>
+              1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+            </p>
+            <h5>Naresh Kirpalani</h5>
+            <h6>Solution Lead, Intelligent Automation</h6>
+         </div>
+         <div class="carousel-item">
+            <p>
+              2Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+            </p>
+            <h5>Naresh Kirpalani</h5>
+            <h6>Solution Lead, Intelligent Automation</h6>
+         </div>
+         <div class="carousel-item">
+            <p>
+              3Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+            </p>
+            <h5>Naresh Kirpalani</h5>
+            <h6>Solution Lead, Intelligent Automation</h6>
+         </div>
+       </div>
+       <div class="button-group">
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-
-          <div class="arrow-group">
-            <div class="buttons-group">
-              <div class="carousel__button--prev--v1">
-                <!--                                <img class="picture" src="{{ asset('assets/images/arrow_right_w.svg') }}" alt="">-->
-                <img class="picture" src="../assets/images/arrow_right_w.svg" alt="">
-              </div>
-              <div class="carousel__button--next--v1">
-                <!--                                <img class="picture" src="{{ asset('assets/images/arrow_right_w.svg') }}" alt="">-->
-                <img class="picture" src="../assets/images/arrow_right_w.svg"  alt="">
-              </div>
-            </div>
-            <div class="quotes__pagination">
-              <div class="quotes__line quotes__line--v1"></div>
-              <div class="quotes__line quotes__line--v1"></div>
-              <div class="quotes__line quotes__line--v1"></div>
-              <div class="quotes__line quotes__line--v1"></div>
-              <div class="quotes__line quotes__line--v1"></div>
-              <div class="quotes__line quotes__line--v1"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+       </div>
+     </div>
     </section>
-
-    <section class="quotes-section quotes-section--v2">
-      <div class="quotes__wrapper second-style--v2">
-        <div class="carusel-wrapper--v2">
-          <div class="carusel--v2">
-            <div class="quotes__block quotes__block--v2 quotes--active2">
-              <div class="quotes">
-                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
-                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
-              </div>
-              <p class="quotes__content">
-                1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-              </p>
-              <p class="quotes__name">Naresh Kirpalani</p>
-              <p class="quotes__position">Solution Lead, Intelligent Automation</p>
-            </div>
-            <div class="quotes__block quotes__block--v2 quotes--next2">
-              <div class="quotes">
-                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
-                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
-              </div>
-              <p class="quotes__content">
-                1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-              </p>
-              <p class="quotes__name">Naresh Kirpalani</p>
-              <p class="quotes__position">Solution Lead, Intelligent Automation</p>
-            </div>
-            <div class="quotes__block quotes__block--v2 quotes--prev2">
-              <div class="quotes">
-                <!--                                <img src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
-                <img src="../assets/images/quotes/quotes.svg" alt="">
-              </div>
-              <p class="quotes__content">
-                1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
-              </p>
-              <p class="quotes__name">Naresh Kirpalani</p>
-              <p class="quotes__position">Solution Lead, Intelligent Automation</p>
-            </div>
+    <section class="quotes-section quotes-section--v2 container-xxl">
+      <div id="carouselExampleIndicators1" class="carousel slide">
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+            <p>
+              1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+            </p>
+            <h5>Naresh Kirpalani</h5>
+            <h6>Solution Lead, Intelligent Automation</h6>
+         </div>
+         <div class="carousel-item">
+          <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+            <p>
+              2Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+            </p>
+            <h5>Naresh Kirpalani</h5>
+            <h6>Solution Lead, Intelligent Automation</h6>
+         </div>
+         <div class="carousel-item">
+          <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+            <p>
+              3Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid migrations where other, stock approaches have failed. Treating each modernization case as unique plays a big part in our engineers’ 100% success rate.
+            </p>
+            <h5>Naresh Kirpalani</h5>
+            <h6>Solution Lead, Intelligent Automation</h6>
+         </div>
+       </div>
+       <div class="button-group">
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-        </div>
-
-        <div class="arrow-group">
-          <div class="buttons-group">
-            <div class="carousel__button--prev--v2">
-              <!--                            <img class="picture" src="{{ asset('assets/images/arrow_right_w.svg') }}" alt="">-->
-              <img class="picture" src="../assets/images/arrow_right_w.svg" alt="">
-            </div>
-            <div class="carousel__button--next--v2">
-              <!--                            <img class="picture" src="{{ asset('assets/images/arrow_right_w.svg') }}" alt="">-->
-              <img class="picture" src="../assets/images/arrow_right_w.svg" alt="">
-            </div>
-          </div>
-          <div class="quotes__pagination">
-            <div class="quotes__line quotes__line--v2"></div>
-            <div class="quotes__line quotes__line--v2"></div>
-            <div class="quotes__line quotes__line--v2"></div>
-            <div class="quotes__line quotes__line--v2"></div>
-          </div>
-        </div>
-      </div>
+       </div>
+     </div>
     </section>
   </div>
 </template>

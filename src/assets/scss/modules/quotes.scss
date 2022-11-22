@@ -11,230 +11,7 @@
       display: none;
     }
   }
-
-  &--v1 {
-    position: relative;
-
-    width: 100%;
-    height: 660px;
-    background-color: $black;
-
-    @include media-breakpoint-down(sm){
-      height: auto;
-      min-height: 660px;
-    }
-
-    .quotes__wrapper{
-      max-width: 1099px;
-      height: 100%;
-      margin: 0 auto;
-      @include py(0);
-      @include px(2);
-
-      @include media-breakpoint-down(lg) {
-        min-width: 328px;
-        max-width: 1024px;
-        height: 100%;
-      }
-      @include media-breakpoint-down(sm) {
-        @include py(0);
-        @include px(2);
-      }
-      .carusel-wrapper--v2{
-        position: relative;
-      }
-      .quotes__block {
-        pointer-events: none;
-        opacity: 0;
-        position: absolute;
-        width: 100%;
-        margin: auto;
-        z-index: 1;
-        transition: transform .5s, opacity .5s, z-index .5s;
-
-        &.quotes--initial, &.quotes--active {
-          opacity: 1;
-          position: relative;
-          z-index: 3;
-        }
-        &.quotes--prev, &.quotes--next {
-          z-index: 2;
-          top: 0;
-        }
-        &.quotes--prev {
-          transform: translateX(-100%);
-        }
-        &.quotes--next {
-          transform: translateX(100%);
-        }
-        .quotes{
-          @include pt(5);
-
-          @include media-breakpoint-down(lg) {
-            @include m(0);
-            @include mt(3);
-            @include mb(4);
-
-            @include p(0);
-            @include pl(2);
-          }
-
-          @include media-breakpoint-down(sm) {
-            @include p(0);
-          }
-        }
-
-        p {
-          font-weight: $font-weight-normal;
-          line-height: $line-height-base;
-          color: $white;
-
-          &.quotes__content {
-            @include pt(3);
-            font-size: $font-size-28;
-
-            @include media-breakpoint-down(lg) {
-              @include py(0);
-              @include px(2);
-              font-size: $font-size-20;
-            }
-
-            @include media-breakpoint-down(sm) {
-              width: 100%;
-              @include p(0);
-            }
-          }
-
-          &.quotes__name{
-            @include pt(3);
-            font-weight: $font-weight-bold;
-            font-size: $font-size-20;
-
-            @include media-breakpoint-down(lg) {
-              @include pl(2);
-              @include pt(3);
-
-              font-size: $font-size-16;
-            }
-
-            @include media-breakpoint-down(sm) {
-              @include pl(0);
-            }
-          }
-
-          &.quotes__position{
-            @include pt(1);
-            font-size: $font-size-16;
-
-            @include media-breakpoint-down(lg) {
-              @include pl(2);
-              @include pt(1);
-              font-size: $font-size-14;
-            }
-
-            @include media-breakpoint-down(sm) {
-              @include pl(0);
-            }
-          }
-        }
-      }
-
-      .arrow-group{
-        display: flex;
-        justify-content: space-between;
-        width: 232px;
-        height: 48px;
-        @include mt(5);
-
-        @include media-breakpoint-down(lg) {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          width: 100%;
-          max-width: 100%;
-          height: 48px;
-          @include mt(3);
-          @include pl(2);
-          @include pb(1);
-        }
-
-        @include media-breakpoint-down(sm) {
-          width: 100%;
-          justify-content: flex-start;
-          @include p(0);
-        }
-
-        .buttons-group{
-          display: flex;
-          width: 110px;
-          justify-content: space-between;
-        }
-
-        img{
-          width: 17.74px;
-          height: 12px;
-        }
-
-        .quotes__pagination{
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-
-          @include media-breakpoint-down(lg) {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-          }
-
-          @include media-breakpoint-down(sm) {
-            @include ml(2);
-          }
-        }
-
-        .quotes__line{
-          cursor: pointer;
-          width: 24px;
-          height: 2px;
-          border-radius: 2px;
-          border: 1px solid $gray;
-          background-color: $gray;
-          @include ml(1);
-
-          &.quotes--active{
-            @include ml(1);
-            border: 1px solid $white;
-            background-color: $white;
-          }
-        }
-
-        .carousel__button--next--v1{
-          cursor: pointer;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          width: 48px;
-          height: 48px;
-          background: $gray-20;
-        }
-
-        .carousel__button--prev--v1{
-          cursor: pointer;
-          transform: rotate(180deg);
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          width: 48px;
-          height: 48px;
-          @include mr(1);
-          background: $gray-20;
-        }
-      }
-    }
-  }
-
-  &--v2 {
+  &--v2{
     height: 680px;
 
     @include media-breakpoint-down(lg) {
@@ -248,57 +25,28 @@
       height: auto;
       min-height: 680px;
     }
-
-    .quotes__wrapper{
-      max-width: 938px;
+    .carousel{
       height: auto;
-      padding: 100px 24px;
-      margin: auto;
-
-      .carusel-wrapper--v2{
-        position: relative;
-      }
-      .carusel--v2 {
-        position: relative;
-        min-height: 430px;
-
-        @include media-breakpoint-down(sm) {
-          min-height: auto;
-        }
-      }
-
-      .quotes__block{
-        pointer-events: none;
-        opacity: 0;
-        position: absolute;
-        top: 0;
+      .carousel-inner{
+        display: flex;
+        justify-content: center;
         width: 100%;
-        margin: auto;
-        z-index: 1;
-        border-radius: 14px;
-        transition: all ease 0.5s;
-
-        @include media-breakpoint-down(sm) {
-          @include pr(2);
-        }
-
-        &.quotes--active2, &.quotes--prev2, &.quotes--next2 {
-          display: block;
-        }
-
-        .quotes {
+      }
+      .carousel-item{
+          max-width: 968px;
+          background: #1A1A1A;
+          border-radius: 15px;
           @include pt(6);
           @include pl(6);
-
+          @include pr(5);
+          @include pb(5);
+          margin: 0;
           @include media-breakpoint-down(sm) {
             @include pl(2);
           }
-        }
-
-        .quotes__content {
+        p {
           @include p(0);
           @include pt(4);
-          @include px(5);
 
           font-weight: $font-weight-normal;
           font-size: $font-size-20;
@@ -308,167 +56,61 @@
             font-size: $font-size-20;
             color: $white;
           }
-
-          @include media-breakpoint-down(sm) {
-            @include p(0);
-            @include pt(3);
-            @include px(2);
-            padding: 24px 16px 0;
-          }
         }
-
-        .quotes__name{
+        h5{
           @include pt(4);
-          @include pl(5);
           font-weight: $font-weight-bold;
           font-size: $font-size-20;
-
-          @include media-breakpoint-down(sm) {
-            @include pl(2);
-          }
         }
-        .quotes__position{
-          @include pl(5);
+        h6{
           @include pt(1);
           font-weight: $font-weight-normal;
           font-size: $font-size-16;
-
-          @include media-breakpoint-down(sm) {
-            @include pl(2);
-          }
-        }
-        &.quotes--initial2, &.quotes--active2 {
-          display: block;
-          width: auto;
-          height: auto;
-          @include pb(5);
-          background: $gray-20;
-          border-radius: 14px;
-          @include mr(4);
-          opacity: 1;
-          position: relative;
-          z-index: 3;
-
-          @include media-breakpoint-down(lg) {
-            @include mr(0);
-          }
-        }
-        &.quotes--prev2{
-          width: auto;
-          height: auto;
-          top:0;
-          position: absolute;
-          z-index: 2;
-          transform: translate(-200%);
-        }
-        &.quotes--next2{
-          top:0;
-          position: absolute;
-          width: 948px;
-          height: auto;
-          padding-bottom: 48px;
-          background: $gray-20;
-          border-radius: 14px;
-          @include ml(3);
-          @include mt(0);
-          position: absolute;
-          display: block;
-          z-index: 2;
-          opacity: 0.5;
-          transform: translate(100%);
-          -webkit-mask-image: linear-gradient(90deg,
-                  rgba(26,26,26,1), rgba(26,26,26,0));
         }
       }
-      .arrow-group{
+    }
+    .button-group{
+      display: flex;
+      @include mt(3);
+      @include pb(1);
+      align-items:center;
+      @include media-breakpoint-down(lg) {
         display: flex;
-        justify-content: space-between;
-        width: 232px;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
         height: 48px;
-        @include mt(6);
-
-        @include media-breakpoint-down(lg) {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          width: 100%;
-          max-width: 100%;
-          height: 48px;
-          @include mt(3);
-          @include pb(1);
-        }
-
-        @include media-breakpoint-down(sm) {
-          width: 100%;
-          justify-content: flex-start;
-          @include p(0);
-        }
-
-        .buttons-group{
-          display: flex;
-        }
-        img{
-          width: 17.74px;
-          height: 12px;
-        }
-        .carousel__button--next--v2{
-          cursor: pointer;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          width: 48px;
-          height: 48px;
-          background: $gray-20;
-        }
-        .carousel__button--prev--v2{
-          cursor: pointer;
-          transform: rotate(180deg);
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          width: 48px;
-          height: 48px;
-          background: $gray-20;
-          @include mr(1);
-        }
-        .quotes__pagination{
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-
-          .quotes__line{
-            cursor: pointer;
-            width: 24px;
-            height: 2px;
-            border-radius: 2px;
-            border: 1px solid $gray;
-            background-color: $gray;
-            @include ml(1);
-          }
-          .quotes__line.quotes--active2{
-            @include ml(1);
-            border: 1px solid $white;
-            background-color: $white;
-          }
-        }
+        @include mt(3);
+        @include pl(2);
+        @include pb(1);
       }
-    }
 
-    .quotes__block:first-child.quotes--next {
-      width: 948px;
-      height: auto;
-      background: $gray-20;
-      border-radius: 14px;
-      @include mr(4);
-      position: absolute;
-      display: block;
-      transform: translateX(100%);
-      z-index: 2;
-      @include pb(5);
-      -webkit-mask-image: linear-gradient(90deg, rgba(26,26,26,1), rgba(26,26,26,0));
-    }
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        justify-content: flex-start;
+        @include p(0);
+      }
+      .carousel-indicators{
+        @include m(0);
+        @include ml(2);
+        position: relative;
+      }
+      }
+      .carousel-control-prev, .carousel-control-next{
+        position: relative;
+        cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          width: 48px;
+          height: 48px;
+          background: $gray-20;
+      }
+      .carousel-control-next{
+        margin-left: 15px;
+      }
   }
   @include media-breakpoint-down(lg){
     .carusel-wrapper--v2{
@@ -655,4 +297,111 @@
       }
     }
   }
+  &--v1{
+    position: relative;
+
+    width: 100%;
+    height: 660px;
+    background-color: $black;
+
+    @include media-breakpoint-down(sm){
+      height: auto;
+      min-height: 660px;
+    }
+    .carousel{
+      max-width: 1099px;
+      height: 100%;
+      margin: 0 auto;
+      @include py(0);
+      @include px(2);
+      p {
+        @include pt(3);
+        font-size: $font-size-28;
+
+        @include media-breakpoint-down(lg) {
+          @include py(0);
+          @include px(2);
+          font-size: $font-size-20;
+        }
+
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          @include p(0);
+        }
+      }
+      h5{
+        @include pt(3);
+        font-weight: $font-weight-bold;
+        font-size: $font-size-20;
+
+        @include media-breakpoint-down(lg) {
+          @include pl(2);
+          @include pt(3);
+
+          font-size: $font-size-16;
+        }
+
+        @include media-breakpoint-down(sm) {
+          @include pl(0);
+        }
+      }
+      h6{
+        @include pt(1);
+            font-size: $font-size-16;
+            font-weight: $font-weight-normal;
+
+            @include media-breakpoint-down(lg) {
+              @include pl(2);
+              @include pt(1);
+              font-size: $font-size-14;
+            }
+
+            @include media-breakpoint-down(sm) {
+              @include pl(0);
+            }
+      }
+    }
+    .button-group{
+      display: flex;
+      @include mt(3);
+      @include pb(1);
+      align-items:center;
+      @include media-breakpoint-down(lg) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: 48px;
+        @include mt(3);
+        @include pl(2);
+        @include pb(1);
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        justify-content: flex-start;
+        @include p(0);
+      }
+      .carousel-indicators{
+        @include m(0);
+        @include ml(2);
+        position: relative;
+      }
+      }
+      .carousel-control-prev, .carousel-control-next{
+        position: relative;
+        cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          width: 48px;
+          height: 48px;
+          background: $gray-20;
+      }
+      .carousel-control-next{
+        margin-left: 15px;
+      }
+    }
 }
