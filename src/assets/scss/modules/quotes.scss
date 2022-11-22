@@ -26,21 +26,19 @@
       min-height: 680px;
     }
     .carousel{
+      max-width: 938px;
       height: auto;
+      margin: auto;
       .carousel-inner{
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        overflow: inherit;
       }
       .carousel-item{
-          max-width: 968px;
           background: #1A1A1A;
           border-radius: 15px;
           @include pt(6);
           @include pl(6);
           @include pr(5);
           @include pb(5);
-          margin: 0;
           @include media-breakpoint-down(sm) {
             @include pl(2);
           }
