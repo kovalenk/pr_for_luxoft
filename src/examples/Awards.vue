@@ -27,7 +27,7 @@
       </div>
     </section>
 
-     <section class="container-awards container-awards__v2 container-xxl">
+    <section class="container-awards container-awards__v2 container-xxl">
       <h2>Awards</h2>
       <div class="swiper swiper--v2">
         <div class="swiper-wrapper">
@@ -41,53 +41,6 @@
             <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
             <p class="marketing">Business Marketing Association</p>
 
-          </div>
-          <div class="swiper-slide">
-            <h2>2021</h2>
-            <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
-            <p class="marketing">Business Marketing Association</p>
-
-          </div>
-          <div class="swiper-slide">
-            <h2>2021</h2>
-            <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
-            <p class="marketing">Business Marketing Association</p>
-
-          </div>
-          <div class="swiper-slide">
-            <h2>2021</h2>
-            <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
-            <p class="marketing">Business Marketing Association</p>
-
-          </div>
-          <div class="swiper-slide">
-            <h2>2021</h2>
-            <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
-            <p class="marketing">Business Marketing Association</p>
-
-          </div>
-          <div class="swiper-slide">
-            <h2>2021</h2>
-            <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
-            <p class="marketing">Business Marketing Association</p>
-
-          </div>
-          <div class="swiper-slide">
-            <h2>2021</h2>
-            <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
-            <p class="marketing">Business Marketing Association</p>
-
-          </div>
-          <div class="swiper-slide">
-            <h2>2021</h2>
-            <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
-            <p class="marketing">Business Marketing Association</p>
-
-          </div>
-          <div class="swiper-slide">
-            <h2>2021</h2>
-            <p class="swiper-slide__text">Leading Central and Eastern European Service Provider </p>
-            <p class="marketing">Business Marketing Association</p>
           </div>
           <div class="swiper-slide">
             <h2>2021</h2>
@@ -330,9 +283,9 @@
 </template>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script >
- 
+
   export default {
-    
+
     name: 'Awards',
     mounted() {
       new Swiper('.swiper--v1', {
@@ -349,28 +302,28 @@
         },
         initialSlide: 1,
         maxBackfaceHiddenSlides: 3,
-      
+
         // If we need pagination
         pagination: {
           el: '.swiper-pagination--v1',
           clickable: true,
         },
       });
-      
+
       new Swiper('.swiper--v2', {
         // Optional parameters
         direction: 'horizontal',
         loop: false,
         initialSlide: 0,
-        slidesPerView:1 ,
-        slidesPerGroup:1,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
         centeredSlides: true,
         spaceBetween: 24,
         navigation: {
-        nextEl: '.button--next--v2',
-        prevEl: '.button--prev--v2',
+          nextEl: '.button--next--v2',
+          prevEl: '.button--prev--v2',
         },
-        observer: true, 
+        observer: true,
         observeParents: true,
         // If we need pagination
         pagination: {
@@ -379,15 +332,15 @@
         },
         breakpoints: {
 
-    905: {
-      slidesPerView: 4,
-      spaceBetween: 24,
-      slidesPerGroup:4,
-      centeredSlides: false,
-    }
-  }
+          905: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+            slidesPerGroup: 4,
+            centeredSlides: false,
+          }
+        }
       });
-      
+
       new Swiper('.swiper--v3', {
         // Optional parameters
         direction: 'horizontal',
@@ -399,7 +352,7 @@
           nextEl: '.button--next--v3',
           prevEl: '.button--prev--v3',
         },
-        observer: true, 
+        observer: true,
         observeParents: true,
         // If we need pagination
         pagination: {
@@ -408,7 +361,6 @@
         },
         centeredSlides: false,
       });
-      
     }
   }
 </script>
