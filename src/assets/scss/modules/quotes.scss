@@ -7,11 +7,48 @@
     width: 100%;
     height: 100%;
 
-    @include  media-breakpoint-down(sm) {
+    @include media-breakpoint-down(sm) {
       display: none;
     }
   }
-  &--v2{
+
+  .carousel-control-prev, .carousel-control-next {
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 48px;
+    height: 48px;
+    background: $gray-20;
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-size: 9px;
+    }
+
+    .carousel-control-prev-icon {
+      //background-image: url("../../assets/images/arrow_right_white.svg");
+      background-image: url("~@/assets/images/arrow_right_white.svg");
+    }
+
+    .carousel-control-next-icon {
+      //background-image: url("../../assets/images/arrow_right_white.svg");
+      background-image: url("~@/assets/images/arrow_right_white.svg");
+    }
+  }
+
+  .carousel-control-prev {
+    transform: rotate(180deg);
+  }
+
+  .carousel-control-next {
+    margin-left: 8px;
+  }
+
+  &--v2 {
     height: 680px;
 
     @include media-breakpoint-down(lg) {
@@ -25,13 +62,17 @@
       height: auto;
       min-height: 680px;
     }
-    .carousel{
+
+    .carousel {
       height: auto;
-      .carousel-inner{
+
+      .carousel-inner {
         overflow: inherit;
       }
-      .carousel-item{
-          width: 100%;
+
+      .carousel-item {
+        width: 100%;
+
         &-default {
           margin: 0 auto;
           max-width: 968px;
@@ -42,10 +83,12 @@
           @include pl(6);
           @include pr(5);
           @include pb(5);
+
           @include media-breakpoint-down(sm) {
-            @include pl(2);
+            @include p(3);
           }
         }
+
         p {
           @include p(0);
           @include pt(4);
@@ -58,26 +101,54 @@
             font-size: $font-size-20;
             color: $white;
           }
+
+          @include media-breakpoint-down(sm) {
+            font-size: $font-size-16;
+          }
         }
-        h5{
-          @include pt(4);
+
+        h5 {
+          @include pt(3);
           font-weight: $font-weight-bold;
           font-size: $font-size-20;
+
+          @include media-breakpoint-down(lg) {
+            @include pl(2);
+            @include pt(3);
+
+            font-size: $font-size-16;
+          }
+
+          @include media-breakpoint-down(sm) {
+            @include pl(0);
+          }
         }
-        h6{
+
+        h6 {
           @include pt(1);
-          font-weight: $font-weight-normal;
           font-size: $font-size-16;
+          font-weight: $font-weight-normal;
+
+          @include media-breakpoint-down(lg) {
+            @include pl(2);
+            @include pt(1);
+            font-size: $font-size-14;
+          }
+
+          @include media-breakpoint-down(sm) {
+            @include pl(0);
+          }
         }
       }
     }
-    .button-group{
+
+    .button-group {
       display: flex;
       max-width: 968px;
       margin: auto;
       @include mt(3);
       @include pb(1);
-      align-items:center;
+      align-items: center;
       @include media-breakpoint-down(lg) {
         display: flex;
         justify-content: flex-start;
@@ -93,36 +164,25 @@
         justify-content: flex-start;
         @include p(0);
       }
-      .carousel-indicators{
+
+      .carousel-indicators {
         @include m(0);
         @include ml(2);
         position: relative;
       }
-      }
-      .carousel-control-prev, .carousel-control-next{
-        position: relative;
-        cursor: pointer;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          width: 48px;
-          height: 48px;
-          background: $gray-20;
-      }
-      .carousel-control-next{
-        margin-left: 15px;
-      }
+    }
   }
-  @include media-breakpoint-down(lg){
-    .carusel-wrapper--v2{
+
+  @include media-breakpoint-down(lg) {
+    .carusel-wrapper--v2 {
       position: relative;
     }
     &--v1 {
-      .quotes__wrapper{
-        .carusel-wrapper--v1{
+      .quotes__wrapper {
+        .carusel-wrapper--v1 {
           position: relative;
         }
+
         .quotes__block {
           opacity: 0;
           position: absolute;
@@ -130,15 +190,18 @@
           margin: auto;
           z-index: 1;
           transition: transform .5s, opacity .5s, z-index .5s;
+
           &.quotes--initial, &.quotes--active {
             opacity: 1;
             position: relative;
             z-index: 3;
           }
+
           &.quotes--prev, &.quotes--next {
             z-index: 2;
           }
-          &.quotes--prev{
+
+          &.quotes--prev {
             transform: translateX(-100%);
           }
 
@@ -146,11 +209,13 @@
             transform: translateX(100%);
           }
         }
-        .arrow-group{
-          .buttons-group{
+
+        .arrow-group {
+          .buttons-group {
             display: flex;
           }
-          .carousel__button--next--v1{
+
+          .carousel__button--next--v1 {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -159,7 +224,8 @@
             height: 48px;
             background: $gray-20;
           }
-          .carousel__button--prev--v1{
+
+          .carousel__button--prev--v1 {
             transform: rotate(180deg);
             display: flex;
             flex-direction: row;
@@ -170,14 +236,16 @@
             background: $gray-20;
             @include mr(2);
           }
-          .quotes__line{
+
+          .quotes__line {
             width: 24px;
             height: 2px;
             border-radius: 2px;
             border: 1px solid $gray;
             background-color: $gray;
             @include ml(1);
-            &.quotes--active{
+
+            &.quotes--active {
               border: 1px solid $white;
               background-color: $white;
 
@@ -189,14 +257,16 @@
     }
 
     &--v2 {
-      .quotes__wrapper{
+      .quotes__wrapper {
         @include p(0);
         min-width: 328px;
         height: 100%;
         margin: 0 auto;
-        .carusel-wrapper--v2{
+
+        .carusel-wrapper--v2 {
           position: relative;
         }
+
         .block {
           width: calc(100% - 20px);
           background: $gray-20;
@@ -206,6 +276,7 @@
           position: absolute;
           z-index: 1;
           transition: transform .5s, opacity .5s, z-index .5s;
+
           &.quotes--initial2, &.quotes--active2 {
             @include my(5);
             @include mx(2);
@@ -213,16 +284,20 @@
             position: relative;
             z-index: 3;
           }
+
           &.quotes--prev2, &.quotes--next2 {
             z-index: 2;
           }
+
           &.quotes--prev2 {
             transform: translateX(-100%);
           }
+
           &.quotes--next2 {
             transform: translateX(100%);
           }
-          .quotes{
+
+          .quotes {
             width: 30px;
             height: 24px;
             @include pt(4);
@@ -234,26 +309,28 @@
             line-height: $line-height-base;
             font-size: $font-size-16;
 
-            &.quotes__name{
+            &.quotes__name {
               @include pt(4);
               @include pl(2);
 
               font-weight: $font-weight-bold;
             }
-            .quotes__position{
+
+            .quotes__position {
               @include pt(1);
               @include pl(2);
 
               font-size: $font-size-14;
             }
           }
-
         }
-        .arrow-group{
-          .buttons-group{
+
+        .arrow-group {
+          .buttons-group {
             display: flex;
           }
-          .carousel__button--next--v2{
+
+          .carousel__button--next--v2 {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -262,7 +339,8 @@
             height: 48px;
             background: $gray-20;
           }
-          .carousel__button--prev--v2{
+
+          .carousel__button--prev--v2 {
             transform: rotate(180deg);
             display: flex;
             flex-direction: row;
@@ -273,24 +351,27 @@
             background: $gray-20;
             @include mr(1);
           }
-          .quotes__pagination{
+
+          .quotes__pagination {
             display: flex;
             flex-direction: row;
             align-items: center;
             @include mr(4);
 
-            .quotes__line{
+            .quotes__line {
               width: 24px;
               height: 2px;
               border-radius: 2px;
               border: 1px solid $gray;
               background-color: $gray;
               @include ml(1);
-              &.quotes--active2{
+
+              &.quotes--active2 {
                 border: 1px solid $white;
                 background-color: $white;
               }
-              &:last-child{
+
+              &:last-child {
                 @include mr(4);
               }
             }
@@ -299,26 +380,41 @@
       }
     }
   }
-  &--v1{
+
+  &--v1 {
     position: relative;
 
     width: 100%;
     height: 660px;
     background-color: $black;
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       height: auto;
       min-height: 660px;
     }
-    .carousel{
+
+    .carousel {
       max-width: 1099px;
       height: 100%;
       margin: 0 auto;
       @include py(0);
       @include px(2);
-      .carousel-inner{
+
+      .carousel-inner {
         overflow: inherit;
       }
+
+      .picture {
+        @include media-breakpoint-down(lg) {
+          @include px(2);
+          @include pb(2);
+        }
+
+        @include media-breakpoint-down(sm) {
+          @include pl(0);
+        }
+      }
+
       p {
         @include pt(3);
         font-size: $font-size-28;
@@ -332,9 +428,11 @@
         @include media-breakpoint-down(sm) {
           width: 100%;
           @include p(0);
+          font-size: $font-size-16;
         }
       }
-      h5{
+
+      h5 {
         @include pt(3);
         font-weight: $font-weight-bold;
         font-size: $font-size-20;
@@ -350,27 +448,29 @@
           @include pl(0);
         }
       }
-      h6{
+
+      h6 {
         @include pt(1);
-            font-size: $font-size-16;
-            font-weight: $font-weight-normal;
+        font-size: $font-size-16;
+        font-weight: $font-weight-normal;
 
-            @include media-breakpoint-down(lg) {
-              @include pl(2);
-              @include pt(1);
-              font-size: $font-size-14;
-            }
+        @include media-breakpoint-down(lg) {
+          @include pl(2);
+          @include pt(1);
+          font-size: $font-size-14;
+        }
 
-            @include media-breakpoint-down(sm) {
-              @include pl(0);
-            }
+        @include media-breakpoint-down(sm) {
+          @include pl(0);
+        }
       }
     }
-    .button-group{
+
+    .button-group {
       display: flex;
       @include mt(3);
       @include pb(1);
-      align-items:center;
+      align-items: center;
       @include media-breakpoint-down(lg) {
         display: flex;
         justify-content: flex-start;
@@ -388,25 +488,12 @@
         justify-content: flex-start;
         @include p(0);
       }
-      .carousel-indicators{
+
+      .carousel-indicators {
         @include m(0);
         @include ml(2);
         position: relative;
       }
-      }
-      .carousel-control-prev, .carousel-control-next{
-        position: relative;
-        cursor: pointer;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          width: 48px;
-          height: 48px;
-          background: $gray-20;
-      }
-      .carousel-control-next{
-        margin-left: 15px;
-      }
     }
+  }
 }
