@@ -580,7 +580,7 @@
             //         h4{
             //         }
             //     }
-                
+
             // .stack-cards {
             //     --stack-cards-gap: 0;
 
@@ -638,150 +638,163 @@
             //     }
             // }
             // }
-            .col {
-                min-width: 300px;
-                box-sizing: border-box;
-                height: 100%;
-                min-height: 600px;
-                @include py(6);
-                @include px(3);
-                padding-right: 500px;
-                cursor: pointer;
-                flex: 1;
-                position: relative;
-    
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                @include media-breakpoint-between(sm,xl){
+
+            .js-stack-cards {
+                --stack-cards-gap: 0;
+
+                .col {
+                    position: relative;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 20px;
+                    //-webkit-transform-origin: center top;
+                    //transform-origin: center top;
+                    //overflow: hidden;
+
+
+                    min-width: 300px;
+                    box-sizing: border-box;
+                    height: 100%;
+                    min-height: 600px;
                     @include py(6);
-                    @include px(1);
-                }
-                @include media-breakpoint-down(sm) {
-                    min-height: 400px;
-                    @include py(4);
                     @include px(3);
-                }
-                &:hover{
+                    padding-right: 500px;
+                    cursor: pointer;
+                    flex: 1;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    @include media-breakpoint-between(sm,xl){
+                        @include py(6);
+                        @include px(1);
+                    }
                     @include media-breakpoint-down(sm) {
                         min-height: 400px;
-                        padding: 0;
-                         margin: 0;
-                        @include pt(5);
+                        @include py(4);
                         @include px(3);
-                        justify-content: flex-start;
                     }
-                    p{
-                        display: block;
-                        font-size: $font-size-20;
-                        line-height: 26px;
-                        @include p(0);
-                        @include pt(3);
-                        color: $gray-80;
+                    &:hover{
                         @include media-breakpoint-down(sm) {
-                            display: none;
+                            min-height: 400px;
+                            padding: 0;
+                            margin: 0;
+                            @include pt(5);
+                            @include px(3);
+                            justify-content: flex-start;
                         }
+                        p{
+                            display: block;
+                            font-size: $font-size-20;
+                            line-height: 26px;
+                            @include p(0);
+                            @include pt(3);
+                            color: $gray-80;
+                            @include media-breakpoint-down(sm) {
+                                display: none;
+                            }
+                        }
+                        h2{
+                            @include media-breakpoint-down(sm) {
+                                display: block;
+                                font-weight: 700;
+                                font-size: 28px;
+                                line-height: 120%;
+                            }
+                        }
+                        h4{
+                            @include media-breakpoint-down(sm) {
+                                display: block;
+                                margin: 0;
+                                padding: 0;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 130%;
+                            }
+                        }
+                        button{
+                            @include media-breakpoint-down(sm) {
+                                display: block;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 130%;
+                                width: 150px;
+                                @include pt(2);
+                            }
+                        }
+                    }
+
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: 0;
+                        @include m(0);
+                        @include p(0);
+                        top: 0;
+                        left: 0;
+                        border-radius: 15px;
+                    }
+
+                    p, button, h2,h4 {
+                        position: relative;
+                        z-index: 1;
                     }
                     h2{
-                        @include media-breakpoint-down(sm) {
-                            display: block;
-                            font-weight: 700;
-                            font-size: 28px;
-                            line-height: 120%;
-                        }
-                    }
-                    h4{
-                        @include media-breakpoint-down(sm) {
-                            display: block;
-                            margin: 0;
-                            padding: 0;
-                            font-weight: 700;
-                            font-size: 16px;
-                            line-height: 130%;
-                        }
-                    }
-                    button{
-                        @include media-breakpoint-down(sm) {
-                            display: block;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 40px;
+                        @include media-breakpoint-down(sm){
                             font-weight: 700;
                             font-size: 20px;
                             line-height: 130%;
-                            width: 150px;
-                            @include pt(2);
                         }
                     }
-                }
-    
-                img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    z-index: 0;
-                    @include m(0);
-                    @include p(0);
-                    top: 0;
-                    left: 0;
-                    border-radius: 15px;
-                }
-    
-                p, button, h2,h4 {
-                    position: relative;
-                    z-index: 1;
-                }
-                h2{
-                    font-weight: 700;
-                    font-size: 36px;
-                    line-height: 40px;
-                    @include media-breakpoint-down(sm){
+
+                    h4 {
+                        min-height: 140px;
+                        @include p(0);
+                        @include m(0);
+                        @include mb(3);
+                        padding-top: 250px;
                         font-weight: 700;
                         font-size: 20px;
                         line-height: 130%;
-                    }
-                }
-    
-                h4 {
-                    min-height: 140px;
-                    @include p(0);
-                    @include m(0);
-                    @include mb(3);
-                    padding-top: 250px;
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 130%;
-    
-                    @include media-breakpoint-down(sm){
-                        font-size: $font-size-28;
-                        display: none;
-                    }
-                }
-                p {
-                    display: none;
-                }
-    
-                button {
-                    @include p(0);
-                    @include m(0);
-                    @include mt(0);
-    
-                    @include media-breakpoint-down(sm){
-                        display: none;
-                    }
-                }
-    
-                div {
-                    min-height: 200px;
-                    border-top: 1px solid white;
-                    @include px(3);
-                    @include py(3);
-    
-                    h4 {
-                        font-size: $font-size-28;
-                        font-weight: $font-weight-bold;
+
+                        @include media-breakpoint-down(sm){
+                            font-size: $font-size-28;
+                            display: none;
+                        }
                     }
                     p {
                         display: none;
-                        @include pb(5);
+                    }
+
+                    button {
+                        @include p(0);
+                        @include m(0);
+                        @include mt(0);
+
+                        @include media-breakpoint-down(sm){
+                            display: none;
+                        }
+                    }
+
+                    div {
+                        min-height: 200px;
+                        border-top: 1px solid white;
+                        @include px(3);
+                        @include py(3);
+
+                        h4 {
+                            font-size: $font-size-28;
+                            font-weight: $font-weight-bold;
+                        }
+                        p {
+                            display: none;
+                            @include pb(5);
+                        }
                     }
                 }
             }

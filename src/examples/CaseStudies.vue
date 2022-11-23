@@ -132,37 +132,29 @@
         <div class="row">
           <h2 class="featured__title">Featured insights</h2>
         </div>
-          <div class="container-xxl">
-              <div class="col">
-                <img src="~@/assets/images/case_st/image5.png" alt="">
-                <h4>Banking</h4>
-                    <h2>How to unleash technology and<br/> dominate marketplace </h2>
-                <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
-                <button type="button" class="btn btn-text btn-icon focus">read more</button>
-              </div>
-              <div class="col">
-                <img src="~@/assets/images/case_st/image5.png" alt="">
-                <h4>Automotive</h4>
-                    <h2>UX writing for digital cockpits: Three</br> practical tips for automotive </h2>
-                <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
-                <button type="button" class="btn btn-text btn-icon focus">read more</button>
-              </div>
-              <div class="col">
-                <img src="~@/assets/images/case_st/image5.png" alt="">
-                <h4>Banking</h4>
-                    <h2>How to unleash technology and<br/> dominate marketplace </h2>
-                <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
-                <button type="button" class="btn btn-text btn-icon focus">read more</button>
-              </div>
-            <!-- <div class="row">
-              <img src="~@/assets/images/case_st/image5.png" alt="">
-              <div></div>
-            </div>
-            <div class="row">
-              <img src="~@/assets/images/case_st/image5.png" alt="">
-              <div></div>
-            </div> -->
+        <div class="container-xxl js-stack-cards">
+          <div class="col js-stack-cards__item">
+            <img src="~@/assets/images/case_st/image5.png" alt="">
+            <h4>Banking</h4>
+            <h2>How to unleash technology and<br/> dominate marketplace </h2>
+            <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
           </div>
+          <div class="col js-stack-cards__item">
+            <img src="~@/assets/images/case_st/image5.png" alt="">
+            <h4>Automotive</h4>
+            <h2>UX writing for digital cockpits: Three</br> practical tips for automotive </h2>
+            <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+          <div class="col js-stack-cards__item">
+            <img src="~@/assets/images/case_st/image5.png" alt="">
+            <h4>Banking</h4>
+            <h2>How to unleash technology and<br/> dominate marketplace </h2>
+            <p class="gray">Discover actionable insights that unlock the</br> value in your data</p>
+            <button type="button" class="btn btn-text btn-icon focus">read more</button>
+          </div>
+        </div>
       </div>
     </section>
   </div>
