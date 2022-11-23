@@ -246,7 +246,7 @@
             cards[i].classList.remove("expand");
         });
     }
-  
+
       /* eslint-disable */
       const accordSection = document.getElementsByClassName('container-case-studies');
       for (let j = 0; j < accordSection.length; j++) {
