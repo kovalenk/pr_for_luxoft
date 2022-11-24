@@ -39,7 +39,7 @@ import Hero from "@/examples/Hero";
 import Benefits from "@/examples/Benefits";
 import Accordion from "@/examples/Accordion";
 import Solutions from "@/examples/Solutions";
-import CaseStudies from "@/examples/CaseStudies";
+// import CaseStudies from "@/examples/CaseStudies";
 import Insights from "@/examples/Insights";
 import Awards from "@/examples/Awards";
 import Quotes from "@/examples/Quotes";
@@ -62,8 +62,8 @@ export default {
     // Benefits,
     // Accordion,
     // Solutions,
-    CaseStudies,
-    // Insights,
+    // CaseStudies,
+   // Insights,
     // Awards,
      Quotes,
   }

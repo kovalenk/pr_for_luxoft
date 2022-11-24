@@ -49,7 +49,7 @@
   }
 
   &--v2 {
-    height: 680px;
+    height: auto;
 
     @include media-breakpoint-down(lg) {
       @include py(0);
@@ -63,15 +63,21 @@
       min-height: 680px;
     }
 
-    .carousel {
-      height: auto;
+      .carousel {
+        height: auto;
 
-      .carousel-inner {
-        overflow: inherit;
-      }
+        .carousel-inner {
+          overflow: inherit;
+        }
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+          display: flex;
+        }
 
       .carousel-item {
         width: 100%;
+        
 
         &-default {
           margin: 0 auto;
@@ -83,7 +89,14 @@
           @include pl(6);
           @include pr(5);
           @include pb(5);
-
+          &:last-child{
+            margin-left: 35px;
+            opacity: 0.5;
+            -webkit-mask-image: linear-gradient(90deg, rgb(26, 26, 26), rgba(26, 26, 26, 0));
+            @include media-breakpoint-down(sm) {
+              display: none;
+            }
+          }
           @include media-breakpoint-down(sm) {
             @include p(3);
           }
@@ -145,7 +158,7 @@
     .button-group {
       display: flex;
       max-width: 968px;
-      margin: auto;
+      margin: auto 0;
       @include mt(3);
       @include pb(1);
       align-items: center;
@@ -385,12 +398,11 @@
     position: relative;
 
     width: 100%;
-    height: 660px;
+    height: auto;
     background-color: $black;
 
     @include media-breakpoint-down(sm) {
       height: auto;
-      min-height: 660px;
     }
 
     .carousel {
@@ -402,12 +414,14 @@
 
       .carousel-inner {
         overflow: inherit;
+        @include mt(10)
       }
 
       .picture {
         @include media-breakpoint-down(lg) {
           @include px(2);
           @include pb(2);
+          @include pt(6);
         }
 
         @include media-breakpoint-down(sm) {
@@ -487,6 +501,7 @@
         width: 100%;
         justify-content: flex-start;
         @include p(0);
+        @include mb(3);
       }
 
       .carousel-indicators {

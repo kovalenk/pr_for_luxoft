@@ -68,7 +68,7 @@
       </div>
     </section>
     <section class="quotes-section quotes-section--v2 container-xxl">
-      <div id="carouselExampleIndicators1" class="carousel slide">
+      <div id="carouselExampleIndicators1" class="carousel slide" data-interval="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="carousel-item-default">
@@ -89,7 +89,7 @@
             <div class="carousel-item-default">
               <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
               <p>
-                1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk
+                2Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk
                 to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and
                 our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and
                 DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid
@@ -104,7 +104,7 @@
             <div class="carousel-item-default">
               <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
               <p>
-                1Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk
+                3Clients engage Luxoft when they need to migrate a complex, business-critical <br>system, and keep risk
                 to a minimum. After all, we’ve been modernizing and <br>migrating mainframes for over 20 years now, and
                 our top-class engineers are fluent in both legacy and modern technologies including cloud, QA and
                 DevOps. Luxoft has helped the world's largest enterprises design and successfully complete custom/hybrid
@@ -143,6 +143,21 @@
 
 <script>
   export default {
-    name: "Quotes"
+    name: "Quotes",
+    mounted(){
+      let items = document.querySelectorAll('.quotes-section--v2 .carousel .carousel-item')
+      items.forEach((el) => {
+			const minPerSlide = 2
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})}
   }
 </script>
