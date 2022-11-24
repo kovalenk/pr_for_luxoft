@@ -10,6 +10,8 @@
     }
 
     .swiper {
+        position: relative;
+
         h2 {
             @include mb(6);
 
@@ -34,11 +36,14 @@
     }
 
     &__v1 {
+        overflow: hidden;
         .swiper {
             height: 543px;
-
             max-width: 468px;
             overflow: visible;
+            @include media-breakpoint-down(md) {
+                overflow: hidden;
+            }
 
             &-slide {
                 position: relative;
@@ -50,13 +55,20 @@
                 height: 543px;
 
                 max-width: 468px;
-                width: 100%;
                 padding: 0 76px 37%;
 
                 //background-image: url("../../assets/images/award_card.svg");
                 background-image: url("~@/assets/images/award_card.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
+                @include media-breakpoint-down(md) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    overflow: hidden;
+                    margin: 0;
+                    padding-top: 15%;
+                }
                 &:before {
                     position: absolute;
                     content: ' ';
@@ -78,16 +90,25 @@
                     @include pt(4);
                     @include mt(10);
                     @include mb(3);
+                    @include media-breakpoint-down(md) {
+                        font-size: $font-size-20;
+                        padding-top: 10%;
+                        margin: 0;
+                    }
                 }
 
                 &__text {
                     margin-bottom: 41px;
-
-                    font-size: $font-size-20;
+                    font-size: $font-size-16;
                     font-weight: $font-weight-normal;
                     line-height: $line-height-130;
                     letter-spacing: 0em;
                     text-align: center;
+                    @include media-breakpoint-down(md) {
+                        font-size: $font-size-16;
+                        padding-top: 5%;
+                        margin: 0;
+                    }
                 }
 
                 p {
@@ -95,6 +116,10 @@
                         @include mb(1);
                         @include py(0);
                         @include px(4);
+                        @include media-breakpoint-down(md) {
+                            font-size: $font-size-14;
+                            padding-top: 8%;
+                        }
                     }
                 }
                 &__year {
@@ -105,10 +130,14 @@
                     letter-spacing: 0em;
                     text-align: center;
                     text-transform: capitalize;
+                    @include media-breakpoint-down(md) {
+                        font-size: $font-size-14;
+                        padding-top: 8%;
+                    }
                 }
             }
             &-pagination {
-                bottom: -8.6%;
+                margin-top: 8.6%;
                 &-bullets {
                     .swiper-pagination-bullet {
                         background: $white;
@@ -124,13 +153,52 @@
     }
 
     &__v2 {
+        display: flex;
+        flex-direction: column;
         .swiper {
             width: 100%;
             height: 100%;
             padding-bottom: 100px;
+            .buttons-group{
+                display: none;
 
+                @include media-breakpoint-down(md) {
+                    display: flex;
+
+                    .button--next--v2, .button--prev--v2 {
+                        position: relative;
+                        opacity: 1;
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 48px;
+                        height: 48px;
+                        background: $gray-20;
+
+                        .carousel-control-prev-icon, .carousel-control-next-icon {
+                            background-size: 9px;
+                        }
+
+                        .carousel-control-prev-icon {
+                            background-image: url("~@/assets/images/arrow_right_white.svg");
+                        }
+
+                        .carousel-control-next-icon {
+                            background-image: url("~@/assets/images/arrow_right_white.svg");
+                        }
+                    }
+
+                    .button--prev--v2 {
+                        transform: rotate(180deg);
+                        @include mr(1);
+                    }
+                }
+            }
             &-wrapper {
-                gap: 24px;
+                width: 100%;
+                margin-bottom: 5.2%;
             }
 
             &-slide {
@@ -153,31 +221,75 @@
                 background-size: 92% 100%;
                 background-position: 50% 50%;
 
+                @include media-breakpoint-down(md) {
+                    background-size: 92% 88%;
+                    background-position: 50% 50%;
+                    background-position-y: top;
+                    @include py(7);
+                    @include px(8);
+                    max-width: 100%;
+                    min-height: 547px;
+                }
+
+
                 h2 {
                     color: $bright-purple-60;
+                    font-weight: 700;
+                    @include media-breakpoint-down(md) {
+                        font-size: 32px;
+                        line-height: 120%;
+                        text-align: center;
+                        @include mb(4);
+                    }
                 }
                 &__text {
                     @include m(0);
                     @include mb(5);
 
-                    font-weight: $font-size-28;
+                    font-size: $font-size-28;
                     font-weight: $font-weight-bold;
 
                     line-height: 34px;
                     letter-spacing: 0em;
                     text-align: center;
+                    @include media-breakpoint-down(md) {
+                        @include mb(9);
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: $line-height-130;
+                        text-align: center;
+                    }
                 }
 
                 p {
                     &.marketing {
                         font-weight: $font-size-20;
                         color: $gray-60;
+                        @include media-breakpoint-down(md) {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: $line-height-130;
+                            text-transform: none;
+                            text-align: center;
+                            color: $gray-60;
+                        }
+
                     }
                 }
             }
 
             &-pagination {
-                bottom: 5.2%;
+                position: inherit;
+                @include media-breakpoint-down(md){
+                    position: absolute;
+                    bottom: 122px;
+                    left: 115px;
+                    width: calc(100% - 118px);
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 8px;
+                }
                 &-bullets {
                     .swiper-pagination-bullet {
                         background: $white;
@@ -185,6 +297,14 @@
                         width: 15px;
                         @include my(0);
                         @include mx(2);
+
+                        @include media-breakpoint-down(md){
+                            width: 100%;
+                            max-width: 24px;
+                            @include m(0);
+                            border-radius: 1px;
+                            height: 4px;
+                        }
                     }
                 }
             }
@@ -192,48 +312,113 @@
     }
 
     &__v3 {
+        overflow: hidden;
         .swiper {
             width: 100%;
             height: 100%;
+            margin-bottom: 60px;
+
+            .buttons-group {
+                display: none;
+                @include media-breakpoint-down(md) {
+                    margin-top: 16px;
+                    display: flex;
+
+                    .button--next--v3, .button--prev--v3 {
+                        position: relative;
+                        opacity: 1;
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 48px;
+                        height: 48px;
+                        background: $gray-20;
+
+                        .carousel-control-prev-icon, .carousel-control-next-icon {
+                            background-size: 9px;
+                        }
+
+                        .carousel-control-prev-icon {
+                            background-image: url("~@/assets/images/arrow_right_white.svg");
+                        }
+
+                        .carousel-control-next-icon {
+                            background-image: url("~@/assets/images/arrow_right_white.svg");
+                        }
+                    }
+                    .button--prev--v3 {
+                        transform: rotate(180deg);
+                        @include mr(1);
+                    }
+                }
+            }
             &-slide {
                 display: flex;
-
                 margin-bottom: 48px;
                 width: 100%;
                 height: 100%;
                 background: transparent;
+                @include media-breakpoint-down(md){
+                    display: block;
+                    margin: 0 auto;
+                    height: auto;
+                }
                 &-info {
                     display: flex;
                     flex-direction: column;
-
                     min-height: 822px;
                     width: 50%;
                     padding: 153px 100px 121px;
                     @include m(0);
                     @include mr(4);
-
                     //background-image: url("../../assets/images/awards/info-block.png");
                     background-image: url("~@/assets/images/awards/info-block.png");
                     background-size: cover;
                     border-radius: 14px;
+                    img{
+                        display: none;
+                    }
+                    @include media-breakpoint-down(md) {
+                        img{
+                            display: block;
+                        }
+                        width: inherit;
+                        background: $gray-20;
+                        border-radius: 14px;
+                        padding-top: 30px;
+                        @include px(3);
+                        @include pt(4);
+                        @include pb(1);
+                        margin: 0;
+                        position: relative;
+                        min-height: auto;
+                    }
                     &__text {
                         @include m(0);
                         margin-bottom: 127px;
-
+                        @include media-breakpoint-down(md) {
+                            @include pt(5);
+                           margin-bottom: 0;
+                        }
                         .article {
                             @include m(0);
-
                             font-size: 28px;
                             font-weight: $font-weight-normal;
                             line-height: 39px;
                             letter-spacing: 0em;
                             text-align: left;
+                            @include media-breakpoint-down(md) {
+                                font-weight: $font-weight-normal;
+                                line-height: $line-height-base;
+                                font-size: $font-size-16;
+                            }
                         }
                     }
                     &__about {
                         display: flex;
                         align-items: center;
-
                         width: 100%;
                         .avatar {
                             width: 146px;
@@ -242,6 +427,9 @@
 
                             border-radius: 100%;
                             background: $white;
+                            @include media-breakpoint-down(md) {
+                                display: none;
+                            }
                         }
                         .name {
                             font-size: 32px;
@@ -250,6 +438,11 @@
                             line-height: 38px;
                             letter-spacing: 0em;
                             text-align: left;
+                            @include media-breakpoint-down(md){
+                                @include pt(4);
+                                font-size: 16px;
+                                font-weight: $font-weight-bold;
+                            }
 
                             .info {
                                 font-size: 28px;
@@ -257,6 +450,12 @@
                                 line-height: 36px;
                                 letter-spacing: 0em;
                                 text-align: left;
+                                @include media-breakpoint-down(md){
+                                    font-size: $font-size-14;
+                                    br{
+                                        display: none;
+                                    }
+                                }
                             }
                         }
                     }
@@ -269,6 +468,11 @@
                     width: 50%;
 
                     border-radius: 14px;
+                    @include media-breakpoint-down(md) {
+                        @include mt(2);
+                        display: block;
+                        width: 100%;
+                    }
 
                     &__card {
                         display: flex;
@@ -283,21 +487,39 @@
 
                         background: $gray-20;
                         border-radius: 14px;
+                        @include media-breakpoint-down(md) {
+                            @include px(3);
+                            @include pt(4);
+                            @include pb(1);
+                            @include mb(0);
+                        }
 
                         h2 {
                             margin-top: 158px;
                             @include mb(3);
                             @include p(0);
                             text-align: left;
+                            @include media-breakpoint-down(md) {
+                                @include p(0);
+                                @include m(0);
+                                font-size: $font-size-20;
+                            }
                         }
 
                         button {
                             @include mb(10);
+                            @include media-breakpoint-down(md) {
+                                @include m(0);
+                                font-size: $font-size-16 !important;
+                            }
                         }
                     }
                     &__awards {
                         display: flex;
                         justify-content: space-between;
+                        @include media-breakpoint-down(md) {
+                            display: block;
+                        }
                         .award-item {
                             position: relative;
                             display: flex;
@@ -316,6 +538,15 @@
                             background-repeat: no-repeat;
                             background-size: 92% 100%;
                             background-position: 50% 50%;
+                            @include media-breakpoint-down(md) {
+                                display: block;
+                                @include mt(2);
+                                width: 100%;
+                                min-height: auto;
+                            }
+                            @include media-breakpoint-between(md,lg){
+                                @include px(4)
+                            }
                             &:first-child {
                                 @include mr(4);
                             }
@@ -324,6 +555,9 @@
                                 @include m(0);
                                 @include mb(6);
                                 color: $bright-purple-60;
+                                @include media-breakpoint-down(md) {
+                                    font-size: $font-size-20;
+                                }
                             }
                             &__text {
                                 @include m(0);
@@ -335,12 +569,18 @@
                                 line-height: 34px;
                                 letter-spacing: 0em;
                                 text-align: center;
+                                @include media-breakpoint-down(md) {
+                                    font-size: $font-size-20;
+                                }
                             }
 
                             p {
                                 &.marketing {
                                     font-weight: $font-size-20;
                                     color: $gray-60;
+                                    @include media-breakpoint-down(md) {
+                                        font-size: $font-size-16;
+                                    }
                                 }
                             }
                         }
@@ -349,6 +589,16 @@
             }
             &-pagination {
                 bottom: 0;
+
+                @include media-breakpoint-down(md){
+                    position: absolute;
+                    bottom: 20px;
+                    left: 115px;
+                    width: calc(100% - 118px);
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
                 &-bullets {
                     .swiper-pagination-bullet {
                         background: $white;
@@ -356,6 +606,14 @@
                         width: 15px;
                         @include my(0);
                         @include mx(2);
+
+                        @include media-breakpoint-down(md){
+                            width: 24px;
+                            border-radius: 1px;
+                            height: 4px;
+                            @include m(0);
+                            @include ml(1);
+                        }
                     }
                 }
             }
