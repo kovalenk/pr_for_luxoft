@@ -223,6 +223,30 @@
   export default {
     name: 'CaseStudies',
     mounted() {
+    const cards= document.getElementsByClassName('col');
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener('mouseover',()=> {
+            cards[i].classList.add("expand");
+            for(let j = 0; j < cards.length; j++){
+                if(i != j){
+                    cards[j].classList.add("shrink");
+                }
+            }
+        });
+        for(let g = 0; g < cards.length; g++){
+            if(i != g){
+                cards[g].addEventListener('mouseout',()=> {
+                    cards[i].classList.remove("shrink");
+                });
+            }
+        }
+        cards[i].addEventListener('mouseout',()=> {
+
+            cards[i].classList.remove("shrink");
+            cards[i].classList.remove("expand");
+        });
+    }
+
       /* eslint-disable */
       const accordSection = document.getElementsByClassName('container-case-studies');
       for (let j = 0; j < accordSection.length; j++) {
@@ -246,7 +270,6 @@
             };
 
             function handler(event) {
-              console.log(targetElemnt, targetElemnt, i)
               if(targetElemnt !== null && targetElemnt === i) {
                 return;
               } else {
