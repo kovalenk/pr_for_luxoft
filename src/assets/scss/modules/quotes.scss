@@ -73,14 +73,14 @@
             display: block;
           }
         }
-        
+
         .carousel-inner .carousel-item.active,
         .carousel-inner .carousel-item-next,
         .carousel-inner .carousel-item-prev {
           display: flex;
         }
-        
-        
+
+
           .carousel-inner .carousel-item-end.active,
           .carousel-inner .carousel-item-next {
             transform: translateX(50%);
@@ -88,23 +88,23 @@
               transform: translateX(100%);
             }
           }
-        
-          .carousel-inner .carousel-item-start.active, 
+
+          .carousel-inner .carousel-item-start.active,
           .carousel-inner .carousel-item-prev {
             transform: translateX(-50%);
             @include media-breakpoint-down(sm) {
               transform: translateX(-100%);
             }
           }
-        
+
         .carousel-inner .carousel-item-end,
-        .carousel-inner .carousel-item-start { 
+        .carousel-inner .carousel-item-start {
           transform: translateX(0);
         }
         .carousel-inner .carousel-item {
         justify-content: flex-end;
         }
-        
+
         .carousel-item-default:first-child {
           display: none;
           @include media-breakpoint-down(sm) {
@@ -118,7 +118,7 @@
               position: relative;
             left: 300px;
         }
-        
+
         .carousel-item-default {
           transition: 1s ease all;
         }
@@ -128,15 +128,14 @@
             display: block;
           }
         }
-        
+
         .card{
           height: 260px;
         }
-        
+
 
       .carousel-item {
         width: 100%;
-        
 
         &-default {
           margin: 0 auto;
@@ -148,8 +147,9 @@
           @include pl(6);
           @include pr(5);
           @include pb(5);
+
           &:last-child{
-            margin-left: 35px;
+            margin-left: 8px;
             opacity: 0.5;
             -webkit-mask-image: linear-gradient(90deg, rgb(26, 26, 26), rgba(26, 26, 26, 0));
             @include media-breakpoint-down(sm) {
@@ -221,6 +221,8 @@
       @include mt(3);
       @include pb(1);
       align-items: center;
+      @include mb(4);
+
       @include media-breakpoint-down(lg) {
         display: flex;
         justify-content: flex-start;
@@ -543,6 +545,8 @@
       display: flex;
       @include mt(3);
       @include pb(1);
+      @include mb(4);
+
       align-items: center;
       @include media-breakpoint-down(lg) {
         display: flex;
