@@ -60,20 +60,79 @@
       @include py(0);
       @include px(2);
       height: auto;
-      min-height: 680px;
     }
 
       .carousel {
         height: auto;
 
-        .carousel-inner {
-          overflow: inherit;
+        @include media-breakpoint-down(sm) {
+          .carousel-inner .carousel-item > div {
+            display: none;
+          }
+          .carousel-inner .carousel-item > div:first-child {
+            display: block;
+          }
         }
+        
         .carousel-inner .carousel-item.active,
         .carousel-inner .carousel-item-next,
         .carousel-inner .carousel-item-prev {
           display: flex;
         }
+        
+        
+          .carousel-inner .carousel-item-end.active,
+          .carousel-inner .carousel-item-next {
+            transform: translateX(50%);
+            @include media-breakpoint-down(sm) {
+              transform: translateX(100%);
+            }
+          }
+        
+          .carousel-inner .carousel-item-start.active, 
+          .carousel-inner .carousel-item-prev {
+            transform: translateX(-50%);
+            @include media-breakpoint-down(sm) {
+              transform: translateX(-100%);
+            }
+          }
+        
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start { 
+          transform: translateX(0);
+        }
+        .carousel-inner .carousel-item {
+        justify-content: flex-end;
+        }
+        
+        .carousel-item-default:first-child {
+          display: none;
+          @include media-breakpoint-down(sm) {
+            display: block;
+          }
+        }
+        .container {
+              overflow: hidden;
+        }
+        .row {
+              position: relative;
+            left: 300px;
+        }
+        
+        .carousel-item-default {
+          transition: 1s ease all;
+        }
+        .carousel-item.active .carousel-item-default:first-child {
+          display: none;
+          @include media-breakpoint-down(sm) {
+            display: block;
+          }
+        }
+        
+        .card{
+          height: 260px;
+        }
+        
 
       .carousel-item {
         width: 100%;

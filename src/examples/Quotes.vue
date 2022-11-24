@@ -147,7 +147,7 @@
     mounted(){
       let items = document.querySelectorAll('.quotes-section--v2 .carousel .carousel-item')
       items.forEach((el) => {
-			const minPerSlide = 2
+			const minPerSlide = 3
 			let next = el.nextElementSibling
 			for (var i=1; i<minPerSlide; i++) {
 				if (!next) {
