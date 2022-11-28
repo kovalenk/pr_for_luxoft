@@ -116,7 +116,7 @@
         }
         .row {
               position: relative;
-            left: 300px;
+              left: 300px;
         }
         
         .carousel-item-default {
@@ -128,7 +128,15 @@
             display: block;
           }
         }
-        
+        .carousel-inner{
+          left: 10%;
+          @include media-breakpoint-down(sm) {
+            left: 0;
+          }
+          @include media-breakpoint-down(lg) {
+            left:0;
+          }
+        }
         .card{
           height: 260px;
         }
@@ -215,18 +223,21 @@
     }
 
     .button-group {
+      position: relative;
       display: flex;
       max-width: 968px;
       margin: auto 0;
       @include mt(3);
       @include pb(1);
       align-items: center;
+      left:10%;
       @include media-breakpoint-down(lg) {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         width: 100%;
         height: 48px;
+        left:0;
         @include mt(3);
         @include pb(1);
       }
@@ -235,6 +246,7 @@
         width: 100%;
         justify-content: flex-start;
         @include p(0);
+        left: 0;
       }
 
       .carousel-indicators {
