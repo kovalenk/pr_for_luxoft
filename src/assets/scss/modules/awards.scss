@@ -554,7 +554,6 @@
                             @include media-breakpoint-down(md) {
                                 display: block;
                                 width: 100%;
-                                min-height: none;
                             }
                             @include media-breakpoint-between(md,lg){
                                 @include px(4)
