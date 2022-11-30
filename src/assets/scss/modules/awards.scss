@@ -310,7 +310,18 @@
             }
         }
     }
-
+    .mobile {
+        display: none;
+        @include media-breakpoint-down(md) {
+            display: block;
+        }
+    }
+    .desktop {
+        display: block;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
     &__v3 {
         overflow: hidden;
         .swiper {
@@ -321,9 +332,7 @@
             .buttons-group {
                 display: none;
                 @include media-breakpoint-down(md) {
-                    margin-top: 16px;
                     display: flex;
-
                     .button--next--v3, .button--prev--v3 {
                         position: relative;
                         opacity: 1;
@@ -363,6 +372,7 @@
                 @include media-breakpoint-down(md){
                     display: block;
                     margin: 0 auto;
+                    margin-bottom: 5.2%;
                     height: auto;
                 }
                 &-info {
@@ -393,7 +403,9 @@
                         @include pb(1);
                         margin: 0;
                         position: relative;
-                        min-height: auto;
+                        min-height: 0;
+                        height: 100%;
+                        justify-content: space-between;
                     }
                     &__text {
                         @include m(0);
@@ -469,7 +481,6 @@
 
                     border-radius: 14px;
                     @include media-breakpoint-down(md) {
-                        @include mt(2);
                         display: block;
                         width: 100%;
                     }
@@ -488,10 +499,13 @@
                         background: $gray-20;
                         border-radius: 14px;
                         @include media-breakpoint-down(md) {
+                            justify-content: space-between;
                             @include px(3);
                             @include pt(4);
                             @include pb(1);
                             @include mb(0);
+                            @include mt(0);
+                            height: 100%;
                         }
 
                         h2 {
@@ -525,7 +539,6 @@
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-
                             width: 402px;
                             min-height: 396px;
                             @include py(5);
@@ -540,9 +553,8 @@
                             background-position: 50% 50%;
                             @include media-breakpoint-down(md) {
                                 display: block;
-                                @include mt(2);
                                 width: 100%;
-                                min-height: auto;
+                                min-height: none;
                             }
                             @include media-breakpoint-between(md,lg){
                                 @include px(4)

@@ -95,7 +95,7 @@
 
     <section class="container-awards container-awards__v3 container-xxl">
       <h2>Awards</h2>
-      <div class="swiper swiper--v3">
+      <div class="desktop swiper swiper--v3">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="swiper-slide-info">
@@ -120,8 +120,6 @@
               <div class="swiper-slide-links__card">
                 <h2>Luxoft Recognized as a Leading Central and Eastern European Service Provider</h2>
                 <button type="button" class="btn btn-text btn-icon focus">read more</button>
-
-
               </div>
               <div class="swiper-slide-links__awards">
                 <div class="award-item">
@@ -256,6 +254,225 @@
                   <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
                   <p class="marketing">Business Marketing Association</p>
                 </div>
+                <div class="award-item">
+                              <h2>2021</h2>
+
+                  <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
+                  <p class="marketing">Business Marketing Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination--v3"></div>
+        <div class="buttons-group">
+          <button class="button--prev--v3 carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="button--next--v3 carousel-control-next" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        <div class="mobile swiper swiper--v3">
+        <div class=" swiper-wrapper">
+          <div class="swiper-slide">
+            <!--  -->
+            <div class="swiper-slide-info">
+              <div class="quotes">
+                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
+                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+              </div>
+              <div class="swiper-slide-info__text">
+                <p class="article">Clients engage Luxoft when they need to migrate a complex, business-critical system,
+                  and keep risk to a minimum. After all, we’ve been modernizing and migrating mainframes for over 20
+                  years now, and our top-class engineers are fluent in both legacy and modern technologies including
+                  cloud, QA and DevOps.</p>
+              </div>
+              <div class="swiper-slide-info__about">
+                <img class="avatar" src="~@/assets/images/awards/avatar.png" alt="avatar">
+                <p class="name">Name Surname <br>
+                  <span class="info">Solution Lead, <br> Intelligent Automation</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links__card">
+                <h2>Luxoft Recognized as a Leading Central and Eastern European Service Provider</h2>
+                <button type="button" class="btn btn-text btn-icon focus">read more</button>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links">
+              <div class="swiper-slide-links__awards">
+                <div class="award-item">
+                              <h2>2021</h2>
+
+                  <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
+                  <p class="marketing">Business Marketing Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links">
+              <div class="swiper-slide-links__awards">
+                <div class="award-item">
+                              <h2>2021</h2>
+
+                  <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
+                  <p class="marketing">Business Marketing Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!--  -->
+            <div class="swiper-slide-info">
+              <div class="quotes">
+                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
+                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+              </div>
+              <div class="swiper-slide-info__text">
+                <p class="article">Clients engage Luxoft when they need to migrate a complex, business-critical system,
+                  and keep risk to a minimum. After all, we’ve been modernizing and migrating mainframes for over 20
+                  years now, and our top-class engineers are fluent in both legacy and modern technologies including
+                  cloud, QA and DevOps.</p>
+              </div>
+              <div class="swiper-slide-info__about">
+                <img class="avatar" src="~@/assets/images/awards/avatar.png" alt="avatar">
+                <p class="name">Name Surname <br>
+                  <span class="info">Solution Lead, <br> Intelligent Automation</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links__card">
+                <h2>Luxoft Recognized as a Leading Central and Eastern European Service Provider</h2>
+                <button type="button" class="btn btn-text btn-icon focus">read more</button>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links">
+              <div class="swiper-slide-links__awards">
+                <div class="award-item">
+                              <h2>2021</h2>
+
+                  <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
+                  <p class="marketing">Business Marketing Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links">
+              <div class="swiper-slide-links__awards">
+                <div class="award-item">
+                              <h2>2021</h2>
+
+                  <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
+                  <p class="marketing">Business Marketing Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!--  -->
+            <div class="swiper-slide-info">
+              <div class="quotes">
+                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
+                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+              </div>
+              <div class="swiper-slide-info__text">
+                <p class="article">Clients engage Luxoft when they need to migrate a complex, business-critical system,
+                  and keep risk to a minimum. After all, we’ve been modernizing and migrating mainframes for over 20
+                  years now, and our top-class engineers are fluent in both legacy and modern technologies including
+                  cloud, QA and DevOps.</p>
+              </div>
+              <div class="swiper-slide-info__about">
+                <img class="avatar" src="~@/assets/images/awards/avatar.png" alt="avatar">
+                <p class="name">Name Surname <br>
+                  <span class="info">Solution Lead, <br> Intelligent Automation</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links__card">
+                <h2>Luxoft Recognized as a Leading Central and Eastern European Service Provider</h2>
+                <button type="button" class="btn btn-text btn-icon focus">read more</button>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links">
+              <div class="swiper-slide-links__awards">
+                <div class="award-item">
+                              <h2>2021</h2>
+
+                  <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
+                  <p class="marketing">Business Marketing Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links">
+              <div class="swiper-slide-links__awards">
+                <div class="award-item">
+                              <h2>2021</h2>
+
+                  <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
+                  <p class="marketing">Business Marketing Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!--  -->
+            <div class="swiper-slide-info">
+              <div class="quotes">
+                <!--                                <img class="picture" src="{{ asset('assets/images/quotes/quotes.svg') }}" alt="">-->
+                <img class="picture" src="../assets/images/quotes/quotes.svg" alt="">
+              </div>
+              <div class="swiper-slide-info__text">
+                <p class="article">Clients engage Luxoft when they need to migrate a complex, business-critical system,
+                  and keep risk to a minimum. After all, we’ve been modernizing and migrating mainframes for over 20
+                  years now, and our top-class engineers are fluent in both legacy and modern technologies including
+                  cloud, QA and DevOps.</p>
+              </div>
+              <div class="swiper-slide-info__about">
+                <img class="avatar" src="~@/assets/images/awards/avatar.png" alt="avatar">
+                <p class="name">Name Surname <br>
+                  <span class="info">Solution Lead, <br> Intelligent Automation</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links__card">
+                <h2>Luxoft Recognized as a Leading Central and Eastern European Service Provider</h2>
+                <button type="button" class="btn btn-text btn-icon focus">read more</button>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links">
+              <div class="swiper-slide-links__awards">
+                <div class="award-item">
+                              <h2>2021</h2>
+
+                  <p class="award-item__text">Leading Central and Eastern European Service Provider </p>
+                  <p class="marketing">Business Marketing Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-links">
+              <div class="swiper-slide-links__awards">
                 <div class="award-item">
                               <h2>2021</h2>
 
