@@ -499,7 +499,7 @@
                         background: $gray-20;
                         border-radius: 14px;
                         @include media-breakpoint-down(md) {
-                            justify-content: space-between;
+                            justify-content: center;
                             @include px(3);
                             @include pt(4);
                             @include pb(1);
@@ -516,7 +516,8 @@
                             @include media-breakpoint-down(md) {
                                 @include p(0);
                                 @include m(0);
-                                font-size: $font-size-20;
+                                @include mb(2);
+                                font-size: $h5-font-size;
                             }
                         }
 
